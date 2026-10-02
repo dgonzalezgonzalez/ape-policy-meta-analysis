@@ -74,6 +74,13 @@ questions, state and model. Do not reuse stale responses or leak `.env` keys.
 No API key or network is needed for the released cached-input replication.
 Intentional input revisions require new checksums and a documented new release.
 
+Rating sensitivity is frozen in data/quality_protocol.json (release 1.1.0).
+Compare rules on common rated directional samples. TrueSkill mu has no calibrated
+mapping to effect bias: use bounded rank emphasis only as exploratory sensitivity,
+alongside median-rating groups. Recompute ranks and ordinary REML heterogeneity
+in paired paper bootstrap draws. Custom rating weights do not use conventional
+Hartung--Knapp intervals. Preserve the baseline estimates and export every weight.
+
 ## Writing and output
 
 Use Diego's academic-writing skill for manuscript edits. Sole author: singular.

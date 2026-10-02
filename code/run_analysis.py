@@ -6,6 +6,7 @@ from scipy import stats
 from paths import RAW, PROCESSED, OUTPUT
 from meta import full_meta, regression, weighted_mean, egger
 from orientation import orientation
+from quality_sensitivity import rating_sensitivity
 
 SEED = 20261002
 SPECS = {
@@ -170,6 +171,27 @@ def main():
     rated = source[source.rated].copy()
     # SDE is an explanatory quantity here; use magnitude only, never mu/Elo transforms.
     R["quality_regressions"] = fit_specs(rated, "mu", ["Basic", "Design", "Reporting", "Full"])
+    protocol = json.loads((RAW.parent / 'quality_protocol.json').read_text(encoding='utf-8'))
+    R['quality_weighting'] = {}
+    quality_rows, quality_groups, quality_weights = [], [], []
+    for est in ('binary', 'continuous'):
+        d = oriented[oriented.estimand.eq(est) & oriented.rated].copy()
+        result, weights = rating_sensitivity(d.sde_welfare, d.se_sde ** 2, d.mu,
+            strengths=protocol['lambdas'], B=protocol['bootstrap_replications'],
+            seed=protocol['bootstrap_seed'])
+        result['excluded_unrated'] = int((oriented.estimand.eq(est) & ~oriented.rated).sum())
+        result['sample_ids'] = d.paper_version_id.tolist()
+        R['quality_weighting'][est] = result
+        quality_rows.extend({'estimand': est, **row} for row in result['summaries'])
+        quality_groups.extend({'estimand': est, **row} for row in result['groups'])
+        for j, row in enumerate(result['summaries']):
+            quality_weights.extend({'estimand': est, 'paper_version_id': vid,
+                'mu': float(mu), 'base': row['base'], 'lambda': row['lambda'],
+                'normalized_weight': float(weight)}
+                for vid, mu, weight in zip(d.paper_version_id, d.mu, weights[j]))
+    pd.DataFrame(quality_rows).to_csv(OUTPUT / 'quality_weighting.csv', index=False)
+    pd.DataFrame(quality_groups).to_csv(OUTPUT / 'quality_rating_groups.csv', index=False)
+    pd.DataFrame(quality_weights).to_csv(OUTPUT / 'quality_paper_weights.csv', index=False)
     R["selection"] = {}
     for est in ("binary", "continuous"):
         d = source[source.estimand.eq(est)]

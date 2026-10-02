@@ -122,6 +122,14 @@ def main():
     macros['OriginalOrientedN'] = str(R['direction_transitions']['previously_oriented'])
     macros['NewlyOrientedN'] = str(R['direction_transitions']['newly_oriented'])
     macros['ReversedDirectionN'] = str(R['direction_transitions']['reversed_direction'])
+    for est, prefix in [('binary', 'Binary'), ('continuous', 'Continuous')]:
+        result = R['quality_weighting'][est]
+        macros[prefix + 'RatedDirectionN'] = str(result['summaries'][0]['k'])
+        for base in ('Equal', 'REML'):
+            for strength, suffix in [(0., 'Base'), (1., 'Rank')]:
+                r = next(x for x in result['summaries'] if x['base'] == base and x['lambda'] == strength)
+                for key, field in [('Mean', 'estimate'), ('Lo', 'ci_lo'), ('Hi', 'ci_hi')]:
+                    macros[prefix + 'Rating' + base + suffix + key] = fmt(r[field], 4)
     (GENERATED / 'numbers.tex').write_text('\n'.join(chr(92)+'newcommand{'+chr(92)+k+'}{'+v+'}' for k,v in macros.items()) + '\n', encoding='utf-8')
     table('sample', 'Sample construction', 'Stage & Paper families', [
         ['Latest table with designated source filename', f['families']],
@@ -185,10 +193,38 @@ def main():
           r'Setup and rule & Estimand & $N$ & Mean & 95\% CI',rows,
           'Notes refers to the original beneficiary questions and table notes. Context refers to outcome-relevant data/setting paragraphs and questions explicitly about conventional outcome ordering, holding other outcomes and policy costs aside. Thus both context and question framing change across routes. Strict requires margin 0.20, support 0.60, opposite support no greater than 0.40 and ambiguity below 0.60. Balanced requires margin 0.15, support 0.55 and ambiguity below 0.75, with no opposite-support ceiling. Both routes use the same estimator. Contextual guarded rules flag group composition at probability 0.65; reporting/enforcement and gross-activity flags at 0.65 additionally require ambiguity at least 0.40. Unguarded omits these safeguards. These comparisons are not classification-error estimates.',
           'llrrl')
+    rows = []
+    groups = []
+    for est in ('binary', 'continuous'):
+        rows.append([r'\multicolumn{6}{l}{\textit{' + est.capitalize() + ' estimand}}'])
+        for r in R['quality_weighting'][est]['summaries']:
+            rows.append([r['base'], fmt(r['lambda'], 1), r['k'], fmt(r['estimate'], 4),
+                         '[' + fmt(r['ci_lo'], 4) + ', ' + fmt(r['ci_hi'], 4) + ']', fmt(r['effective_k'], 1)])
+        for r in R['quality_weighting'][est]['groups']:
+            groups.append([est.capitalize(), r['group'], r['k'], fmt(r['estimate'], 4),
+                           '[' + fmt(r['ci_lo'], 4) + ', ' + fmt(r['ci_hi'], 4) + ']'])
+    table('quality_weights', 'Corpus averages with bounded tournament-rating emphasis',
+          r'Base weight & $\lambda$ & $N$ & Mean & 95\% CI & $N_{\mathrm{eff}}$', rows,
+          r'All rows within an estimand use the identical rated, direction-coded sample: 331 binary and 149 continuous papers. '
+          r'Base weights are one (Equal) or $(v_i+\widehat\tau^2)^{-1}$ (REML), multiplied by $1+\lambda r_i$; '
+          r'$r_i$ is the within-sample midrank percentile of frozen TrueSkill $\mu$. '
+          r'$\lambda=0$ gives no rating emphasis; $\lambda=0.5$ and 1 bound the largest-to-smallest multiplier ratio below 1.5 and 2, respectively. '
+          r'All intervals here use 1,999 paired independent-paper bootstrap draws, re-estimating ranks and REML heterogeneity. '
+          r'$N_{\mathrm{eff}}=1/\sum_i p_i^2$, with $p_i$ normalized weights; this measures concentration, not independent information. '
+          r'Intervals condition on observed ratings and directions and do not resolve cross-paper dependence or rating uncertainty. '
+          r'These exploratory rules change the corpus summary and do not correct estimated effects for bias.', 'lccclc')
+    table('quality_groups', 'Favourable outcome changes by tournament-rating group',
+          r'Estimand & Rating group & $N$ & Mean & 95\% CI', groups,
+          r'The groups partition the same common rated sample used in Table~\ref{tab:quality_weights}, separately by estimand. '
+          r'Ties at the within-sample median enter the upper group. Each group re-estimates REML heterogeneity and uses modified Hartung--Knapp inference. '
+          r'The rating split changes the policy, outcome and design composition; it is not an estimate of an effect of research quality or an independently assessed risk-of-bias restriction.', 'llccl')
     pd.DataFrame(R['domains']).to_csv(TABLES/'domain_summaries.csv',index=False)
     pd.DataFrame(R['coverage_by_domain']).to_csv(TABLES/'direction_coverage.csv',index=False)
     (TABLES/'exhibit_map.csv').write_text('exhibit,source,output\nTable 1,sample_flow.json,paper/generated/sample.tex\nTable 2,results.json:distribution,paper/generated/distribution.tex\nTable 3,results.json:pooled,paper/generated/pooled.tex\nTable 4,results.json:policy_regressions,paper/generated/policy_regressions.tex\nTable 5,results.json:quality_regressions,paper/generated/quality_regressions.tex\nFigure 1,analysis_sample.csv,output/figures/magnitude_cdf.pdf\nFigure 2,results.json:domains,output/figures/domains.pdf\nTable A1,results.json:sign_sensitivity,paper/generated/thresholds.tex\nTable A2,results.json:robustness,paper/generated/robustness.tex\nTable A3,results.json:distribution,paper/generated/identities.tex\nTable A4,results.json:weighting,paper/generated/weights.tex\nTable A5,results.json:direction_comparison,paper/generated/direction_comparison.tex\n',encoding='utf-8')
-    print('Generated',len(macros),'numeric macros and ten tables')
+    with (TABLES/'exhibit_map.csv').open('a', encoding='utf-8') as mapping:
+        mapping.write('Table A6,results.json:quality_weighting:summaries,paper/generated/quality_weights.tex\n'
+                      'Table A7,results.json:quality_weighting:groups,paper/generated/quality_groups.tex\n')
+    print('Generated',len(macros),'numeric macros and twelve tables')
 
 
 if __name__=='__main__':

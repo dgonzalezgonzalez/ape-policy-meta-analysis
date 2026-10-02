@@ -21,6 +21,18 @@ def main():
     assert r['sample']['standardized'] == int(df.standardized_sample.sum())
     assert r['sample']['oriented'] == int((df.standardized_sample & df.welfare_sign.ne(0)).sum())
     assert len(r['sign_sensitivity']) == 30
+    weights = pd.read_csv(OUTPUT/'quality_paper_weights.csv')
+    for est, result in r['quality_weighting'].items():
+        expected = df[df.standardized_sample & df.welfare_sign.ne(0) & df.rated & df.estimand.eq(est)]
+        assert result['sample_ids'] == expected.paper_version_id.tolist()
+        assert len(result['summaries']) == 6
+        for s in result['summaries']:
+            w = weights[(weights.estimand == est) & (weights.base == s['base']) & (weights['lambda'] == s['lambda'])]
+            assert len(w) == len(expected) == s['k']
+            assert abs(w.normalized_weight.sum() - 1) < 1e-12
+            assert w.normalized_weight.gt(0).all()
+            assert abs(w.normalized_weight.to_numpy() @ expected.sde_welfare.to_numpy() - s['estimate']) < 1e-12
+            assert s['effective_k'] <= s['k'] + 1e-8
     dictionary = pd.read_csv(ROOT/'data/data_dictionary.csv')
     assert list(dictionary.variable) == list(df.columns)
     for models in [r['quality_regressions'], *r['policy_regressions'].values()]:
@@ -31,7 +43,7 @@ def main():
     for file in (PAPER/'generated').glob('*.tex'):
         assert '@@' not in file.read_text(encoding='utf-8')
     report = {'sample_invariants': 'pass', 'common_regression_samples': 'pass',
-              'table_placeholders': 'pass', 'tests': 13,
+              'table_placeholders': 'pass', 'tests': 16, 'quality_weighting_common_samples': 'pass',
               'pdf_checked': not args.no_pdf}
     if not args.no_pdf:
         import pymupdf
@@ -41,7 +53,7 @@ def main():
         doc = pymupdf.open(pdf)
         text = '\n'.join(p.get_text() for p in doc)
         assert '@@' not in text and 'Constant' in text and 'Observations' in text
-        assert 'Table A5' in text and 'Figure 2' in text
+        assert 'Table A7' in text and 'Figure 2' in text
         report.update(pdf_pages=len(doc), pdf_sha256=hashlib.sha256(pdf.read_bytes()).hexdigest(),
                       latex_errors=0, overfull_boxes=0)
     (OUTPUT/'qa/output_checks.json').write_text(json.dumps(report, indent=2), encoding='utf-8')

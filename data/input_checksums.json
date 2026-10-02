@@ -5,5 +5,6 @@
   "data/raw/sources_manifest.csv": "8590fb1097dd4d36f7fcdadf8007b6a2411232ef915da58ba48b6d54255623a7",
   "data/raw/provenance.json": "f532c094324dfe4128a4d51f6098d86ce76f434a4a2e65d56d2a54af724cbf9a",
   "data/raw/jev_direction_context.jsonl": "73420584a10dbcb9c6c15f30d10d469e39e832328a378f36a255781a41b522e4",
-  "data/direction_protocol.json": "d58ab1b148f2c56c78f44ca66da09163011345ce8f4a3aea0381b00354160c7f"
+  "data/direction_protocol.json": "d58ab1b148f2c56c78f44ca66da09163011345ce8f4a3aea0381b00354160c7f",
+  "data/quality_protocol.json": "14256d92357297e292bb08a83ce34d5c98838e694914dea2e5e7eab89b3f2004"
 }

@@ -1,0 +1,25 @@
+\begin{table}[htbp]\centering\small
+\caption{Corpus averages with bounded tournament-rating emphasis}\label{tab:quality_weights}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccclc}\toprule
+Base weight & $\lambda$ & $N$ & Mean & 95\% CI & $N_{\mathrm{eff}}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Binary estimand}} \\
+Equal & 0.0 & 331 & -0.0120 & [-0.0631, 0.0375] & 331.0 \\
+Equal & 0.5 & 331 & -0.0123 & [-0.0680, 0.0413] & 326.6 \\
+Equal & 1.0 & 331 & -0.0125 & [-0.0713, 0.0445] & 319.2 \\
+REML & 0.0 & 331 & -0.0001 & [-0.0358, 0.0356] & 316.4 \\
+REML & 0.5 & 331 & 0.0014 & [-0.0389, 0.0400] & 311.2 \\
+REML & 1.0 & 331 & 0.0024 & [-0.0397, 0.0438] & 303.6 \\
+\multicolumn{6}{l}{\textit{Continuous estimand}} \\
+Equal & 0.0 & 149 & 0.0371 & [-0.0163, 0.0999] & 149.0 \\
+Equal & 0.5 & 149 & 0.0382 & [-0.0141, 0.1014] & 147.0 \\
+Equal & 1.0 & 149 & 0.0390 & [-0.0137, 0.1018] & 143.7 \\
+REML & 0.0 & 149 & 0.0123 & [-0.0108, 0.0405] & 134.8 \\
+REML & 0.5 & 149 & 0.0122 & [-0.0131, 0.0424] & 132.5 \\
+REML & 1.0 & 149 & 0.0121 & [-0.0145, 0.0439] & 129.4 \\
+\bottomrule\end{tabular}
+\par\vspace{4pt}\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} All rows within an estimand use the identical rated, direction-coded sample: 331 binary and 149 continuous papers. Base weights are one (Equal) or $(v_i+\widehat\tau^2)^{-1}$ (REML), multiplied by $1+\lambda r_i$; $r_i$ is the within-sample midrank percentile of frozen TrueSkill $\mu$. $\lambda=0$ gives no rating emphasis; $\lambda=0.5$ and 1 bound the largest-to-smallest multiplier ratio below 1.5 and 2, respectively. All intervals here use 1,999 paired independent-paper bootstrap draws, re-estimating ranks and REML heterogeneity. $N_{\mathrm{eff}}=1/\sum_i p_i^2$, with $p_i$ normalized weights; this measures concentration, not independent information. Intervals condition on observed ratings and directions and do not resolve cross-paper dependence or rating uncertainty. These exploratory rules change the corpus summary and do not correct estimated effects for bias.
+\end{minipage}
+\end{table}

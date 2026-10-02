@@ -1,0 +1,15 @@
+\begin{table}[htbp]\centering\small
+\caption{Favourable outcome changes by tournament-rating group}\label{tab:quality_groups}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llccl}\toprule
+Estimand & Rating group & $N$ & Mean & 95\% CI \\
+\midrule
+Binary & Below median rating & 165 & -0.0155 & [-0.0471, 0.0161] \\
+Binary & At/above median rating & 166 & 0.0098 & [-0.0636, 0.0832] \\
+Continuous & Below median rating & 74 & 0.0116 & [-0.0173, 0.0405] \\
+Continuous & At/above median rating & 75 & 0.0139 & [-0.0333, 0.0610] \\
+\bottomrule\end{tabular}
+\par\vspace{4pt}\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} The groups partition the same common rated sample used in Table~\ref{tab:quality_weights}, separately by estimand. Ties at the within-sample median enter the upper group. Each group re-estimates REML heterogeneity and uses modified Hartung--Knapp inference. The rating split changes the policy, outcome and design composition; it is not an estimate of an effect of research quality or an independently assessed risk-of-bias restriction.
+\end{minipage}
+\end{table}

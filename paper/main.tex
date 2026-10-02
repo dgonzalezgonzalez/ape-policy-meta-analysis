@@ -103,6 +103,18 @@ I report the heterogeneity statistic $I^2$ alongside $\widehat\tau^2$. I also re
 
 An inverse-variance fixed-effect average would impose a common effect across these outcomes and allow a few unusually precise reports to dominate. I therefore do not present it as a policy result. Equal-paper and inverse-standard-error averages provide descriptive alternatives. Their intervals use a sandwich variance that includes observed variation between papers; the uncertainty formula for a common-effect inverse-variance estimator is inappropriate for these weights.
 
+\subsection{Paper assessment and weighting}
+An average can be uninformative if less credible evaluations receive substantial weight. APE's tournament provides an assessment of papers, but its TrueSkill mean has no established quantitative relationship to bias in a policy coefficient. Research quality scores can combine reporting, precision and validity in ways that alter a synthesis without correcting its biases \citep{juni,boutron}. I therefore examine rating-related sensitivity while retaining the baseline estimator. The analysis uses only rated papers with an assigned outcome direction, and every weighting comparison within an estimand uses this same sample.
+
+Let $r_i$ be the midrank percentile of $\mu_i$ within that sample, with ties assigned their average rank. I consider the normalized weights
+\begin{equation}\label{eq:ratingweights}
+ p_i(\lambda)=\frac{b_i(1+\lambda r_i)}{\sum_j b_j(1+\lambda r_j)},
+ \qquad \lambda\in\{0,0.5,1\},
+\end{equation}
+where $b_i$ is either one or the ordinary REML weight $(v_i+\widehat\tau^2)^{-1}$. The corresponding summary is $\sum_i p_i(\lambda)y_i$. The parameter $\lambda$ controls the emphasis placed on higher-rated papers: zero preserves the base weights, while one permits a rating multiplier ratio below two. These bounded choices avoid converting the arbitrary origin of $\mu$ into a weight and are invariant to a positive affine rescaling of ratings. They are exploratory sensitivity rules, specified after the baseline analysis, with no claim that either multiplier is optimal. For the REML base, I hold the common-sample heterogeneity estimate fixed across the three point estimates.
+
+Intervals for these comparisons use 1,999 paired paper-level bootstrap draws. Each draw resamples the same observations for every weighting rule, recomputes rating ranks, and re-estimates REML heterogeneity. Percentile intervals are conditional on the frozen ratings and directional assignments; they rely on independent, exchangeable papers within the rated stratum. They do not incorporate TrueSkill rating uncertainty or shared errors across papers. I also divide the common sample at its median rating and estimate ordinary REML summaries within each group, with modified Hartung--Knapp intervals. That comparison reveals which rated papers contribute to the averages, although differences in outcomes, policies and designs prevent interpreting it as an effect of research quality.
+
 \subsection{Descriptive regressions}
 To examine which paper characteristics covary with the reported outcomes, I estimate
 \begin{equation}\label{eq:reg}
@@ -179,6 +191,13 @@ To make the missing-direction issue explicit, I also report finite-corpus ranges
 
 Explicit policy objectives supply a separate interpretation. A policy can be designed to change compliance or revenue even when the beneficiary interpretation is ambiguous. Conversely, a research question asking whether employment falls does not state that lower employment is the policy's objective. I therefore retain only explicit intent in that sensitivity exercise. Its coverage is limited, and it is not a substitute for favourable outcome coding.
 
+\subsection{Paper assessment and the corpus average}
+Do papers with lower tournament ratings account for the small baseline averages? Tables~\ref{tab:quality_weights} and~\ref{tab:quality_groups} address this concern within \BinaryRatedDirectionN{} binary-treatment and \ContinuousRatedDirectionN{} continuous-exposure papers. Four binary papers and one continuous paper lack a usable rating and are excluded from every row of the weighting comparison. Keeping this sample common separates rating emphasis from the effect of removing unrated papers.
+
+Giving every rated paper equal weight yields means of \BinaryRatingEqualBaseMean{} and \ContinuousRatingEqualBaseMean{} outcome standard deviations. Under the strongest rating emphasis, these become \BinaryRatingEqualRankMean{} and \ContinuousRatingEqualRankMean{}. Applying the same multipliers to REML weights changes the binary mean from \BinaryRatingREMLBaseMean{} to \BinaryRatingREMLRankMean{} and the continuous mean from \ContinuousRatingREMLBaseMean{} to \ContinuousRatingREMLRankMean{}. The corresponding bootstrap intervals remain wide: [\BinaryRatingREMLRankLo{}, \BinaryRatingREMLRankHi{}] and [\ContinuousRatingREMLRankLo{}, \ContinuousRatingREMLRankHi{}]. Paired intervals for the change in each average also include zero. Thus these particular reweighting rules leave the broad interpretation of the corpus averages similar, while allowing economically different effects among individual policies.
+
+Both rating groups have intervals that include zero under ordinary REML inference. This comparison does not establish that lower-rated evaluations are unbiased, or that higher-rated evaluations identify policy effects correctly. Ratings are associated with reported precision, and multiplying precision-based weights by rating ranks can give additional emphasis to this same characteristic. The exercise shows the sensitivity of the observed corpus summary to bounded rating emphasis. A correction for research bias would require assessment of the source designs and evidence linking specific failures to the selected estimates.
+
 \subsection{Arithmetic, assessment, and dependence}
 Table~\ref{tab:identities} reports internal arithmetic checks. Excluding papers that fail a test provides a limited robustness check; untestable cases remain. Source discrepancies should be resolved in the underlying evaluations before stronger substantive claims are made. Recovering a missing exposure standard deviation from the SDE being tested would make the check circular, so I do not use that procedure.
 
@@ -203,6 +222,8 @@ The public replication package contains frozen factual table and rating extracts
 \bibitem[TypeSafe(2026)]{typesafe} TypeSafe. 2026. \textit{Jev 1.13.0 annotation responses}. Generated October 2 using the System One API; frozen responses in the replication package. API and question definitions: \url{https://docs.typesafe.ai/api}.
 \bibitem[Deeks et al.(2024)]{cochrane} Deeks, Jonathan J., Julian P. T. Higgins, Douglas G. Altman, Joanne E. McKenzie, and Areti Angeliki Veroniki, eds. 2024. ``Analysing Data and Undertaking Meta-Analyses.'' Chapter 10, \textit{Cochrane Handbook for Systematic Reviews of Interventions}, version 6.5. Updated November 2024. \url{https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10}.
 \bibitem[Egger et al.(1997)]{egger} Egger, Matthias, George Davey Smith, Martin Schneider, and Christoph Minder. 1997. ``Bias in Meta-Analysis Detected by a Simple, Graphical Test.'' \textit{BMJ} 315 (7109): 629--634. \url{https://doi.org/10.1136/bmj.315.7109.629}.
+\bibitem[Boutron et al.(2024)]{boutron} Boutron, Isabelle, Matthew J. Page, Julian P. T. Higgins, Douglas G. Altman, Andreas Lundh, and Asbj\o rn Hr\'objartsson. 2024. ``Considering Bias and Conflicts of Interest among the Included Studies.'' Chapter 7, \textit{Cochrane Handbook for Systematic Reviews of Interventions}, version 6.5. Updated August 2022. \url{https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-07}.
+\bibitem[J\"uni et al.(1999)]{juni} J\"uni, Peter, Anja Witschi, Ralph Bloch, and Matthias Egger. 1999. ``The Hazards of Scoring the Quality of Clinical Trials for Meta-analysis.'' \textit{JAMA} 282 (11): 1054--1060. \url{https://doi.org/10.1001/jama.282.11.1054}.
 \bibitem[R\"over, Knapp, and Friede(2015)]{rover} R\"over, Christian, Guido Knapp, and Tim Friede. 2015. ``Hartung--Knapp--Sidik--Jonkman Approach and Its Modification for Random-Effects Meta-Analysis with Few Studies.'' \textit{BMC Medical Research Methodology} 15: 99. \url{https://doi.org/10.1186/s12874-015-0091-1}.
 \bibitem[Viechtbauer(2010)]{viechtbauer} Viechtbauer, Wolfgang. 2010. ``Conducting Meta-Analyses in R with the metafor Package.'' \textit{Journal of Statistical Software} 36 (3): 1--48. \url{https://doi.org/10.18637/jss.v036.i03}.
 \bibitem[Abadie(2020)]{abadie} Abadie, Alberto. 2020. ``Statistical Nonsignificance in Empirical Economics.'' \textit{American Economic Review: Insights} 2 (2): 193--208. \url{https://doi.org/10.1257/aeri.20190252}.
@@ -223,4 +244,8 @@ The public replication package contains frozen factual table and rating extracts
 \clearpage
 \section{Annotation setup and coverage}
 \input{generated/direction_comparison.tex}
+\clearpage
+\section{Tournament ratings and pooled summaries}
+\input{generated/quality_weights.tex}
+\input{generated/quality_groups.tex}
 \end{document}

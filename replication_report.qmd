@@ -15,7 +15,7 @@ format:
 | Paper ID | Working paper; no JPE submission identifier |
 | Author | Diego GonzÃ¡lez-GonzÃ¡lez |
 | Title | Automated Policy Evaluation and the Interpretation of Evidence: A Meta-Analysis of Project APE |
-| Iteration | Author release 1.0.0 |
+| Iteration | Author release 1.1.0 |
 | Repository | <https://github.com/dgonzalezgonzalez/ape-policy-meta-analysis> |
 | Report status | Author-side self-check; not a JPE replicator report or approval |
 
@@ -62,7 +62,7 @@ The analysis population is the paper families with designated effect tables, not
 2. APE leaderboard, accessed October 2, 2026, reporting a July 1 update. The package freezes selected factual records rather than reusing the mutable live endpoint.
 3. Author-generated TypeSafe Jev 1.13.0 responses, generated October 2, 2026. Questions, request hashes, returned typed answers and usage are provided.
 
-The released inputs are JSON, JSON Lines and CSV. `data/input_checksums.json` verifies the seven frozen files. The dictionary defines every column in the 699-row generated dataset. Original source prose and local API credentials are excluded. Detailed acquisition and rights statements are in the README.
+The released inputs are JSON, JSON Lines and CSV. `data/input_checksums.json` verifies the eight frozen files. The dictionary defines every column in the 699-row generated dataset. Original source prose and local API credentials are excluded. Detailed acquisition and rights statements are in the README.
 
 # Requirements
 
@@ -74,13 +74,15 @@ Python 3.12 and `requirements.txt`; pdflatex for manuscript compilation. No prop
 
 ## Code description
 
-`run_all.py` verifies inputs, builds the dataset, runs thirteen benchmark checks, estimates results, writes tables and figures, compiles the manuscript twice and checks outputs. The optional `--rebuild-sources` route performs immutable acquisition, parsing and arithmetic diagnostics first. The optional `--enrich` route refreshes only missing/stale model requests.
+`run_all.py` verifies inputs, builds the dataset, runs sixteen benchmark checks, estimates results, writes tables and figures, compiles the manuscript twice and checks outputs. The optional `--rebuild-sources` route performs immutable acquisition, parsing and arithmetic diagnostics first. The optional `--enrich` route refreshes only missing/stale model requests.
 
 The numerical generator writes no source input files during the default run. `make_tex.py` reads results and writes generated TeX; it does not rewrite figure inputs. The primary row rule, latest-version rule, deduplication, missingness and directional thresholds are explicit in code and manuscript.
 
+Release 1.1.0 adds exploratory rating-related sensitivity, frozen in `data/quality_protocol.json`, without changing raw factual inputs or baseline estimates. `code/quality_sensitivity.py` compares equal-paper and REML base weights multiplied by bounded midrank-based rating factors. Every rule uses the identical rated directional sample within each estimand (331 binary, 149 continuous). A paired 1,999-draw independent-paper bootstrap re-estimates ranks and heterogeneity, with conditional percentile intervals for averages and changes from each unmodified base. Every normalized paper weight is exported. Median-rating groups receive separate ordinary REML summaries and modified Hartung–Knapp intervals. These exercises do not claim validated bias correction or independent assessment of research quality.
+
 ## Computing Environment of Replicator
 
-The author-side checks used Python 3.12.10 on Windows 11 build 26200, an Intel i7-1165G7 processor, eight logical CPUs and approximately 16 GB RAM. The tested dependency versions are in `requirements.txt` and `output/qa/run_environment.json`. A complete offline run takes approximately 25 seconds. This is the author's environment, not an independent replicator's computer.
+The author-side checks used Python 3.12.10 on Windows 11 build 26200, an Intel i7-1165G7 processor, eight logical CPUs and approximately 16 GB RAM. The tested dependency versions are in `requirements.txt` and `output/qa/run_environment.json`. A complete offline run takes approximately 46 seconds. This is the author's environment, not an independent replicator's computer.
 
 # Replication
 
@@ -102,13 +104,13 @@ Exactly repeated table files are removed using LF-normalized SHA256. The compara
 
 ## Tables and Figures
 
-The package reproduces Tables 1â€“5, Figures 1â€“2 and Tables A1â€“A5. The machine-readable mapping is `output/tables/exhibit_map.csv`. Regression displays include constants, observations, fit measures and HC3 inference. Main binary and continuous means are separate REML summaries with modified Hartungâ€“Knapp intervals. Exact source standardization and directional selection limit their interpretation.
+The package reproduces Tables 1–5, Figures 1–2 and Tables A1–A7. The machine-readable mapping is `output/tables/exhibit_map.csv`. Regression displays include constants, observations, fit measures and HC3 inference. Main binary and continuous means are separate REML summaries with modified Hartung–Knapp intervals. Exact source standardization and directional selection limit their interpretation.
 
 All manuscript pages were rendered for visual inspection. Checks cover margins, axis/legend placement, table readability, placeholders, undefined references and overfull horizontal boxes. The log and QA output record compiler success; visual inspection is a separate author check.
 
 ## In-Text Numbers
 
-Fifty-nine generated macros populate the text's numerical claims from `results.json`. The complete coefficient exports include categorical controls omitted from the displayed tables. The fifteen directional threshold pairs are reapplied to all comparable observations. The strict-confidence subset and original notes-only route are retained; both information and threshold changes are exposed in Table A5.
+Eighty-five generated macros populate the text's numerical claims from `results.json`. The complete coefficient exports include categorical controls omitted from the displayed tables. The fifteen directional threshold pairs are reapplied to all comparable observations. The strict-confidence subset and original notes-only route are retained; both information and threshold changes are exposed in Table A5.
 
 ## Other Issues
 

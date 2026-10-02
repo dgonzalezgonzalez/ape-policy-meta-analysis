@@ -5,7 +5,7 @@ title: "Automated Policy Evaluation and the Interpretation of Evidence: A Meta-A
 authors:
   - family-names: González-González
     given-names: Diego
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-10-02
 repository-code: "https://github.com/dgonzalezgonzalez/ape-policy-meta-analysis"
 license: MIT

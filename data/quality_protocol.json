@@ -1,0 +1,17 @@
+{
+  "release": "1.1.0",
+  "date": "2026-10-02",
+  "status": "Exploratory sensitivity added after the baseline analysis; not preregistered",
+  "population": "Baseline direction-oriented, comparable, rated papers, separately by estimand",
+  "rating": "Frozen TrueSkill mu; no imputation or annulled/unrated papers",
+  "rank": "Midrank percentile (average rank minus 0.5) / N within the common analysis sample",
+  "multiplier": "1 + lambda * rank percentile",
+  "lambdas": [0.0, 0.5, 1.0],
+  "base_weights": ["Equal", "REML"],
+  "heterogeneity": "Estimate ordinary REML tau squared on the common rated sample; hold it common across multipliers in each point estimate",
+  "bootstrap_replications": 1999,
+  "bootstrap_seed": 20261002,
+  "inference": "Paired independent-paper percentile bootstrap; recompute ranks and REML heterogeneity in each draw; conditional on frozen ratings and directions",
+  "rating_groups": "Below versus at or above the common-sample median mu; ordinary REML with modified Hartung-Knapp intervals",
+  "interpretation": "Bounded rating emphasis changes the corpus summary. It is not a validated risk-of-bias correction. Rating uncertainty and dependence across papers are not resolved by these intervals."
+}

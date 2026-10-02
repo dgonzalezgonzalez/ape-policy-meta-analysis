@@ -1,8 +1,8 @@
 # Automated Policy Evaluation and the Interpretation of Evidence
 
-**Author:** Diego GonzÃ¡lez-GonzÃ¡lez  
-**Paper:** *A Meta-Analysis of Project APE*  
-**Release:** 1.0.0, October 2, 2026  
+**Author:** Diego GonzÃ¡lez-GonzÃ¡lez\
+**Paper:** *A Meta-Analysis of Project APE*\
+**Release:** 1.1.0, October 2, 2026\
 **Repository:** <https://github.com/dgonzalezgonzalez/ape-policy-meta-analysis>
 
 This package reproduces the paper's analysis of standardized estimates reported in Project APE policy evaluations. It includes frozen factual inputs, cached model annotations, all analysis programs, machine-readable results, LaTeX sources, vector figures, and the compiled paper at `output/paper/main.pdf`. The numerical replication runs offline without an API key.
@@ -13,13 +13,21 @@ The organization and documentation follow the [JPE package guidance](https://jpe
 
 The unit of observation is a paper family, represented by its latest version containing the designated `tabF1_sde.tex` filename in a frozen public repository tree. The release accounts for 699 families, including seven latest tables without a numeric standardized estimate. It keeps 626 comparable estimates after the reported-uncertainty, estimand, magnitude, bunching, and duplicate-table screens. The balanced contextual rule assigns outcome direction to 485 of these papers: 335 binary-treatment and 150 continuous-exposure estimates, compared with 299 in the original notes-only strict setup. The tournament-rating regressions use 620 comparable rated papers, including papers without a directional classification.
 
-Binary-treatment contrasts and continuous-exposure slopes are analyzed separately. The main REML means are âˆ’0.0023 and 0.0113 outcome SDs, with modified Hartungâ€“Knapp 95% intervals of [âˆ’0.0411, 0.0366] and [âˆ’0.0180, 0.0406]. These summarize selected reported outcome changes. They are not net welfare estimates, a systematic review of all policy evidence, or independent replications of the source evaluations. The paper reports heterogeneity, directional-coverage sensitivity, alternative samples and weights, and descriptive associations with tournament ratings.
+Binary-treatment contrasts and continuous-exposure slopes are analyzed separately. The main REML means are −0.0023 and 0.0113 outcome SDs, with modified Hartung–Knapp 95% intervals of [−0.0411, 0.0366] and [−0.0180, 0.0406]. These summarize selected reported outcome changes. They are not net welfare estimates, a systematic review of all policy evidence, or independent replications of the source evaluations. The paper reports heterogeneity, directional-coverage sensitivity, alternative samples and weights, and descriptive associations with tournament ratings.
+
+## Rating-related sensitivity in release 1.1.0
+
+Paper assessment may matter for a synthesis, but APE's TrueSkill mean is not calibrated to the bias of a reported policy estimate. The baseline analysis remains unchanged. Tables A6–A7 compare equal-paper and REML averages on common rated directional samples (331 binary, 149 continuous), with and without bounded rating emphasis, and show ordinary REML estimates below versus at/above each sample's median rating. Four binary and one continuous baseline observations lack usable ratings; no rating is imputed.
+
+`data/quality_protocol.json` freezes this exploratory extension, added after the baseline analysis. Within each common sample, the midrank percentile is `(average_rank(mu) - 0.5) / N`. Base weights are multiplied by `1 + lambda * percentile`, for lambda 0, 0.5 and 1. The largest-to-smallest rating multiplier ratio stays below 1.5 or 2. This uses only rating order and remains invariant to positive affine rescaling of mu. It is an illustrative change in emphasis, not a validated quality-effects or risk-of-bias adjustment. All REML-base point estimates share the ordinary common-sample heterogeneity estimate.
+
+For every weighting row, 1,999 paired independent-paper bootstrap resamples recompute ranks and REML heterogeneity; percentile intervals include observed paper variation. Paired intervals for changes against the matching unmodified base rule are exported. Inference conditions on frozen ratings and directions; TrueSkill uncertainty and dependence between papers are not resolved. Median-rating groups instead use ordinary REML and modified Hartung–Knapp inference. Differences between groups can reflect policy and outcome composition. Results change little under the bounded rules, and all average and paired-change intervals include zero.
 
 ## Data availability and provenance
 
 ### Source 1: Project APE tables and metadata
 
-Social Catalyst Lab, *Project APE papers*: <https://github.com/SocialCatalystLab/ape-papers>, accessed October 2, 2026. The frozen tree is `70c660ea5a7de722e9a12ad965e1c665890208d8`. There are 712 version-specific designated tables, 710 associated metadata files, and 691 locally acquired latest-version paper sources used for contextual direction coding. One numeric table has no paper.tex in the frozen tree and uses notes alone. The source versions with an SDE are dated Marchâ€“April 2026. Public access requires neither an account nor authentication.
+Social Catalyst Lab, *Project APE papers*: <https://github.com/SocialCatalystLab/ape-papers>, accessed October 2, 2026. The frozen tree is `70c660ea5a7de722e9a12ad965e1c665890208d8`. There are 712 version-specific designated tables, 710 associated metadata files, and 691 locally acquired latest-version paper sources used for contextual direction coding. One numeric table has no paper.tex in the frozen tree and uses notes alone. The source versions with an SDE are dated March–April 2026. Public access requires neither an account nor authentication.
 
 `data/raw/sources_manifest.csv` records every original path, immutable download URL, Git blob SHA1, and content SHA256. Tables are compared after converting CRLF to LF; metadata checksums use canonical JSON. All 712 locally acquired table contents matched the frozen Git blob SHA1 after newline normalization. There are two table versions without a metadata file in the snapshot. They are not replaced with invented metadata.
 
@@ -60,9 +68,10 @@ The frozen APE source tree did not contain an explicit redistribution licence. P
 | `data/raw/jev_annotations.jsonl` | 692 successful typed annotation responses | Frozen annotation input; UTF-8 JSON Lines |
 | `data/raw/sources_manifest.csv` | 2,113 immutable table/metadata/paper source paths and checksums | Optional acquisition manifest; CSV |
 | `data/raw/provenance.json` | Source dates, tree identifier, leaderboard hash and model | Provenance; JSON |
-| `data/input_checksums.json` | LF-normalized SHA256 for the seven frozen input files | Integrity check; JSON |
+| `data/input_checksums.json` | LF-normalized SHA256 for the eight frozen input files | Integrity check; JSON |
 | `data/raw/jev_direction_context.jsonl` | 692 contextual direction responses and selected-context metadata | Frozen annotation input; JSON Lines |
 | `data/direction_protocol.json` | Direction thresholds, measurement safeguards and revision timing | Frozen coding protocol; JSON |
+| `data/quality_protocol.json` | Common samples, bounded rating weights and bootstrap settings | Frozen exploratory analysis protocol; JSON |
 | `data/direction_audit.csv` | Illustrative AI-assisted source-definition review | Author audit; CSV |
 | `data/processed/dataset.csv` | 699 rows, all extracted and constructed variables | Generated complete dataset; CSV |
 | `data/data_dictionary.csv` | Definition, origin, units/coding and missingness for every dataset column | Codebook; CSV |
@@ -70,7 +79,10 @@ The frozen APE source tree did not contain an explicit redistribution licence. P
 | `output/direction_review_queue.csv` | 141 unresolved comparable outcomes | Generated review queue; CSV |
 | `output/direction_comparison.csv` | 626 paper-level annotation transitions and measurement flags | Generated comparison; CSV |
 | `output/results.json` | All summaries, specifications, diagnostics and sensitivities | Generated results; JSON |
-| `output/sign_sensitivity.csv` | 15 threshold pairs Ã— 2 estimands | Generated sensitivity results; CSV |
+| `output/sign_sensitivity.csv` | 15 threshold pairs × 2 estimands | Generated sensitivity results; CSV |
+| `output/quality_weighting.csv` | Six rules per estimand, bootstrap intervals, paired differences and concentration | Generated rating sensitivity; CSV |
+| `output/quality_rating_groups.csv` | Below/above median rating REML summaries | Generated rating-group sensitivity; CSV |
+| `output/quality_paper_weights.csv` | Every paper's normalized weight under every rule | Generated weight audit; CSV |
 | `output/tables/` | Domain summaries, coverage, all regression coefficients, exhibit map | Generated numerical exports; CSV |
 
 Missing numeric values in CSV are blank; JSON uses `null`. Zero is retained when it is a reported value and does not mean missing. Probabilistic binary descriptions range from zero to one. The dictionary points to exact question definitions and categorical alternatives. No long paper prose or original microdata are shipped. The optional `data/raw/sde/` and `data/raw/meta/` and `data/raw/papers/` directories are gitignored.
@@ -87,11 +99,11 @@ Installing Python packages or missing TeX packages requires internet access. Onc
 
 ### Hardware, storage, time and randomness
 
-Tested on an Intel i7-1165G7 laptop, eight logical processors and approximately 16 GB RAM. The full offline analysis, checks, figures, TeX tables and two PDF passes took about **25 seconds**. `output/qa/run_environment.json` records actual stage timings and software versions for each run. No GPU is needed. Allow 1 GB free RAM for the main analysis and 200 MB of free storage for a working checkout and optional original tables; these are conservative allowances, not measured peak requirements.
+Tested on an Intel i7-1165G7 laptop, eight logical processors and approximately 16 GB RAM. The full offline analysis, checks, figures, TeX tables and two PDF passes took about **46 seconds**. `output/qa/run_environment.json` records actual stage timings and software versions for each run. No GPU is needed. Allow 1 GB free RAM for the main analysis and 200 MB of free storage for a working checkout and optional original tables; these are conservative allowances, not measured peak requirements.
 
 The optional detector uses a separate Python environment and a neural model download; allow several GB of additional storage and memory. It is outside the numerical replication. Optional full-source acquisition involves 2,113 public source downloads; duration depends on the network. Request regeneration requires a TypeSafe account and key and may incur charges. Frozen responses are sufficient for every paper result. New API responses need not be identical even with a pinned model.
 
-Country-group bootstrap calculations use 999 resamples and seed `20261002`. No other main analysis stage uses randomness. Generated figures have fixed PDF date metadata. TeX PDF timestamps and file identifiers can vary; numerical files, generated table text and figure content are the replication targets, not byte-identical manuscript PDFs.
+Country-group bootstrap calculations use 999 resamples and seed `20261002`. Rating-related sensitivity uses 1,999 paired independent-paper resamples with the same documented seed. No other main analysis stage uses randomness. Generated figures have fixed PDF date metadata. TeX PDF timestamps and file identifiers can vary; numerical files, generated table text and figure content are the replication targets, not byte-identical manuscript PDFs.
 
 ## Instructions to replicators
 
@@ -116,7 +128,7 @@ python3.12 -m venv .venv
 .venv/bin/python run_all.py
 ```
 
-Use `run_all.py --no-pdf` to reproduce the numerical analysis, figures and generated LaTeX without a TeX installation. The driver verifies frozen inputs (SHA256 after CRLF-to-LF normalization), rebuilds the dataset, runs thirteen benchmark/parser checks, runs the analysis, generates tables and figures, compiles the paper twice, and checks the outputs. It fails on a subprocess error, stale input checksum, invalid sample invariant, unresolved table placeholder, undefined LaTeX reference or overfull horizontal box. It writes `output/replication.log` and machine-readable QA reports. The log is overwritten on each run.
+Use `run_all.py --no-pdf` to reproduce the numerical analysis, figures and generated LaTeX without a TeX installation. The driver verifies frozen inputs (SHA256 after CRLF-to-LF normalization), rebuilds the dataset, runs sixteen benchmark/parser checks, runs the analysis, generates tables and figures, compiles the paper twice, and checks the outputs. It fails on a subprocess error, stale input checksum, invalid sample invariant, unresolved table placeholder, undefined LaTeX reference or overfull horizontal box. It writes `output/replication.log` and machine-readable QA reports. The log is overwritten on each run.
 
 ### Optional source-level reconstruction
 
@@ -154,7 +166,8 @@ The requested [econ-ai-detector](https://github.com/paulgp/econ-ai-detector) is 
 | `code/build_dataset.py` | Frozen-input merge, latest-version sample, missingness, duplicates | NumPy, pandas |
 | `code/meta.py` | REML, modified HK, weighting, HC3 regressions and Egger diagnostic | NumPy, SciPy, statsmodels |
 | `code/run_analysis.py` | Corpus summaries, regressions, thresholds and robustness | Numerical libraries; frozen dataset |
-| `code/make_tex.py` | Numeric macros and ten conventional regression/summary tables | pandas; read-only results |
+| `code/quality_sensitivity.py` | Bounded rating emphasis, paired bootstrap and median-rating groups | NumPy/SciPy; frozen analysis protocol |
+| `code/make_tex.py` | Numeric macros and twelve conventional regression/summary tables | pandas; read-only results |
 | `code/make_figures.py` | Two vector figures | Matplotlib; numerical results |
 | `code/test_analysis.py` | Thirteen analytical, context and parser benchmark checks | Numerical libraries |
 | `code/check_outputs.py` | Sample, regression, table and PDF invariants | pandas; optional PyMuPDF |
@@ -179,12 +192,14 @@ The table generator does not modify analysis CSVs. It can be rerun safely withou
 | Table A3: Arithmetic diagnostics | `results.json:distribution` | `paper/generated/identities.tex` |
 | Table A4: Alternative weights | `results.json:weighting` | `paper/generated/weights.tex` |
 | Table A5: Annotation setups | `results.json:direction_comparison` | `paper/generated/direction_comparison.tex` |
+| Table A6: Rating emphasis | `results.json:quality_weighting:summaries` | `paper/generated/quality_weights.tex` |
+| Table A7: Rating groups | `results.json:quality_weighting:groups` | `paper/generated/quality_groups.tex` |
 
-`output/tables/exhibit_map.csv` supplies the same mapping for machine use. `paper/generated/numbers.tex` supplies 59 macros used for the numerical claims in the text. All coefficient estimates, including omitted-from-display categorical controls, are exported in `output/tables/*_all_coefficients.csv`; the results JSON also records reference categories and omitted dependent/constant columns. Conventional regression displays include the intercept, observations, RÂ², adjusted RÂ², unweighted RMSE, residual degrees of freedom and HC3 Wald statistics. Standard errors appear below coefficients.
+`output/tables/exhibit_map.csv` supplies the same mapping for machine use. `paper/generated/numbers.tex` supplies 85 macros used for the numerical claims in the text. All coefficient estimates, including omitted-from-display categorical controls, are exported in `output/tables/*_all_coefficients.csv`; the results JSON also records reference categories and omitted dependent/constant columns. Conventional regression displays include the intercept, observations, R², adjusted R², unweighted RMSE, residual degrees of freedom and HC3 Wald statistics. Standard errors appear below coefficients.
 
 ## Validation and interpretation
 
-The thirteen checks cover a closed-form homoskedastic REML solution, translation invariance, the zero-variance boundary, modified HK inference, weighted-mean uncertainty, the Egger intercept, unresolved direction, the earlier probability inversion, escaped ampersands/parenthesized errors, table/panel selection, exclusion of results from contextual paragraphs, retention of supported moderate-confidence directions, and an enforcement-proxy safeguard. Source arithmetic failures are reported rather than corrected or hidden. The primary sample retains them; a sensitivity removes them. Standard errors rounded to zero are not replaced with an invented floor.
+The sixteen checks cover a closed-form homoskedastic REML solution, translation invariance, the zero-variance boundary, modified HK inference, weighted-mean uncertainty, the Egger intercept, unresolved direction, the earlier probability inversion, escaped ampersands/parenthesized errors, table/panel selection, exclusion of results from contextual paragraphs, retention of supported moderate-confidence directions, an enforcement-proxy safeguard, rating-rank scale/tie invariance, recovery of unmodified estimates with tied ratings, and bootstrap reproducibility/input validation. Source arithmetic failures are reported rather than corrected or hidden. The primary sample retains them; a sensitivity removes them. Standard errors rounded to zero are not replaced with an invented floor.
 
 Exact duplicate table files are removed; this is not a test of independence among all remaining papers. Reported variances, common data sources, outcome selection and the shared automated production process limit inference. Country-group bootstrap intervals are additional sensitivity summaries, not a solution to every dependence pattern. Model probabilities and design descriptions lack an independent validation sample. The more confident subset changes point estimates but its intervals also include zero. The package exposes annotation and safeguard sensitivity rather than maximizing coverage by assigning directions to every measure.
 

@@ -11,3 +11,5 @@ Table A2,results.json:robustness,paper/generated/robustness.tex
 Table A3,results.json:distribution,paper/generated/identities.tex
 Table A4,results.json:weighting,paper/generated/weights.tex
 Table A5,results.json:direction_comparison,paper/generated/direction_comparison.tex
+Table A6,results.json:quality_weighting:summaries,paper/generated/quality_weights.tex
+Table A7,results.json:quality_weighting:groups,paper/generated/quality_groups.tex

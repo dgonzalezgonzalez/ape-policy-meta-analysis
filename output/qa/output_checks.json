@@ -2,10 +2,11 @@
   "sample_invariants": "pass",
   "common_regression_samples": "pass",
   "table_placeholders": "pass",
-  "tests": 13,
+  "tests": 16,
+  "quality_weighting_common_samples": "pass",
   "pdf_checked": true,
-  "pdf_pages": 20,
-  "pdf_sha256": "281a5df4c5802348340d0fac1748be3565c1c0d5cdb75f2e935b3b63ea6278fb",
+  "pdf_pages": 22,
+  "pdf_sha256": "e2f81bce36f0a6b1418ac348de22a211a070bfb5c2d29114c87db6e4359b8c97",
   "latex_errors": 0,
   "overfull_boxes": 0
 }

@@ -20,35 +20,35 @@
         "python.exe",
         "code/build_dataset.py"
       ],
-      "seconds": 2.197
+      "seconds": 3.793
     },
     {
       "command": [
         "python.exe",
         "code/test_analysis.py"
       ],
-      "seconds": 4.27
+      "seconds": 8.728
     },
     {
       "command": [
         "python.exe",
         "code/run_analysis.py"
       ],
-      "seconds": 5.698
+      "seconds": 17.504
     },
     {
       "command": [
         "python.exe",
         "code/make_tex.py"
       ],
-      "seconds": 1.322
+      "seconds": 2.45
     },
     {
       "command": [
         "python.exe",
         "code/make_figures.py"
       ],
-      "seconds": 3.556
+      "seconds": 5.337
     },
     {
       "command": [
@@ -58,7 +58,7 @@
         "-output-directory=../output/paper",
         "main.tex"
       ],
-      "seconds": 2.116
+      "seconds": 3.232
     },
     {
       "command": [
@@ -68,15 +68,15 @@
         "-output-directory=../output/paper",
         "main.tex"
       ],
-      "seconds": 1.806
+      "seconds": 3.258
     },
     {
       "command": [
         "python.exe",
         "code/check_outputs.py"
       ],
-      "seconds": 1.844
+      "seconds": 2.75
     }
   ],
-  "total_seconds": 23.046
+  "total_seconds": 47.508
 }

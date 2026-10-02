@@ -6,9 +6,42 @@ from meta import tau2_reml, full_meta, egger, weighted_mean
 from orientation import orientation, legacy_orientation
 from parse_sde import split_row, se_number, tonum, parse_table, pick_primary
 from jev_direction import extract_context
+from quality_sensitivity import rating_multipliers, rating_sensitivity
 
 
 class AnalysisChecks(unittest.TestCase):
+    def test_rating_multiplier_invariance_ties_and_bound(self):
+        mu = np.array([3., 1., 3., 9., 2.])
+        w = rating_multipliers(mu, 1.)
+        np.testing.assert_allclose(w, [1.6, 1.1, 1.6, 1.9, 1.3])
+        np.testing.assert_allclose(w, rating_multipliers(17 + 4 * mu, 1.))
+        self.assertEqual(w[0], w[2])
+        self.assertGreater(w.min(), 1.)
+        self.assertLess(w.max(), 2.)
+        order = np.array([4, 2, 0, 1, 3])
+        np.testing.assert_allclose(w[order], rating_multipliers(mu[order], 1.))
+
+    def test_tied_ratings_recover_unemphasized_estimates(self):
+        y, v = np.array([-.4, .1, .5, .2, -.1]), np.array([.01, .1, .03, .2, .1])
+        r, w = rating_sensitivity(y, v, np.ones(5), B=29)
+        self.assertAlmostEqual(r['summaries'][0]['estimate'], y.mean())
+        self.assertAlmostEqual(r['summaries'][3]['estimate'], full_meta(y, v)['estimate'])
+        for base in (0, 3):
+            for j in (base + 1, base + 2):
+                np.testing.assert_allclose(w[j], w[base])
+                self.assertAlmostEqual(r['summaries'][j]['delta_lo'], 0.)
+                self.assertAlmostEqual(r['summaries'][j]['delta_hi'], 0.)
+
+    def test_rating_weight_bootstrap_reproducible_and_validates_inputs(self):
+        y, v, mu = np.arange(5.), np.ones(5), np.arange(5.)
+        a, weights = rating_sensitivity(y, v, mu, B=29, seed=12)
+        b, _ = rating_sensitivity(y, v, mu, B=29, seed=12)
+        self.assertEqual(a, b)
+        np.testing.assert_allclose(weights.sum(axis=1), 1.)
+        self.assertGreater(a['summaries'][2]['estimate'], a['summaries'][0]['estimate'])
+        with self.assertRaises(ValueError):
+            rating_sensitivity(y, np.zeros(5), mu, B=29)
+
     def test_reml_homoskedastic_analytical_solution(self):
         y = np.array([1., 2., 3., 5., 9.])
         variance = .4

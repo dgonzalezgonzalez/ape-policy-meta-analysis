@@ -1,39 +1,80 @@
 {
   "status": "pass",
   "date": "2026-10-02",
-  "copied_files": 39,
+  "release": "1.1.0",
+  "copied_files": 41,
   "source": "Git index bytes, excluding all outputs, generated tables, processed data and ignored local files",
   "credentials_present": false,
   "original_source_prose_present": false,
-  "seconds": 22.688,
+  "seconds": 40.811,
   "comparisons": {
     "data/processed/dataset.csv": {
       "match": true,
       "sha256": "853e9046153f0338394eff01d31cd41b74c00d9070e3354e0652e3b65d0402a7"
     },
-    "output/results.json": {
-      "match": true,
-      "sha256": "8b1fba96c87ff074ca8e32410965dcc66c5b2feb35d7f1bca0aba0083e101f1e"
-    },
-    "output/sample_flow.json": {
-      "match": true,
-      "sha256": "e39f226b1a3603aac738a4b8c74517ecc04e287892aed67a7bacb2c2e9f40668"
-    },
     "output/analysis_sample.csv": {
       "match": true,
       "sha256": "b7c8124825084b64bc6f08dba1c3799ebc87f76a55315538ea6a0c39eab214af"
     },
-    "output/sign_sensitivity.csv": {
+    "output/direction_comparison.csv": {
       "match": true,
-      "sha256": "1102cc0c36d562c187bcd69fa5ff323ea96ad9f79c9d406b42b293658565a362"
+      "sha256": "3f244feaff08d274bcdd1c3e07bde9af6b83028b959497c9e878cfb10ae0a4ed"
     },
     "output/direction_review_queue.csv": {
       "match": true,
       "sha256": "8f8751c8689a11741d4656625ed112d7a89dd56e6d111ea986089599b6b3ef9f"
     },
-    "output/direction_comparison.csv": {
+    "output/figures/domains.pdf": {
       "match": true,
-      "sha256": "3f244feaff08d274bcdd1c3e07bde9af6b83028b959497c9e878cfb10ae0a4ed"
+      "sha256": "035c983b1ed6ecbbff9668a3afd264d4ff4b5f52583feaecb67554a8211640c1"
+    },
+    "output/figures/magnitude_cdf.pdf": {
+      "match": true,
+      "sha256": "98d687006b228e35a55298ea73763e94d8bed18acf0ea027dde6269660b77fd5"
+    },
+    "output/quality_paper_weights.csv": {
+      "match": true,
+      "sha256": "fff2b6109f4eb93fd187d594757f81788b020a5f93dbc20e9867a993e27b4fa3"
+    },
+    "output/quality_rating_groups.csv": {
+      "match": true,
+      "sha256": "f4a09ca1ee58cc8c3ed875cb707d96b19389444abfdebfb2a6e6ce0e01a8c605"
+    },
+    "output/quality_weighting.csv": {
+      "match": true,
+      "sha256": "834ab2fd048ea7b1f8d4c30a56ce9557a4bddaaf8801f63c55490bfa5add73b1"
+    },
+    "output/results.json": {
+      "match": true,
+      "sha256": "2accdb5baafd393f223e5264665be1d3f14c922576ac35295f87a0dbfbfaaaf3"
+    },
+    "output/sample_flow.json": {
+      "match": true,
+      "sha256": "e39f226b1a3603aac738a4b8c74517ecc04e287892aed67a7bacb2c2e9f40668"
+    },
+    "output/sign_sensitivity.csv": {
+      "match": true,
+      "sha256": "1102cc0c36d562c187bcd69fa5ff323ea96ad9f79c9d406b42b293658565a362"
+    },
+    "output/tables/direction_coverage.csv": {
+      "match": true,
+      "sha256": "6ac0709f462b1986d55db64b995635358ff30be0bc996fdca45e755198bfb0f1"
+    },
+    "output/tables/domain_summaries.csv": {
+      "match": true,
+      "sha256": "edfb138837d9c53d14f066d327bb62dbe5e91601e3152fe753fb49a06991b0a8"
+    },
+    "output/tables/exhibit_map.csv": {
+      "match": true,
+      "sha256": "28b6ed9bb12839cda300f9b96c5e5529272c474d48f4ae3879bad8fc5f0e61ed"
+    },
+    "output/tables/policy_regressions_all_coefficients.csv": {
+      "match": true,
+      "sha256": "911807209caaa642fa4965b40697d3eae9590bbb09b2987373690bdf9f36cabe"
+    },
+    "output/tables/quality_regressions_all_coefficients.csv": {
+      "match": true,
+      "sha256": "84ebd73bee6d70615fcc929bc3e66761d68debd736f9e2290dccdcbb9456fb7f"
     },
     "paper/generated/direction_comparison.tex": {
       "match": true,
@@ -49,7 +90,7 @@
     },
     "paper/generated/numbers.tex": {
       "match": true,
-      "sha256": "a5c1bcc6aaee64497097c663bb97c4ea368f5ea57007c83b11b0fa853973a475"
+      "sha256": "402eb4abd1bf120a9dd71113bd928c25ad0e0f328ad8b5e07c254bf063117f21"
     },
     "paper/generated/policy_regressions.tex": {
       "match": true,
@@ -59,9 +100,17 @@
       "match": true,
       "sha256": "5ca676ce462219807d0aaa69bf0a1adcefc709c900a54f1f568de2732c56a8a9"
     },
+    "paper/generated/quality_groups.tex": {
+      "match": true,
+      "sha256": "2ac4cb8a0608f6376e68786da3b902cde2eb12ac504aba44fb70f255eab06cc2"
+    },
     "paper/generated/quality_regressions.tex": {
       "match": true,
       "sha256": "abaaddc4beeaf96c9723755be477754bb2bab3efa576e5afcd174fadad1760d5"
+    },
+    "paper/generated/quality_weights.tex": {
+      "match": true,
+      "sha256": "0c4fcb33e67d35cbfe5fe920a3028ba1edee278fc051ae8c8564d5899b21d526"
     },
     "paper/generated/robustness.tex": {
       "match": true,
@@ -78,45 +127,19 @@
     "paper/generated/weights.tex": {
       "match": true,
       "sha256": "f92e0713fc1d0779d32ec386a486378ba47ab34eba497a32e0bc0bedfb64b96e"
-    },
-    "output/tables/direction_coverage.csv": {
-      "match": true,
-      "sha256": "6ac0709f462b1986d55db64b995635358ff30be0bc996fdca45e755198bfb0f1"
-    },
-    "output/tables/domain_summaries.csv": {
-      "match": true,
-      "sha256": "edfb138837d9c53d14f066d327bb62dbe5e91601e3152fe753fb49a06991b0a8"
-    },
-    "output/tables/exhibit_map.csv": {
-      "match": true,
-      "sha256": "cb087889201d38ea98007971d5c1d2565792956639d508b1ad83e8644994dc00"
-    },
-    "output/tables/policy_regressions_all_coefficients.csv": {
-      "match": true,
-      "sha256": "911807209caaa642fa4965b40697d3eae9590bbb09b2987373690bdf9f36cabe"
-    },
-    "output/tables/quality_regressions_all_coefficients.csv": {
-      "match": true,
-      "sha256": "84ebd73bee6d70615fcc929bc3e66761d68debd736f9e2290dccdcbb9456fb7f"
-    },
-    "output/figures/domains.pdf": {
-      "match": true,
-      "sha256": "c52cef486a5b1ccd7ff364e6219cccba389c73caa1fd8661de1aeeca29dfb63a"
-    },
-    "output/figures/magnitude_cdf.pdf": {
-      "match": true,
-      "sha256": "6945ae4dc18b59fc9662620761a41577873aaad2c5e60effe061867ccaf99be3"
     }
   },
+  "unchanged_baseline_sections": 20,
   "pdf": "Compiled successfully in clean copy; PDF bytes not compared because TeX timestamps and IDs vary.",
   "clean_output_checks": {
     "sample_invariants": "pass",
     "common_regression_samples": "pass",
     "table_placeholders": "pass",
-    "tests": 13,
+    "tests": 16,
+    "quality_weighting_common_samples": "pass",
     "pdf_checked": true,
-    "pdf_pages": 20,
-    "pdf_sha256": "d0a493f2a13b395228f2063b194178b233baa313709b69731fe77608aa3d8e5d",
+    "pdf_pages": 22,
+    "pdf_sha256": "e4c8e6a3d1df60092b8771f508e8bf7b0b8a08d534fc36ec71aa0b20b96f0519",
     "latex_errors": 0,
     "overfull_boxes": 0
   }
