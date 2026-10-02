@@ -1,0 +1,6 @@
+# Optional, isolated environment; not required for numerical replication.
+econ-ai-detector @ git+https://github.com/paulgp/econ-ai-detector.git@11285447a3ccdc300bef25bc0a4a1eb42fd489cb
+scikit-learn==1.9.0
+torch==2.14.1
+transformers==5.18.0
+requests==2.34.2

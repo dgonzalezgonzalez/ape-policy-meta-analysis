@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-02",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "logical_cpus": 8,
+  "offline": true,
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.1",
+    "requests": "2.34.2",
+    "pymupdf": "1.28.2"
+  },
+  "stages": [
+    {
+      "command": [
+        "python.exe",
+        "code/build_dataset.py"
+      ],
+      "seconds": 2.197
+    },
+    {
+      "command": [
+        "python.exe",
+        "code/test_analysis.py"
+      ],
+      "seconds": 4.27
+    },
+    {
+      "command": [
+        "python.exe",
+        "code/run_analysis.py"
+      ],
+      "seconds": 5.698
+    },
+    {
+      "command": [
+        "python.exe",
+        "code/make_tex.py"
+      ],
+      "seconds": 1.322
+    },
+    {
+      "command": [
+        "python.exe",
+        "code/make_figures.py"
+      ],
+      "seconds": 3.556
+    },
+    {
+      "command": [
+        "pdflatex.EXE",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=../output/paper",
+        "main.tex"
+      ],
+      "seconds": 2.116
+    },
+    {
+      "command": [
+        "pdflatex.EXE",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=../output/paper",
+        "main.tex"
+      ],
+      "seconds": 1.806
+    },
+    {
+      "command": [
+        "python.exe",
+        "code/check_outputs.py"
+      ],
+      "seconds": 1.844
+    }
+  ],
+  "total_seconds": 23.046
+}

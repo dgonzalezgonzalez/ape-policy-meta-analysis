@@ -1,0 +1,627 @@
+paper_version_id,outcome_label,estimand,notes_strict_sign,notes_relaxed_sign,context_strict_sign,welfare_sign,higher_benefits,lower_benefits,direction_ambiguous,sign_reason,source_path,direction_context_characters,administrative_detection,group_composition,gross_activity,context_unguarded_sign
+apep_0591_v2,Tertiary share (25--34),continuous,0,0,1,1,0.92,0.09,0.12,beneficiary outcome direction,apep_0591/v2/tables/tabF1_sde.tex,2796.0,0.03,0.4,0.06,1
+apep_0592_v1,DeltaOCCSCORE (1910-1920),continuous,0,0,1,1,0.93,0.17,0.11,beneficiary outcome direction,apep_0592/v1/tables/tabF1_sde.tex,4942.0,0.02,0.04,0.02,1
+apep_0593_v1,Log foreign nights,binary,0,0,1,1,0.72,0.25,0.34,beneficiary outcome direction,apep_0593/v1/tables/tabF1_sde.tex,3448.0,0.06,0.04,0.14,1
+apep_0594_v1,Temp. Share (Unwt.),continuous,0,0,0,0,0.26,0.61,0.7,measurement qualifier: group_composition,apep_0594/v1/tables/tabF1_sde.tex,2599.0,0.04,0.81,0.03,-1
+apep_0595_v1,Log rice price,binary,0,-1,-1,-1,0.13,0.72,0.3,beneficiary outcome direction,apep_0595/v1/tables/tabF1_sde.tex,4553.0,0.02,0.02,0.05,-1
+apep_0596_v1,Log total imports,continuous,0,0,0,0,0.47,0.31,0.45,measurement qualifier: gross_activity,apep_0596/v1/tables/tabF1_sde.tex,4828.0,0.04,0.03,0.78,0
+apep_0597_v1,Log PMS price,continuous,0,0,-1,-1,0.13,0.74,0.25,beneficiary outcome direction,apep_0597/v1/tables/tabF1_sde.tex,3354.0,0.02,0.02,0.05,-1
+apep_0599_v1,DP Rate,binary,0,0,-1,-1,0.1,0.87,0.29,beneficiary outcome direction,apep_0599/v1/tables/tabF1_sde.tex,3126.0,0.17,0.17,0.09,-1
+apep_0600_v1,Mortgage rate,binary,0,-1,-1,-1,0.17,0.86,0.14,beneficiary outcome direction,apep_0600/v1/tables/tabF1_sde.tex,2950.0,0.05,0.02,0.06,-1
+apep_0601_v1,Log serious adverse events,binary,0,-1,0,0,0.12,0.87,0.55,measurement qualifier: administrative_detection,apep_0601/v1/tables/tabF1_sde.tex,3828.0,0.84,0.02,0.23,-1
+apep_0602_v1,Log Enrollment,binary,1,1,1,1,0.75,0.21,0.34,beneficiary outcome direction,apep_0602/v1/tables/tabF1_sde.tex,3060.0,0.06,0.03,0.29,1
+apep_0603_v1,New Business Reg.,continuous,0,0,1,1,0.69,0.25,0.41,beneficiary outcome direction,apep_0603/v1/tables/tabF1_sde.tex,708.0,0.23,0.09,0.48,1
+apep_0604_v1,Overall dropout rate,continuous,-1,-1,-1,-1,0.07,0.97,0.12,beneficiary outcome direction,apep_0604/v1/tables/tabF1_sde.tex,3330.0,0.07,0.17,0.08,-1
+apep_0605_v1,Total Employment,binary,1,1,1,1,0.96,0.13,0.08,beneficiary outcome direction,apep_0605/v1/tables/tabF1_sde.tex,3271.0,0.03,0.03,0.02,1
+apep_0606_v1,Total ethanol,binary,0,0,-1,-1,0.06,0.82,0.45,beneficiary outcome direction,apep_0606/v1/tables/tabF1_sde.tex,2715.0,0.03,0.03,0.06,-1
+apep_0607_v1,Log soybean area,continuous,0,0,0,1,0.57,0.3,0.5,beneficiary outcome direction,apep_0607/v1/tables/tabF1_sde.tex,2695.0,0.03,0.05,0.04,1
+apep_0608_v1,Gender Wage Gap (All Workers),binary,-1,-1,0,1,0.76,0.42,0.22,beneficiary outcome direction,apep_0608/v1/tables/tabF1_sde.tex,2471.0,0.04,0.04,0.02,1
+apep_0609_v1,Log(retail/warehouse ratio),binary,0,0,0,0,0.33,0.33,0.79,ambiguous economic direction,apep_0609/v1/tables/tabF1_sde.tex,3440.0,0.03,0.49,0.02,0
+apep_0610_v1,Unmarried birth share,binary,0,0,0,0,0.22,0.52,0.77,measurement qualifier: group_composition,apep_0610/v1/tables/tabF1_sde.tex,2438.0,0.04,0.79,0.06,0
+apep_0612_v1,All Homicide Rate,continuous,-1,-1,-1,-1,0.06,0.97,0.3,beneficiary outcome direction,apep_0612/v1/tables/tabF1_sde.tex,2996.0,0.07,0.03,0.03,-1
+apep_0613_v1,Admin payroll share,binary,0,0,0,0,0.41,0.41,0.77,ambiguous economic direction,apep_0613/v1/tables/tabF1_sde.tex,4306.0,0.05,0.58,0.18,0
+apep_0614_v1,Any New EV Charger,binary,1,1,1,1,0.91,0.16,0.12,beneficiary outcome direction,apep_0614/v1/tables/tabF1_sde.tex,3633.0,0.14,0.05,0.41,1
+apep_0615_v1,Share above 10%,binary,0,0,0,0,0.18,0.36,0.61,insufficient directional evidence,apep_0615/v1/tables/tabF1_sde.tex,2314.0,0.23,0.12,0.2,0
+apep_0616_v1,Charge rate (%),continuous,0,0,0,0,0.72,0.23,0.45,measurement qualifier: administrative_detection,apep_0616/v1/tables/tabF1_sde.tex,3276.0,0.95,0.15,0.85,1
+apep_0617_v1,Healthcare share,binary,0,0,0,0,0.7,0.31,0.61,measurement qualifier: group_composition,apep_0617/v1/tables/tabF1_sde.tex,3698.0,0.03,0.94,0.03,1
+apep_0618_v1,Log(All Transactions),continuous,0,0,0,0,0.38,0.25,0.76,measurement qualifier: gross_activity,apep_0618/v1/tables/tabF1_sde.tex,1787.0,0.08,0.05,0.81,0
+apep_0619_v1,log(R&D),continuous,1,1,1,1,0.77,0.16,0.21,beneficiary outcome direction,apep_0619/v1/tables/tabF1_sde.tex,2786.0,0.04,0.02,0.06,1
+apep_0620_v1,Employment rate,continuous,1,1,1,1,0.98,0.11,0.05,beneficiary outcome direction,apep_0620/v1/tables/tabF1_sde.tex,3618.0,0.07,0.35,0.02,1
+apep_0622_v1,ln(BEV Registrations),binary,1,1,1,1,0.76,0.17,0.19,beneficiary outcome direction,apep_0622/v1/tables/tabF1_sde.tex,2850.0,0.12,0.03,0.48,1
+apep_0623_v1,Log ZHVI (continuous),continuous,1,1,0,0,0.54,0.21,0.18,insufficient directional evidence,apep_0623/v1/tables/tabF1_sde.tex,2881.0,0.02,0.02,0.07,0
+apep_0624_v1,Total emissions (all sectors),binary,-1,-1,-1,-1,0.05,0.94,0.22,beneficiary outcome direction,apep_0624/v1/tables/tabF1_sde.tex,2069.0,0.03,0.02,0.05,-1
+apep_0625_v1,Gender Earnings Gap (log),binary,-1,-1,-1,-1,0.18,0.85,0.17,beneficiary outcome direction,apep_0625/v1/tables/tabF1_sde.tex,3070.0,0.02,0.02,0.01,-1
+apep_0626_v2,Delta OCCSCORE,continuous,0,0,1,1,0.94,0.07,0.07,beneficiary outcome direction,apep_0626/v2/tables/tabF1_sde.tex,2183.0,0.02,0.04,0.02,1
+apep_0627_v1,Total collisions,binary,-1,-1,-1,-1,0.04,0.97,0.11,beneficiary outcome direction,apep_0627/v1/tables/tabF1_sde.tex,2636.0,0.22,0.02,0.29,-1
+apep_0628_v1,Log imports (DiD),binary,0,0,0,0,0.46,0.3,0.59,insufficient directional evidence,apep_0628/v1/tables/tabF1_sde.tex,2889.0,0.07,0.03,0.18,0
+apep_0630_v1,ED time to discharge (min.),binary,-1,-1,-1,-1,0.07,0.93,0.06,beneficiary outcome direction,apep_0630/v1/tables/tabF1_sde.tex,3043.0,0.03,0.02,0.26,-1
+apep_0631_v1,House Prices (TCJA),continuous,0,0,0,0,0.36,0.34,0.32,insufficient directional evidence,apep_0631/v1/tables/tabF1_sde.tex,3032.0,0.02,0.02,0.1,0
+apep_0632_v1,DeltaRN share 2017--2022,binary,0,0,0,0,0.18,0.27,0.83,measurement qualifier: group_composition,apep_0632/v1/tables/tabF1_sde.tex,2769.0,0.04,0.97,0.06,0
+apep_0634_v1,Log total employment,continuous,1,1,1,1,0.95,0.28,0.11,beneficiary outcome direction,apep_0634/v1/tables/tabF1_sde.tex,2405.0,0.03,0.05,0.02,1
+apep_0636_v1,Pharmacies per 100K,binary,1,1,1,1,0.88,0.1,0.12,beneficiary outcome direction,apep_0636/v1/tables/tabF1_sde.tex,3133.0,0.04,0.08,0.46,1
+apep_0637_v1,Class filings (1 year),binary,0,0,0,0,0.27,0.33,0.63,measurement qualifier: gross_activity,apep_0637/v1/tables/tabF1_sde.tex,3284.0,0.54,0.02,0.95,0
+apep_0638_v1,Employment,binary,0,1,1,1,0.97,0.19,0.06,beneficiary outcome direction,apep_0638/v1/tables/tabF1_sde.tex,3047.0,0.03,0.17,0.02,1
+apep_0639_v1,Rx Opioid (T40.2),binary,-1,-1,-1,-1,0.11,0.92,0.3,beneficiary outcome direction,apep_0639/v1/tables/tabF1_sde.tex,4550.0,0.04,0.02,0.05,-1
+apep_0640_v1,Hispanic log employment,binary,0,1,1,1,0.96,0.16,0.11,beneficiary outcome direction,apep_0640/v1/tables/tabF1_sde.tex,2936.0,0.03,0.06,0.02,1
+apep_0641_v1,Female new-hire earn (DDD),binary,0,1,1,1,0.97,0.16,0.07,beneficiary outcome direction,apep_0641/v1/tables/tabF1_sde.tex,2784.0,0.02,0.03,0.01,1
+apep_0643_v1,Log Employment,binary,0,1,1,1,0.93,0.23,0.2,beneficiary outcome direction,apep_0643/v1/tables/tabF1_sde.tex,2804.0,0.04,0.07,0.02,1
+apep_0644_v1,New hire rate,binary,0,0,1,1,0.85,0.21,0.33,beneficiary outcome direction,apep_0644/v1/tables/tabF1_sde.tex,3156.0,0.06,0.09,0.04,1
+apep_0648_v1,Firearm homicide rate,binary,-1,-1,-1,-1,0.03,0.98,0.13,beneficiary outcome direction,apep_0648/v1/tables/tabF1_sde.tex,2324.0,0.05,0.02,0.02,-1
+apep_0649_v1,log(Price) --- Pooled,binary,0,0,0,0,0.44,0.31,0.12,insufficient directional evidence,apep_0649/v1/tables/tabF1_sde.tex,2778.0,0.02,0.01,0.1,0
+apep_0650_v1,Log Employment,continuous,0,1,1,1,0.93,0.29,0.2,beneficiary outcome direction,apep_0650/v1/tables/tabF1_sde.tex,2659.0,0.03,0.04,0.02,1
+apep_0651_v1,Inspections (90d post),continuous,1,1,1,1,0.75,0.27,0.34,beneficiary outcome direction,apep_0651/v1/tables/tabF1_sde.tex,2870.0,0.96,0.02,0.91,1
+apep_0652_v1,Rx opioid rate (T40.2),binary,0,0,-1,-1,0.1,0.79,0.15,beneficiary outcome direction,apep_0652/v1/tables/tabF1_sde.tex,4347.0,0.15,0.03,0.09,-1
+apep_0653_v1,Establishment Entry Rate,binary,1,1,1,1,0.89,0.12,0.13,beneficiary outcome direction,apep_0653/v1/tables/tabF1_sde.tex,1821.0,0.04,0.12,0.3,1
+apep_0654_v1,New-hire earn (DDD),binary,1,1,1,1,0.9,0.2,0.09,beneficiary outcome direction,apep_0654/v1/tables/tabF1_sde.tex,3454.0,0.03,0.04,0.02,1
+apep_0655_v1,Employment,binary,1,1,1,1,0.97,0.21,0.07,beneficiary outcome direction,apep_0655/v1/tables/tabF1_sde.tex,3386.0,0.04,0.18,0.02,1
+apep_0658_v1,Building permits,binary,0,0,1,1,0.82,0.16,0.22,beneficiary outcome direction,apep_0658/v1/tables/tabF1_sde.tex,2036.0,0.1,0.02,0.9,1
+apep_0659_v1,"Delta Occ. score (bust, pooled)",continuous,0,-1,0,0,0.57,0.67,0.22,insufficient directional evidence,apep_0659/v1/tables/tabF1_sde.tex,1164.0,0.05,0.13,0.04,0
+apep_0660_v1,Log employment,binary,1,1,1,1,0.95,0.21,0.1,beneficiary outcome direction,apep_0660/v1/tables/tabF1_sde.tex,3404.0,0.03,0.02,0.02,1
+apep_0661_v1,Total crime rate,continuous,0,-1,-1,-1,0.05,0.95,0.26,beneficiary outcome direction,apep_0661/v1/tables/tabF1_sde.tex,3303.0,0.85,0.04,0.19,-1
+apep_0662_v1,Unemployment rate,binary,-1,-1,-1,-1,0.06,0.98,0.12,beneficiary outcome direction,apep_0662/v1/tables/tabF1_sde.tex,2461.0,0.12,0.28,0.02,-1
+apep_0663_v1,New Hire Rate,binary,0,0,1,1,0.67,0.22,0.42,beneficiary outcome direction,apep_0663/v1/tables/tabF1_sde.tex,3256.0,0.06,0.12,0.03,1
+apep_0664_v1,Log Total Hours,binary,0,0,0,0,0.33,0.42,0.65,insufficient directional evidence,apep_0664/v1/tables/tabF1_sde.tex,2266.0,0.03,0.03,0.07,0
+apep_0666_v1,Log Hosp Emp,binary,0,0,1,1,0.91,0.22,0.18,beneficiary outcome direction,apep_0666/v1/tables/tabF1_sde.tex,2681.0,0.04,0.09,0.03,1
+apep_0667_v1,Drug death rate,binary,-1,-1,-1,-1,0.03,0.98,0.15,beneficiary outcome direction,apep_0667/v1/tables/tabF1_sde.tex,2837.0,0.05,0.02,0.02,-1
+apep_0668_v1,Log yield,continuous,1,1,1,1,0.94,0.11,0.07,beneficiary outcome direction,apep_0668/v1/tables/tabF1_sde.tex,2636.0,0.03,0.02,0.05,1
+apep_0669_v1,log(ZHVI),binary,1,1,1,1,0.76,0.18,0.1,beneficiary outcome direction,apep_0669/v1/tables/tabF1_sde.tex,3794.0,0.02,0.01,0.06,1
+apep_0671_v1,OCCSCORE Change,continuous,1,1,1,1,0.86,0.19,0.16,beneficiary outcome direction,apep_0671/v1/tables/tabF1_sde.tex,3027.0,0.03,0.08,0.04,1
+apep_0674_v1,Log Completions,binary,1,1,1,1,0.93,0.11,0.1,beneficiary outcome direction,apep_0674/v1/tables/tabF1_sde.tex,4068.0,0.08,0.06,0.24,1
+apep_0675_v1,Gas price (pass-through),binary,0,-1,-1,-1,0.14,0.7,0.4,beneficiary outcome direction,apep_0675/v1/tables/tabF1_sde.tex,2627.0,0.03,0.04,0.07,-1
+apep_0677_v1,ln(Trade Value) to EU,binary,0,0,1,1,0.74,0.25,0.35,beneficiary outcome direction,apep_0677/v1/tables/tabF1_sde.tex,2876.0,0.02,0.03,0.94,1
+apep_0678_v1,Alcohol-specific mortality (regional TWFE),binary,-1,-1,-1,-1,0.03,0.98,0.07,beneficiary outcome direction,apep_0678/v1/tables/tabF1_sde.tex,4431.0,0.03,0.01,0.02,-1
+apep_0679_v1,log(Starts),continuous,0,0,1,1,0.82,0.26,0.24,beneficiary outcome direction,apep_0679/v1/tables/tabF1_sde.tex,2549.0,0.14,0.05,0.42,1
+apep_0680_v1,Log price/m^2,binary,0,0,0,0,0.48,0.36,0.11,insufficient directional evidence,apep_0680/v1/tables/tabF1_sde.tex,3282.0,0.02,0.01,0.12,0
+apep_0681_v1,log(Companies),binary,0,0,1,1,0.66,0.31,0.59,beneficiary outcome direction,apep_0681/v1/tables/tabF1_sde.tex,3857.0,0.07,0.05,0.43,1
+apep_0682_v1,Log price (baseline),binary,0,0,0,0,0.42,0.28,0.15,insufficient directional evidence,apep_0682/v1/tables/tabF1_sde.tex,3344.0,0.03,0.02,0.15,0
+apep_0683_v1,Log(long-term vacants),binary,-1,-1,-1,-1,0.1,0.7,0.3,beneficiary outcome direction,apep_0683/v1/tables/tabF1_sde.tex,3358.0,0.08,0.04,0.42,-1
+apep_0684_v1,Log Price (All),continuous,0,0,-1,-1,0.13,0.72,0.19,beneficiary outcome direction,apep_0684/v1/tables/tabF1_sde.tex,2692.0,0.02,0.03,0.06,-1
+apep_0685_v1,Total CO2e,binary,-1,-1,-1,-1,0.06,0.95,0.24,beneficiary outcome direction,apep_0685/v1/tables/tabF1_sde.tex,3931.0,0.03,0.02,0.03,-1
+apep_0686_v1,All Applications,binary,0,0,1,1,0.69,0.27,0.33,beneficiary outcome direction,apep_0686/v1/tables/tabF1_sde.tex,2763.0,0.27,0.12,0.96,1
+apep_0687_v1,Applications decided,binary,0,0,0,0,0.4,0.39,0.62,measurement qualifier: gross_activity,apep_0687/v1/tables/tabF1_sde.tex,2396.0,0.38,0.06,0.94,0
+apep_0688_v1,Knife crime,binary,-1,-1,-1,-1,0.05,0.96,0.21,beneficiary outcome direction,apep_0688/v1/tables/tabF1_sde.tex,3493.0,0.64,0.03,0.16,-1
+apep_0689_v1,Mortgage Denial,binary,0,-1,-1,-1,0.05,0.93,0.21,beneficiary outcome direction,apep_0689/v1/tables/tabF1_sde.tex,4186.0,0.17,0.05,0.65,-1
+apep_0690_v1,Net additions,continuous,0,0,1,1,0.87,0.17,0.14,beneficiary outcome direction,apep_0690/v1/tables/tabF1_sde.tex,3081.0,0.05,0.03,0.07,1
+apep_0691_v1,Dental Decay,continuous,-1,-1,-1,-1,0.04,0.98,0.09,beneficiary outcome direction,apep_0691/v1/tables/tabF1_sde.tex,4102.0,0.17,0.03,0.02,-1
+apep_0692_v1,Log Employment (base),binary,0,1,1,1,0.94,0.19,0.12,beneficiary outcome direction,apep_0692/v1/tables/tabF1_sde.tex,3656.0,0.04,0.05,0.02,1
+apep_0693_v1,log(Total Applications),binary,0,0,1,1,0.79,0.2,0.25,beneficiary outcome direction,apep_0693/v1/tables/tabF1_sde.tex,3026.0,0.04,0.02,0.95,1
+apep_0694_v1,log(Houses) --- ITS,binary,1,1,1,1,0.77,0.18,0.13,beneficiary outcome direction,apep_0694/v1/tables/tabF1_sde.tex,3001.0,0.07,0.03,0.64,1
+apep_0695_v1,Vulnerable employment,binary,0,-1,-1,-1,0.1,0.94,0.31,beneficiary outcome direction,apep_0695/v1/tables/tabF1_sde.tex,2785.0,0.03,0.48,0.02,-1
+apep_0696_v1,"Log Crop Area (Full Sample, RDD)",binary,0,0,1,1,0.64,0.23,0.39,beneficiary outcome direction,apep_0696/v1/tables/tabF1_sde.tex,1409.0,0.03,0.02,0.05,1
+apep_0697_v1,Foreign Buyer Share (%),continuous,0,0,0,0,0.31,0.41,0.78,measurement qualifier: group_composition,apep_0697/v1/tables/tabF1_sde.tex,3052.0,0.06,0.96,0.55,0
+apep_0700_v1,Acceptance rate,continuous,-1,-1,0,0,0.6,0.68,0.47,measurement qualifier: gross_activity,apep_0700/v1/tables/tabF1_sde.tex,3398.0,0.52,0.11,0.82,0
+apep_0701_v1,Log edu spending (main),binary,1,1,1,1,0.82,0.14,0.21,beneficiary outcome direction,apep_0701/v1/tables/tabF1_sde.tex,2262.0,0.02,0.05,0.3,1
+apep_0702_v1,Credit/GDP (%),binary,0,0,1,1,0.76,0.31,0.39,beneficiary outcome direction,apep_0702/v1/tables/tabF1_sde.tex,3026.0,0.04,0.22,0.09,1
+apep_0703_v1,Log(Employment),binary,0,1,1,1,0.95,0.16,0.1,beneficiary outcome direction,apep_0703/v1/tables/tabF1_sde.tex,3146.0,0.03,0.03,0.02,1
+apep_0704_v1,Separation Rate (All High-Exp.),binary,-1,-1,-1,-1,0.09,0.74,0.31,beneficiary outcome direction,apep_0704/v1/tables/tabF1_sde.tex,3599.0,0.06,0.12,0.06,-1
+apep_0705_v1,Log mean income (baseline),continuous,1,1,1,1,0.95,0.09,0.09,beneficiary outcome direction,apep_0705/v1/tables/tabF1_sde.tex,2111.0,0.04,0.03,0.02,1
+apep_0706_v1,Homicide rate (level),binary,-1,-1,-1,-1,0.03,0.98,0.09,beneficiary outcome direction,apep_0706/v1/tables/tabF1_sde.tex,1296.0,0.06,0.02,0.02,-1
+apep_0708_v1,Delta LFP (all women),continuous,0,0,1,1,0.93,0.28,0.19,beneficiary outcome direction,apep_0708/v1/tables/tabF1_sde.tex,2636.0,0.04,0.09,0.02,1
+apep_0709_v1,Log food price (all),binary,0,-1,-1,-1,0.12,0.82,0.29,beneficiary outcome direction,apep_0709/v1/tables/tabF1_sde.tex,3307.0,0.03,0.02,0.09,-1
+apep_0711_v1,Weekly Suicide Deaths,binary,-1,-1,-1,-1,0.03,0.98,0.11,beneficiary outcome direction,apep_0711/v1/tables/tabF1_sde.tex,2453.0,0.07,0.02,0.04,-1
+apep_0712_v1,Log(price) --- RDD,binary,0,0,0,0,0.2,0.41,0.44,insufficient directional evidence,apep_0712/v1/tables/tabF1_sde.tex,3039.0,0.02,0.01,0.11,0
+apep_0713_v1,Broadband penetration (pct pt),binary,1,1,1,1,0.96,0.07,0.07,beneficiary outcome direction,apep_0713/v1/tables/tabF1_sde.tex,3081.0,0.05,0.16,0.05,1
+apep_0714_v1,Log Black Earnings,binary,1,1,1,1,0.96,0.16,0.08,beneficiary outcome direction,apep_0714/v1/tables/tabF1_sde.tex,1820.0,0.04,0.04,0.02,1
+apep_0715_v1,Log GGY (sector DiD),binary,0,0,0,-1,0.28,0.6,0.64,beneficiary outcome direction,apep_0715/v1/tables/tabF1_sde.tex,2837.0,0.03,0.04,0.5,-1
+apep_0717_v1,"TA per 1,000",continuous,-1,-1,-1,-1,0.1,0.81,0.33,beneficiary outcome direction,apep_0717/v1/tables/tabF1_sde.tex,3112.0,0.11,0.09,0.33,-1
+apep_0718_v1,Mobile Home Share,binary,0,0,1,1,0.64,0.31,0.34,beneficiary outcome direction,apep_0718/v1/tables/tabF1_sde.tex,4569.0,0.04,0.44,0.04,1
+apep_0719_v1,Farm Exit,binary,0,0,0,-1,0.13,0.6,0.69,beneficiary outcome direction,apep_0719/v1/tables/tabF1_sde.tex,2274.0,0.04,0.08,0.03,-1
+apep_0720_v1,Log gambling tax (T11),binary,0,0,0,0,0.26,0.25,0.39,insufficient directional evidence,apep_0720/v1/tables/tabF1_sde.tex,2145.0,0.05,0.02,0.09,0
+apep_0721_v1,Log p10,continuous,1,1,1,1,0.94,0.13,0.07,beneficiary outcome direction,apep_0721/v1/tables/tabF1_sde.tex,3313.0,0.02,0.02,0.01,1
+apep_0722_v1,Restaurant CPI (CP11 vs. CP01),binary,0,0,0,0,0.16,0.52,0.43,insufficient directional evidence,apep_0722/v1/tables/tabF1_sde.tex,1351.0,0.03,0.03,0.08,0
+apep_0723_v1,Delta NEET rate,binary,-1,-1,-1,-1,0.07,0.97,0.1,beneficiary outcome direction,apep_0723/v1/tables/tabF1_sde.tex,3416.0,0.05,0.51,0.02,-1
+apep_0726_v1,DV notifications per 100K,binary,0,-1,0,0,0.19,0.68,0.75,measurement qualifier: administrative_detection,apep_0726/v1/tables/tabF1_sde.tex,2131.0,0.91,0.05,0.52,0
+apep_0728_v1,Log Monthly Earnings,continuous,0,1,1,1,0.97,0.12,0.06,beneficiary outcome direction,apep_0728/v1/tables/tabF1_sde.tex,3594.0,0.03,0.02,0.01,1
+apep_0730_v1,Morning fatality rate,binary,-1,-1,-1,-1,0.03,0.98,0.12,beneficiary outcome direction,apep_0730/v1/tables/tabF1_sde.tex,2720.0,0.07,0.02,0.05,-1
+apep_0732_v1,Late Sunset times Temp to YPLL,binary,-1,-1,-1,-1,0.07,0.98,0.09,beneficiary outcome direction,apep_0732/v1/tables/tabF1_sde.tex,2623.0,0.04,0.02,0.02,-1
+apep_0733_v1,Log overnight stays (aggregated),binary,1,1,1,1,0.76,0.25,0.24,beneficiary outcome direction,apep_0733/v1/tables/tabF1_sde.tex,2917.0,0.06,0.04,0.27,1
+apep_0734_v1,Total casualties (restricted),binary,-1,-1,-1,-1,0.05,0.97,0.1,beneficiary outcome direction,apep_0734/v1/tables/tabF1_sde.tex,2513.0,0.11,0.02,0.07,-1
+apep_0735_v1,Log Price/m^2,binary,0,0,0,0,0.45,0.38,0.13,insufficient directional evidence,apep_0735/v1/tables/tabF1_sde.tex,3659.0,0.02,0.02,0.08,0
+apep_0736_v1,Drug OD rate (full panel),binary,0,0,0,0,0.05,0.94,0.5,measurement qualifier: administrative_detection,apep_0736/v1/tables/tabF1_sde.tex,2653.0,0.79,0.02,0.05,-1
+apep_0738_v1,Log retail establishments,continuous,0,1,1,1,0.82,0.27,0.35,beneficiary outcome direction,apep_0738/v1/tables/tabF1_sde.tex,3021.0,0.06,0.34,0.19,1
+apep_0739_v1,Type 1 A&E (levels),binary,0,0,-1,-1,0.16,0.86,0.32,beneficiary outcome direction,apep_0739/v1/tables/tabF1_sde.tex,2818.0,0.11,0.03,0.51,-1
+apep_0740_v1,Log price/m^2,binary,0,1,0,0,0.51,0.2,0.1,insufficient directional evidence,apep_0740/v1/tables/tabF1_sde.tex,3715.0,0.02,0.02,0.11,0
+apep_0741_v1,All fatal crashes,binary,-1,-1,-1,-1,0.05,0.97,0.12,beneficiary outcome direction,apep_0741/v1/tables/tabF1_sde.tex,3017.0,0.05,0.02,0.14,-1
+apep_0742_v1,Theft offences,continuous,-1,-1,-1,-1,0.05,0.96,0.22,beneficiary outcome direction,apep_0742/v1/tables/tabF1_sde.tex,3096.0,0.9,0.03,0.29,-1
+apep_0743_v1,Estab./10K,binary,0,0,0,0,0.49,0.34,0.62,insufficient directional evidence,apep_0743/v1/tables/tabF1_sde.tex,3131.0,0.07,0.06,0.27,0
+apep_0744_v1,Collisions,binary,-1,-1,-1,-1,0.05,0.96,0.13,beneficiary outcome direction,apep_0744/v1/tables/tabF1_sde.tex,3280.0,0.29,0.03,0.23,-1
+apep_0745_v1,All incorporations (log),binary,0,0,1,1,0.75,0.17,0.18,beneficiary outcome direction,apep_0745/v1/tables/tabF1_sde.tex,3238.0,0.12,0.02,0.8,1
+apep_0746_v1,Log price (all),binary,0,0,0,0,0.43,0.26,0.1,insufficient directional evidence,apep_0746/v1/tables/tabF1_sde.tex,3370.0,0.02,0.02,0.21,0
+apep_0747_v1,Hispanic Share,binary,0,0,0,0,0.17,0.27,0.84,measurement qualifier: group_composition,apep_0747/v1/tables/tabF1_sde.tex,2800.0,0.03,0.97,0.03,0
+apep_0748_v1,Type 1 A&E (full sample),binary,0,0,-1,-1,0.16,0.8,0.56,beneficiary outcome direction,apep_0748/v1/tables/tabF1_sde.tex,3493.0,0.13,0.02,0.58,-1
+apep_0750_v1,All sectors,binary,0,0,-1,-1,0.16,0.78,0.36,beneficiary outcome direction,apep_0750/v1/tables/tabF1_sde.tex,3403.0,0.71,0.04,0.79,-1
+apep_0751_v1,Convenience stores,continuous,0,1,1,1,0.86,0.23,0.17,beneficiary outcome direction,apep_0751/v1/tables/tabF1_sde.tex,4039.0,0.04,0.04,0.35,1
+apep_0752_v1,Gaming State (baseline),binary,-1,-1,-1,-1,0.12,0.96,0.27,beneficiary outcome direction,apep_0752/v1/tables/tabF1_sde.tex,2227.0,0.05,0.02,0.03,-1
+apep_0753_v1,Conv. store exit rate,binary,0,0,0,0,0.1,0.89,0.43,measurement qualifier: gross_activity,apep_0753/v1/tables/tabF1_sde.tex,3532.0,0.26,0.15,0.77,-1
+apep_0754_v1,Exit Rate (CS-DiD),binary,0,-1,-1,-1,0.11,0.85,0.33,beneficiary outcome direction,apep_0754/v1/tables/tabF1_sde.tex,3879.0,0.41,0.2,0.71,-1
+apep_0755_v1,Global Score (Boundary 1|2),binary,1,1,1,1,0.97,0.13,0.05,beneficiary outcome direction,apep_0755/v1/tables/tabF1_sde.tex,3453.0,0.02,0.02,0.02,1
+apep_0756_v1,Separation Rate,binary,-1,-1,-1,-1,0.09,0.9,0.27,beneficiary outcome direction,apep_0756/v1/tables/tabF1_sde.tex,2144.0,0.05,0.11,0.05,-1
+apep_0757_v1,Black sep. rate (diff.),binary,-1,-1,-1,-1,0.1,0.95,0.16,beneficiary outcome direction,apep_0757/v1/tables/tabF1_sde.tex,3510.0,0.06,0.11,0.04,-1
+apep_0758_v1,SNAP participation rate,binary,1,1,1,1,0.87,0.17,0.3,beneficiary outcome direction,apep_0758/v1/tables/tabF1_sde.tex,4561.0,0.12,0.52,0.06,1
+apep_0759_v1,Offers received,binary,0,1,1,1,0.83,0.24,0.21,beneficiary outcome direction,apep_0759/v1/tables/tabF1_sde.tex,3360.0,0.16,0.03,0.9,1
+apep_0760_v1,FY enforcement Delta%,binary,0,0,0,0,0.4,0.31,0.69,measurement qualifier: administrative_detection,apep_0760/v1/tables/tabF1_sde.tex,2227.0,0.97,0.04,0.92,0
+apep_0761_v1,FP Emp (Ban),binary,0,0,0,0,0.79,0.69,0.43,insufficient directional evidence,apep_0761/v1/tables/tabF1_sde.tex,1771.0,0.04,0.07,0.03,0
+apep_0762_v1,log(ZHVI),binary,1,1,1,1,0.75,0.14,0.08,beneficiary outcome direction,apep_0762/v1/tables/tabF1_sde.tex,3045.0,0.02,0.01,0.05,1
+apep_0763_v1,New hires (all workers),binary,1,1,1,1,0.9,0.22,0.26,beneficiary outcome direction,apep_0763/v1/tables/tabF1_sde.tex,4067.0,0.05,0.04,0.05,1
+apep_0764_v1,Average formal wage (log),continuous,0,1,1,1,0.96,0.09,0.06,beneficiary outcome direction,apep_0764/v1/tables/tabF1_sde.tex,2413.0,0.02,0.02,0.01,1
+apep_0765_v1,Denial rate,binary,-1,-1,-1,-1,0.06,0.96,0.15,beneficiary outcome direction,apep_0765/v1/tables/tabF1_sde.tex,2354.0,0.22,0.12,0.81,-1
+apep_0766_v1,"IMR (pooled, 5 cutoffs)",binary,-1,-1,-1,-1,0.06,0.98,0.06,beneficiary outcome direction,apep_0766/v1/tables/tabF1_sde.tex,3391.0,0.04,0.02,0.02,-1
+apep_0767_v1,Turnover Rate,binary,0,0,0,1,0.59,0.34,0.7,beneficiary outcome direction,apep_0767/v1/tables/tabF1_sde.tex,3230.0,0.05,0.13,0.03,1
+apep_0768_v1,Log emp. (all),binary,1,1,1,1,0.93,0.14,0.09,beneficiary outcome direction,apep_0768/v1/tables/tabF1_sde.tex,2023.0,0.04,0.05,0.02,1
+apep_0771_v1,Education Emp.,continuous,0,1,1,1,0.94,0.24,0.12,beneficiary outcome direction,apep_0771/v1/tables/tabF1_sde.tex,3600.0,0.03,0.06,0.02,1
+apep_0772_v1,ln(Employment),binary,1,1,1,1,0.95,0.11,0.16,beneficiary outcome direction,apep_0772/v1/tables/tabF1_sde.tex,3284.0,0.03,0.04,0.02,1
+apep_0774_v1,Log employees,binary,0,0,0,1,0.88,0.53,0.42,beneficiary outcome direction,apep_0774/v1/tables/tabF1_sde.tex,3860.0,0.05,0.02,0.04,1
+apep_0775_v1,Employment (<HS),binary,0,1,0,1,0.96,0.41,0.08,beneficiary outcome direction,apep_0775/v1/tables/tabF1_sde.tex,4004.0,0.04,0.07,0.02,1
+apep_0776_v1,All-cause mortality (55--64),continuous,-1,-1,-1,-1,0.07,0.98,0.11,beneficiary outcome direction,apep_0776/v1/tables/tabF1_sde.tex,3393.0,0.03,0.02,0.01,-1
+apep_0777_v1,Enrollment (pooled DiD),binary,1,1,1,1,0.94,0.1,0.06,beneficiary outcome direction,apep_0777/v1/tables/tabF1_sde.tex,3450.0,0.06,0.11,0.08,1
+apep_0778_v1,SNAP rate,binary,1,1,1,1,0.93,0.1,0.09,beneficiary outcome direction,apep_0778/v1/tables/tabF1_sde.tex,3546.0,0.12,0.47,0.06,1
+apep_0779_v1,Separation rate,binary,-1,-1,-1,-1,0.08,0.92,0.25,beneficiary outcome direction,apep_0779/v1/tables/tabF1_sde.tex,3638.0,0.06,0.13,0.07,-1
+apep_0780_v1,Log violent crime,binary,-1,-1,0,0,0.06,0.93,0.43,measurement qualifier: administrative_detection,apep_0780/v1/tables/tabF1_sde.tex,3639.0,0.81,0.02,0.23,-1
+apep_0781_v1,Separations (Low-Wage),binary,0,0,-1,-1,0.11,0.7,0.52,beneficiary outcome direction,apep_0781/v1/tables/tabF1_sde.tex,916.0,0.05,0.07,0.15,-1
+apep_0782_v1,Injury rate,continuous,-1,-1,-1,-1,0.04,0.97,0.08,beneficiary outcome direction,apep_0782/v1/tables/tabF1_sde.tex,3211.0,0.06,0.02,0.04,-1
+apep_0783_v1,Binary DiD,binary,0,0,1,1,0.84,0.35,0.14,beneficiary outcome direction,apep_0783/v1/tables/tabF1_sde.tex,2820.0,0.07,0.03,0.88,1
+apep_0784_v1,TRC Rate,binary,-1,-1,-1,-1,0.06,0.97,0.09,beneficiary outcome direction,apep_0784/v1/tables/tabF1_sde.tex,4095.0,0.1,0.02,0.06,-1
+apep_0785_v1,Log ZHVI (CS-DR),binary,1,1,1,1,0.85,0.19,0.07,beneficiary outcome direction,apep_0785/v1/tables/tabF1_sde.tex,4085.0,0.02,0.02,0.05,1
+apep_0786_v1,Black--White denial gap,binary,-1,-1,-1,-1,0.11,0.93,0.09,beneficiary outcome direction,apep_0786/v1/tables/tabF1_sde.tex,3352.0,0.07,0.1,0.35,-1
+apep_0787_v1,Total case rate,binary,-1,-1,-1,-1,0.06,0.96,0.15,beneficiary outcome direction,apep_0787/v1/tables/tabF1_sde.tex,2342.0,0.38,0.02,0.27,-1
+apep_0788_v1,CBAM Deflection (DDD),binary,0,0,0,0,0.57,0.42,0.52,measurement qualifier: gross_activity,apep_0788/v1/tables/tabF1_sde.tex,2114.0,0.04,0.08,0.91,0
+apep_0789_v1,Mean price,binary,-1,-1,-1,-1,0.17,0.7,0.12,beneficiary outcome direction,apep_0789/v1/tables/tabF1_sde.tex,3614.0,0.02,0.01,0.1,-1
+apep_0790_v1,Excess PM2.5,binary,-1,-1,-1,-1,0.05,0.98,0.19,beneficiary outcome direction,apep_0790/v1/tables/tabF1_sde.tex,2632.0,0.02,0.01,0.04,-1
+apep_0791_v1,Minority Share,binary,0,0,0,0,0.65,0.24,0.43,measurement qualifier: group_composition,apep_0791/v1/tables/tabF1_sde.tex,3341.0,0.05,0.96,0.18,1
+apep_0792_v1,Total exports,continuous,0,1,1,1,0.9,0.12,0.1,beneficiary outcome direction,apep_0792/v1/tables/tabF1_sde.tex,2392.0,0.03,0.06,0.34,1
+apep_0793_v1,Info Sector Employment,continuous,1,1,1,1,0.91,0.21,0.16,beneficiary outcome direction,apep_0793/v1/tables/tabF1_sde.tex,3033.0,0.03,0.3,0.02,1
+apep_0794_v1,Black enrollment share,continuous,0,0,0,0,0.85,0.08,0.3,measurement qualifier: group_composition,apep_0794/v1/tables/tabF1_sde.tex,3339.0,0.07,0.98,0.09,1
+apep_0795_v1,Switch to covered (all excluded),binary,1,1,1,1,0.86,0.4,0.18,beneficiary outcome direction,apep_0795/v1/tables/tabF1_sde.tex,3278.0,0.04,0.16,0.04,1
+apep_0796_v1,Delta Primary share,binary,0,0,0,0,0.69,0.26,0.27,measurement qualifier: group_composition,apep_0796/v1/tables/tabF1_sde.tex,2300.0,0.04,0.65,0.05,1
+apep_0797_v1,"Rice (imported), log price",binary,0,-1,-1,-1,0.13,0.8,0.3,beneficiary outcome direction,apep_0797/v1/tables/tabF1_sde.tex,3340.0,0.02,0.02,0.05,-1
+apep_0798_v1,Transit stations,binary,0,0,1,1,0.66,0.25,0.39,beneficiary outcome direction,apep_0798/v1/tables/tabF1_sde.tex,3919.0,0.04,0.04,0.08,1
+apep_0799_v1,Log nighttime lights (any shutdown),binary,0,1,0,1,0.7,0.51,0.6,beneficiary outcome direction,apep_0799/v1/tables/tabF1_sde.tex,3402.0,0.05,0.02,0.1,1
+apep_0800_v1,New Hires (asinh),binary,0,0,1,1,0.85,0.25,0.12,beneficiary outcome direction,apep_0800/v1/tables/tabF1_sde.tex,2675.0,0.07,0.08,0.07,1
+apep_0802_v1,Multi-unit consents (treatment period),binary,0,0,0,0,0.66,0.3,0.43,measurement qualifier: gross_activity,apep_0802/v1/tables/tabF1_sde.tex,2579.0,0.11,0.12,0.89,1
+apep_0803_v1,Black share of HC emp.,binary,0,0,0,0,0.75,0.23,0.38,measurement qualifier: group_composition,apep_0803/v1/tables/tabF1_sde.tex,1955.0,0.05,0.97,0.02,1
+apep_0804_v1,Employment,binary,1,1,1,1,0.95,0.22,0.11,beneficiary outcome direction,apep_0804/v1/tables/tabF1_sde.tex,4197.0,0.03,0.09,0.01,1
+apep_0805_v1,Log(1+fires),binary,-1,-1,-1,-1,0.07,0.87,0.23,beneficiary outcome direction,apep_0805/v1/tables/tabF1_sde.tex,4212.0,0.23,0.01,0.34,-1
+apep_0806_v1,Log rent level,binary,0,-1,-1,-1,0.2,0.75,0.18,beneficiary outcome direction,apep_0806/v1/tables/tabF1_sde.tex,2888.0,0.02,0.02,0.08,-1
+apep_0807_v1,Recorded Roll-Call Vote,binary,0,0,1,1,0.76,0.33,0.36,beneficiary outcome direction,apep_0807/v1/tables/tabF1_sde.tex,3306.0,0.22,0.04,0.43,1
+apep_0808_v1,501(c)(3) Charitable,binary,1,1,1,1,0.8,0.31,0.21,beneficiary outcome direction,apep_0808/v1/tables/tabF1_sde.tex,3765.0,0.43,0.1,0.43,1
+apep_0809_v1,FN/RN Vote Share,continuous,0,0,0,0,0.14,0.46,0.83,measurement qualifier: group_composition,apep_0809/v1/tables/tabF1_sde.tex,2097.0,0.04,0.98,0.04,0
+apep_0810_v1,"Log employment (DDD, preferred)",binary,1,1,1,1,0.92,0.31,0.13,beneficiary outcome direction,apep_0810/v1/tables/tabF1_sde.tex,1375.0,0.03,0.05,0.02,1
+apep_0811_v1,Log incorporations,binary,0,0,0,0,0.72,0.32,0.44,measurement qualifier: gross_activity,apep_0811/v1/tables/tabF1_sde.tex,4291.0,0.12,0.04,0.84,1
+apep_0812_v1,DeltaRN 2017--2012,continuous,0,0,0,0,0.16,0.34,0.81,measurement qualifier: group_composition,apep_0812/v1/tables/tabF1_sde.tex,1057.0,0.04,0.95,0.06,0
+apep_0813_v1,Net migration rate,continuous,0,0,0,0,0.27,0.25,0.68,insufficient directional evidence,apep_0813/v1/tables/tabF1_sde.tex,2710.0,0.05,0.09,0.1,0
+apep_0814_v1,"ln(Hom.+1), continuous",continuous,-1,-1,-1,-1,0.1,0.94,0.16,beneficiary outcome direction,apep_0814/v1/tables/tabF1_sde.tex,2393.0,0.05,0.02,0.06,-1
+apep_0815_v1,Log Employment,binary,1,1,1,1,0.91,0.27,0.26,beneficiary outcome direction,apep_0815/v1/tables/tabF1_sde.tex,1358.0,0.05,0.08,0.02,1
+apep_0816_v1,Employment,continuous,1,1,1,1,0.96,0.2,0.09,beneficiary outcome direction,apep_0816/v1/tables/tabF1_sde.tex,2935.0,0.03,0.07,0.02,1
+apep_0817_v1,Log IHP/registrant,continuous,1,1,1,1,0.87,0.21,0.16,beneficiary outcome direction,apep_0817/v1/tables/tabF1_sde.tex,2533.0,0.17,0.11,0.29,1
+apep_0818_v1,New formations per 10K pop.,continuous,0,1,1,1,0.82,0.19,0.33,beneficiary outcome direction,apep_0818/v1/tables/tabF1_sde.tex,3637.0,0.1,0.06,0.78,1
+apep_0820_v1,Math proficiency (std.),continuous,1,1,1,1,0.98,0.09,0.05,beneficiary outcome direction,apep_0820/v1/tables/tabF1_sde.tex,2758.0,0.06,0.05,0.02,1
+apep_0821_v1,log(light + 1),continuous,1,1,1,1,0.88,0.12,0.09,beneficiary outcome direction,apep_0821/v1/tables/tabF1_sde.tex,1882.0,0.03,0.03,0.05,1
+apep_0822_v1,Cohort literacy gap,continuous,1,1,0,1,0.9,0.45,0.11,beneficiary outcome direction,apep_0822/v1/tables/tabF1_sde.tex,2855.0,0.03,0.16,0.03,1
+apep_0823_v1,Employment (all software),binary,1,1,1,1,0.97,0.2,0.07,beneficiary outcome direction,apep_0823/v1/tables/tabF1_sde.tex,2593.0,0.03,0.05,0.02,1
+apep_0825_v1,Delta SD Vote Share (own exposure),continuous,0,0,0,0,0.16,0.6,0.83,measurement qualifier: group_composition,apep_0825/v1/tables/tabF1_sde.tex,1152.0,0.05,0.98,0.06,0
+apep_0826_v1,Log(Mining Emp.),continuous,1,1,1,1,0.92,0.35,0.15,beneficiary outcome direction,apep_0826/v1/tables/tabF1_sde.tex,3323.0,0.03,0.05,0.02,1
+apep_0827_v1,Drug crime (total),binary,-1,-1,-1,-1,0.05,0.91,0.29,beneficiary outcome direction,apep_0827/v1/tables/tabF1_sde.tex,3809.0,0.93,0.02,0.3,-1
+apep_0828_v1,Total collisions/mile,binary,-1,-1,-1,-1,0.04,0.97,0.1,beneficiary outcome direction,apep_0828/v1/tables/tabF1_sde.tex,4329.0,0.27,0.02,0.28,-1
+apep_0829_v1,Total fwd. citations (5yr),continuous,0,0,1,1,0.77,0.2,0.32,beneficiary outcome direction,apep_0829/v1/tables/tabF1_sde.tex,2060.0,0.17,0.02,0.34,1
+apep_0830_v1,VAT/GDP (%),binary,0,0,0,0,0.29,0.17,0.21,insufficient directional evidence,apep_0830/v1/tables/tabF1_sde.tex,2615.0,0.19,0.15,0.07,0
+apep_0831_v1,Overall Earnings (White),continuous,1,1,1,1,0.98,0.06,0.05,beneficiary outcome direction,apep_0831/v1/tables/tabF1_sde.tex,2280.0,0.02,0.03,0.01,1
+apep_0832_v1,LBW rate (TWFE),binary,-1,-1,-1,-1,0.05,0.98,0.08,beneficiary outcome direction,apep_0832/v1/tables/tabF1_sde.tex,2836.0,0.05,0.04,0.02,-1
+apep_0834_v1,Log land price (Delta 2020--2010),binary,0,1,0,0,0.36,0.29,0.24,insufficient directional evidence,apep_0834/v1/tables/tabF1_sde.tex,3157.0,0.02,0.02,0.08,0
+apep_0835_v1,Log establishments,binary,0,0,1,1,0.71,0.25,0.46,beneficiary outcome direction,apep_0835/v1/tables/tabF1_sde.tex,2275.0,0.09,0.05,0.29,1
+apep_0836_v1,Log SFD per capita,binary,0,0,0,0,0.24,0.48,0.56,insufficient directional evidence,apep_0836/v1/tables/tabF1_sde.tex,2124.0,0.03,0.03,0.13,0
+apep_0837_v1,Long hours (>48h),binary,-1,-1,-1,-1,0.07,0.92,0.29,beneficiary outcome direction,apep_0837/v1/tables/tabF1_sde.tex,3367.0,0.04,0.23,0.03,-1
+apep_0838_v1,Female share,continuous,0,0,0,0,0.84,0.12,0.3,measurement qualifier: group_composition,apep_0838/v1/tables/tabF1_sde.tex,1581.0,0.04,0.98,0.02,1
+apep_0839_v1,Poverty rate (%),continuous,-1,-1,-1,-1,0.05,0.97,0.12,beneficiary outcome direction,apep_0839/v1/tables/tabF1_sde.tex,828.0,0.04,0.21,0.03,-1
+apep_0840_v1,Turnout (%),continuous,0,0,1,1,0.74,0.14,0.36,beneficiary outcome direction,apep_0840/v1/tables/tabF1_sde.tex,3406.0,0.2,0.32,0.24,1
+apep_0841_v1,Gender gap (all CEE),binary,0,1,0,1,0.86,0.56,0.16,beneficiary outcome direction,apep_0841/v1/tables/tabF1_sde.tex,3024.0,0.03,0.37,0.02,1
+apep_0842_v2,Recognition rate,binary,1,1,1,1,0.94,0.17,0.11,beneficiary outcome direction,apep_0842/v2/tables/tabF1_sde.tex,4284.0,0.6,0.13,0.33,1
+apep_0843_v1,Business Applications (BA),binary,1,1,1,1,0.84,0.15,0.13,beneficiary outcome direction,apep_0843/v1/tables/tabF1_sde.tex,3288.0,0.08,0.03,0.95,1
+apep_0844_v1,Pell share,continuous,0,0,0,0,0.84,0.27,0.32,measurement qualifier: group_composition,apep_0844/v1/tables/tabF1_sde.tex,2443.0,0.07,0.93,0.18,1
+apep_0845_v1,"OQ gap, all foreign - nat.",continuous,-1,-1,-1,-1,0.21,0.84,0.12,beneficiary outcome direction,apep_0845/v1/tables/tabF1_sde.tex,2788.0,0.06,0.18,0.03,-1
+apep_0846_v1,Black homeown. rate (CS ATT),binary,1,1,1,1,0.96,0.07,0.06,beneficiary outcome direction,apep_0846/v1/tables/tabF1_sde.tex,2954.0,0.03,0.52,0.03,1
+apep_0847_v1,CO-validated quit rate,continuous,1,1,1,1,0.97,0.08,0.04,beneficiary outcome direction,apep_0847/v1/tables/tabF1_sde.tex,3030.0,0.21,0.06,0.09,1
+apep_0848_v1,Log employment,binary,0,0,1,1,0.9,0.23,0.34,beneficiary outcome direction,apep_0848/v1/tables/tabF1_sde.tex,2952.0,0.03,0.04,0.02,1
+apep_0849_v1,ln( Patents ),binary,1,1,1,1,0.85,0.14,0.13,beneficiary outcome direction,apep_0849/v1/tables/tabF1_sde.tex,3285.0,0.2,0.03,0.83,1
+apep_0850_v1,Cross-border worker count (log),binary,0,0,1,1,0.73,0.29,0.43,beneficiary outcome direction,apep_0850/v1/tables/tabF1_sde.tex,1823.0,0.07,0.07,0.08,1
+apep_0851_v1,Log HPI,binary,0,0,0,0,0.31,0.45,0.46,insufficient directional evidence,apep_0851/v1/tables/tabF1_sde.tex,2792.0,0.03,0.02,0.09,0
+apep_0852_v1,Food insecure,binary,-1,-1,-1,-1,0.06,0.96,0.13,beneficiary outcome direction,apep_0852/v1/tables/tabF1_sde.tex,4189.0,0.03,0.09,0.02,-1
+apep_0853_v1,Nonemployer establishments (log),binary,1,1,1,1,0.85,0.12,0.15,beneficiary outcome direction,apep_0853/v1/tables/tabF1_sde.tex,3375.0,0.05,0.03,0.51,1
+apep_0854_v1,Log resale price (pooled),continuous,0,0,0,0,0.4,0.25,0.21,insufficient directional evidence,apep_0854/v1/tables/tabF1_sde.tex,3303.0,0.02,0.03,0.15,0
+apep_0856_v1,Earnings (DDD),continuous,1,1,1,1,0.96,0.08,0.06,beneficiary outcome direction,apep_0856/v1/tables/tabF1_sde.tex,1977.0,0.02,0.04,0.02,1
+apep_0860_v1,Establishments,binary,0,0,1,1,0.73,0.31,0.46,beneficiary outcome direction,apep_0860/v1/tables/tabF1_sde.tex,3582.0,0.06,0.03,0.16,1
+apep_0861_v1,Victim-based charge rate,continuous,0,1,1,1,0.84,0.29,0.33,beneficiary outcome direction,apep_0861/v1/tables/tabF1_sde.tex,2639.0,0.96,0.12,0.8,1
+apep_0862_v1,FTE employment,binary,1,1,1,1,0.93,0.26,0.12,beneficiary outcome direction,apep_0862/v1/tables/tabF1_sde.tex,2772.0,0.04,0.05,0.02,1
+apep_0863_v1,Total casualties,continuous,-1,-1,-1,-1,0.04,0.97,0.12,beneficiary outcome direction,apep_0863/v1/tables/tabF1_sde.tex,2974.0,0.08,0.02,0.03,-1
+apep_0864_v1,Foreign population share,continuous,0,0,0,0,0.31,0.29,0.74,measurement qualifier: group_composition,apep_0864/v1/tables/tabF1_sde.tex,990.0,0.04,0.98,0.06,0
+apep_0865_v1,Drinking-place emp.,continuous,0,1,0,1,0.9,0.44,0.15,beneficiary outcome direction,apep_0865/v1/tables/tabF1_sde.tex,3959.0,0.03,0.04,0.02,1
+apep_0866_v1,Female non-mining emp (boom),binary,1,1,1,1,0.95,0.13,0.11,beneficiary outcome direction,apep_0866/v1/tables/tabF1_sde.tex,1887.0,0.04,0.08,0.03,1
+apep_0867_v1,Log NACE J empl. (CS-DiD),binary,1,1,1,1,0.94,0.19,0.11,beneficiary outcome direction,apep_0867/v1/tables/tabF1_sde.tex,3786.0,0.03,0.27,0.02,1
+apep_0868_v1,Log employment,binary,0,1,1,1,0.97,0.3,0.08,beneficiary outcome direction,apep_0868/v1/tables/tabF1_sde.tex,2696.0,0.03,0.03,0.02,1
+apep_0869_v3,Employment,continuous,0,1,1,1,0.95,0.32,0.09,beneficiary outcome direction,apep_0869/v3/tables/tabF1_sde.tex,3540.0,0.03,0.05,0.02,1
+apep_0870_v1,Log ICT Employment,binary,0,1,1,1,0.95,0.16,0.09,beneficiary outcome direction,apep_0870/v1/tables/tabF1_sde.tex,3856.0,0.03,0.04,0.02,1
+apep_0871_v1,Security index,binary,1,1,1,1,0.93,0.18,0.09,beneficiary outcome direction,apep_0871/v1/tables/tabF1_sde.tex,4125.0,0.08,0.15,0.09,1
+apep_0872_v1,Log(NFC Loans),binary,1,1,1,1,0.83,0.28,0.16,beneficiary outcome direction,apep_0872/v1/tables/tabF1_sde.tex,2501.0,0.03,0.05,0.08,1
+apep_0873_v1,All opioid deaths,continuous,-1,-1,-1,-1,0.04,0.97,0.31,beneficiary outcome direction,apep_0873/v1/tables/tabF1_sde.tex,2220.0,0.06,0.02,0.03,-1
+apep_0874_v1,New auths (count),continuous,0,0,1,1,0.65,0.23,0.28,beneficiary outcome direction,apep_0874/v1/tables/tabF1_sde.tex,2820.0,0.25,0.03,0.95,1
+apep_0875_v1,Program survival,binary,0,0,1,1,0.86,0.31,0.4,beneficiary outcome direction,apep_0875/v1/tables/tabF1_sde.tex,2803.0,0.08,0.06,0.32,1
+apep_0876_v1,Net migration rate,binary,0,0,0,0,0.32,0.33,0.64,insufficient directional evidence,apep_0876/v1/tables/tabF1_sde.tex,1355.0,0.06,0.26,0.4,0
+apep_0877_v1,VAT/GDP (%),binary,0,0,0,0,0.17,0.35,0.61,insufficient directional evidence,apep_0877/v1/tables/tabF1_sde.tex,3655.0,0.28,0.14,0.09,0
+apep_0878_v1,Black Employment (CS ATT),binary,1,1,1,1,0.97,0.18,0.05,beneficiary outcome direction,apep_0878/v1/tables/tabF1_sde.tex,4181.0,0.03,0.15,0.02,1
+apep_0879_v1,Black hire share,binary,1,1,0,0,0.87,0.09,0.2,measurement qualifier: group_composition,apep_0879/v1/tables/tabF1_sde.tex,1858.0,0.06,0.96,0.04,1
+apep_0880_v1,HHI,continuous,0,0,-1,-1,0.13,0.76,0.32,beneficiary outcome direction,apep_0880/v1/tables/tabF1_sde.tex,3839.0,0.03,0.13,0.15,-1
+apep_0882_v1,Drug OD,binary,-1,-1,-1,-1,0.04,0.97,0.26,beneficiary outcome direction,apep_0882/v1/tables/tabF1_sde.tex,3704.0,0.03,0.02,0.02,-1
+apep_0884_v1,Employment (DDD),binary,0,1,1,1,0.94,0.3,0.1,beneficiary outcome direction,apep_0884/v1/tables/tabF1_sde.tex,2885.0,0.03,0.05,0.02,1
+apep_0885_v1,Construction expenditure (canton),binary,1,1,1,1,0.71,0.22,0.36,beneficiary outcome direction,apep_0885/v1/tables/tabF1_sde.tex,3917.0,0.03,0.03,0.19,1
+apep_0887_v1,Remediation employment,binary,0,0,1,1,0.87,0.39,0.3,beneficiary outcome direction,apep_0887/v1/tables/tabF1_sde.tex,3238.0,0.14,0.04,0.03,1
+apep_0889_v1,Log total votes,binary,0,0,0,0,0.38,0.17,0.36,insufficient directional evidence,apep_0889/v1/tables/tabF1_sde.tex,2887.0,0.07,0.04,0.39,0
+apep_0890_v1,Log Employment,binary,0,1,0,1,0.94,0.42,0.12,beneficiary outcome direction,apep_0890/v1/tables/tabF1_sde.tex,3846.0,0.03,0.04,0.02,1
+apep_0891_v1,Eviction filing rate (TWFE),binary,-1,-1,-1,-1,0.05,0.94,0.29,beneficiary outcome direction,apep_0891/v1/tables/tabF1_sde.tex,1746.0,0.77,0.06,0.87,-1
+apep_0892_v1,Log radiance (continuous),continuous,1,1,1,1,0.89,0.12,0.08,beneficiary outcome direction,apep_0892/v1/tables/tabF1_sde.tex,2815.0,0.03,0.03,0.06,1
+apep_0893_v1,NPRM count (log),continuous,0,0,0,0,0.16,0.34,0.75,measurement qualifier: gross_activity,apep_0893/v1/tables/tabF1_sde.tex,344.0,0.37,0.02,0.97,0
+apep_0894_v1,Employment,continuous,0,1,1,1,0.95,0.28,0.13,beneficiary outcome direction,apep_0894/v1/tables/tabF1_sde.tex,2391.0,0.03,0.05,0.03,1
+apep_0895_v1,Log(ML offences),binary,0,-1,0,0,0.21,0.64,0.73,measurement qualifier: administrative_detection,apep_0895/v1/tables/tabF1_sde.tex,3026.0,0.96,0.02,0.49,-1
+apep_0896_v1,Log Establishments,binary,1,1,1,1,0.86,0.18,0.23,beneficiary outcome direction,apep_0896/v1/tables/tabF1_sde.tex,3181.0,0.08,0.04,0.23,1
+apep_0897_v1,Specific Conductance (muS/cm),continuous,-1,-1,-1,-1,0.04,0.97,0.18,beneficiary outcome direction,apep_0897/v1/tables/tabF1_sde.tex,3681.0,0.02,0.03,0.03,-1
+apep_0898_v1,Food service (IV),continuous,0,1,1,1,0.82,0.26,0.17,beneficiary outcome direction,apep_0898/v1/tables/tabF1_sde.tex,3566.0,0.04,0.04,0.24,1
+apep_0899_v1,Employment rate,continuous,1,1,1,1,0.98,0.18,0.06,beneficiary outcome direction,apep_0899/v1/tables/tabF1_sde.tex,2215.0,0.03,0.26,0.02,1
+apep_0900_v1,Import value (all metals),binary,0,0,0,0,0.36,0.28,0.56,measurement qualifier: gross_activity,apep_0900/v1/tables/tabF1_sde.tex,3832.0,0.03,0.02,0.95,0
+apep_0901_v1,Total Expenditure p.c.,continuous,0,0,0,1,0.55,0.33,0.53,beneficiary outcome direction,apep_0901/v1/tables/tabF1_sde.tex,2622.0,0.03,0.02,0.12,1
+apep_0902_v1,Employment (log),binary,1,1,1,1,0.92,0.16,0.11,beneficiary outcome direction,apep_0902/v1/tables/tabF1_sde.tex,2827.0,0.03,0.04,0.02,1
+apep_0903_v1,Delta Sec. home share (pp),binary,0,0,0,0,0.22,0.63,0.57,measurement qualifier: group_composition,apep_0903/v1/tables/tabF1_sde.tex,2802.0,0.03,0.66,0.06,-1
+apep_0905_v1,Log(Passengers),binary,1,1,1,1,0.84,0.1,0.12,beneficiary outcome direction,apep_0905/v1/tables/tabF1_sde.tex,3745.0,0.04,0.02,0.17,1
+apep_0906_v1,Transport employment (log),binary,0,1,1,1,0.94,0.17,0.1,beneficiary outcome direction,apep_0906/v1/tables/tabF1_sde.tex,2922.0,0.02,0.04,0.02,1
+apep_0907_v1,SNAP Rate,binary,1,1,1,1,0.91,0.09,0.13,beneficiary outcome direction,apep_0907/v1/tables/tabF1_sde.tex,2912.0,0.11,0.35,0.07,1
+apep_0909_v1,Charge/summons rate,binary,0,0,0,0,0.67,0.34,0.62,measurement qualifier: administrative_detection,apep_0909/v1/tables/tabF1_sde.tex,2076.0,0.96,0.12,0.76,1
+apep_0910_v1,Violent crime rate,binary,0,-1,0,0,0.04,0.95,0.44,measurement qualifier: administrative_detection,apep_0910/v1/tables/tabF1_sde.tex,2185.0,0.9,0.03,0.32,-1
+apep_0912_v1,Rice price (intensity),continuous,0,-1,-1,-1,0.13,0.78,0.32,beneficiary outcome direction,apep_0912/v1/tables/tabF1_sde.tex,1875.0,0.02,0.02,0.09,-1
+apep_0913_v1,Any tree cover loss (2001--2023),binary,0,0,-1,-1,0.09,0.9,0.25,beneficiary outcome direction,apep_0913/v1/tables/tabF1_sde.tex,4129.0,0.06,0.02,0.05,-1
+apep_0914_v1,Occ. Score (DDD),continuous,1,1,1,1,0.96,0.16,0.06,beneficiary outcome direction,apep_0914/v1/tables/tabF1_sde.tex,3075.0,0.02,0.03,0.02,1
+apep_0915_v1,Below 10-ton,binary,0,0,0,-1,0.42,0.8,0.61,beneficiary outcome direction,apep_0915/v1/tables/tabF1_sde.tex,4481.0,0.31,0.04,0.16,-1
+apep_0916_v1,Delta Occ. Score,continuous,1,1,1,1,0.94,0.32,0.07,beneficiary outcome direction,apep_0916/v1/tables/tabF1_sde.tex,2538.0,0.02,0.03,0.02,1
+apep_0917_v1,ES revenue (asinh),binary,0,0,0,0,0.21,0.48,0.66,insufficient directional evidence,apep_0917/v1/tables/tabF1_sde.tex,3591.0,0.34,0.02,0.08,0
+apep_0918_v1,NO_2,binary,-1,-1,-1,-1,0.06,0.96,0.12,beneficiary outcome direction,apep_0918/v1/tables/tabF1_sde.tex,3240.0,0.03,0.02,0.02,-1
+apep_0919_v1,Corruption/100k (ln),binary,-1,-1,0,0,0.09,0.81,0.62,measurement qualifier: administrative_detection,apep_0919/v1/tables/tabF1_sde.tex,3770.0,0.92,0.03,0.22,-1
+apep_0920_v1,Hospice spending per capita,binary,0,0,0,1,0.67,0.32,0.7,beneficiary outcome direction,apep_0920/v1/tables/tabF1_sde.tex,3311.0,0.05,0.03,0.15,1
+apep_0921_v1,log(ES Funds + 1),binary,0,0,0,0,0.27,0.51,0.61,insufficient directional evidence,apep_0921/v1/tables/tabF1_sde.tex,2721.0,0.33,0.02,0.09,0
+apep_0922_v1,Establishments,binary,0,0,1,1,0.62,0.33,0.52,beneficiary outcome direction,apep_0922/v1/tables/tabF1_sde.tex,4006.0,0.09,0.03,0.31,1
+apep_0923_v1,Log liabilities,binary,0,0,0,0,0.35,0.32,0.73,insufficient directional evidence,apep_0923/v1/tables/tabF1_sde.tex,3369.0,0.04,0.04,0.14,0
+apep_0925_v1,Log total enterprises,binary,0,0,0,1,0.7,0.28,0.62,beneficiary outcome direction,apep_0925/v1/tables/tabF1_sde.tex,3648.0,0.09,0.06,0.41,1
+apep_0927_v1,Wage gap ratio,binary,1,1,1,1,0.94,0.09,0.07,beneficiary outcome direction,apep_0927/v1/tables/tabF1_sde.tex,2655.0,0.03,0.03,0.02,1
+apep_0929_v1,Log donations,binary,0,1,0,1,0.56,0.21,0.28,beneficiary outcome direction,apep_0929/v1/tables/tabF1_sde.tex,2928.0,0.06,0.03,0.63,1
+apep_0931_v1,Log nightlights,binary,1,1,1,1,0.92,0.21,0.1,beneficiary outcome direction,apep_0931/v1/tables/tabF1_sde.tex,3507.0,0.04,0.02,0.08,1
+apep_0932_v1,Delta Occ. Score,continuous,1,1,1,1,0.95,0.14,0.06,beneficiary outcome direction,apep_0932/v1/tables/tabF1_sde.tex,3359.0,0.02,0.03,0.03,1
+apep_0933_v1,Total Apps Granted (log),continuous,0,1,1,1,0.77,0.19,0.24,beneficiary outcome direction,apep_0933/v1/tables/tabF1_sde.tex,2216.0,0.17,0.02,0.96,1
+apep_0934_v1,Log property value (CS-DiD),binary,1,1,1,1,0.6,0.16,0.1,beneficiary outcome direction,apep_0934/v1/tables/tabF1_sde.tex,2702.0,0.03,0.27,0.05,1
+apep_0935_v1,Sentence (months),binary,-1,-1,-1,-1,0.09,0.89,0.13,beneficiary outcome direction,apep_0935/v1/tables/tabF1_sde.tex,4041.0,0.72,0.02,0.09,-1
+apep_0936_v1,BERD/GDP (%),binary,1,1,1,1,0.89,0.11,0.09,beneficiary outcome direction,apep_0936/v1/tables/tabF1_sde.tex,3271.0,0.03,0.33,0.05,1
+apep_0937_v1,Fire safety incorporations,continuous,0,0,0,0,0.61,0.29,0.63,measurement qualifier: gross_activity,apep_0937/v1/tables/tabF1_sde.tex,2673.0,0.21,0.04,0.77,1
+apep_0938_v1,Death Rate,continuous,-1,-1,-1,-1,0.06,0.96,0.25,beneficiary outcome direction,apep_0938/v1/tables/tabF1_sde.tex,3616.0,0.04,0.06,0.1,-1
+apep_0939_v1,Total Employment,binary,1,1,1,1,0.96,0.11,0.07,beneficiary outcome direction,apep_0939/v1/tables/tabF1_sde.tex,2757.0,0.03,0.04,0.02,1
+apep_0940_v1,Non-Western Share,binary,0,0,0,0,0.23,0.34,0.72,measurement qualifier: group_composition,apep_0940/v1/tables/tabF1_sde.tex,3857.0,0.05,0.98,0.03,0
+apep_0941_v1,CC Total Enrollment,continuous,0,0,1,1,0.83,0.16,0.32,beneficiary outcome direction,apep_0941/v1/tables/tabF1_sde.tex,3218.0,0.04,0.04,0.22,1
+apep_0942_v1,Log unique suppliers,continuous,0,1,1,1,0.86,0.21,0.28,beneficiary outcome direction,apep_0942/v1/tables/tabF1_sde.tex,2462.0,0.07,0.09,0.83,1
+apep_0943_v1,New bld/1K pop.,continuous,0,0,0,1,0.58,0.25,0.33,beneficiary outcome direction,apep_0943/v1/tables/tabF1_sde.tex,3261.0,0.13,0.07,0.78,1
+apep_0944_v1,Acquittal rate,binary,0,0,0,0,0.6,0.34,0.63,measurement qualifier: administrative_detection,apep_0944/v1/tables/tabF1_sde.tex,3119.0,0.91,0.14,0.45,1
+apep_0945_v1,NPRM volume (log),continuous,0,0,0,0,0.2,0.29,0.75,measurement qualifier: gross_activity,apep_0945/v1/tables/tabF1_sde.tex,2048.0,0.37,0.02,0.96,0
+apep_0946_v1,Communications CPI,binary,-1,-1,-1,-1,0.15,0.85,0.13,beneficiary outcome direction,apep_0946/v1/tables/tabF1_sde.tex,4274.0,0.02,0.02,0.04,-1
+apep_0948_v1,"MAT claims per 1,000",continuous,-1,-1,-1,-1,0.38,0.85,0.5,beneficiary outcome direction,apep_0948/v1/tables/tabF1_sde.tex,2532.0,0.11,0.05,0.52,-1
+apep_0954_v1,Log price (all commodities),continuous,0,-1,-1,-1,0.13,0.76,0.19,beneficiary outcome direction,apep_0954/v1/tables/tabF1_sde.tex,3596.0,0.02,0.02,0.06,-1
+apep_0955_v1,Education (1940),continuous,1,1,1,1,0.97,0.09,0.04,beneficiary outcome direction,apep_0955/v1/tables/tabF1_sde.tex,3498.0,0.02,0.03,0.01,1
+apep_0956_v1,Log CPI (treated),binary,0,0,0,0,0.13,0.52,0.41,insufficient directional evidence,apep_0956/v1/tables/tabF1_sde.tex,3259.0,0.02,0.02,0.06,0
+apep_0957_v1,ln(Employment),binary,1,1,1,1,0.96,0.12,0.07,beneficiary outcome direction,apep_0957/v1/tables/tabF1_sde.tex,1935.0,0.03,0.05,0.02,1
+apep_0958_v1,BBB vote share (agri. empl.),continuous,0,0,0,0,0.18,0.24,0.73,measurement qualifier: group_composition,apep_0958/v1/tables/tabF1_sde.tex,2507.0,0.07,0.98,0.05,0
+apep_0960_v1,asinh(NTL),binary,1,1,1,1,0.86,0.13,0.11,beneficiary outcome direction,apep_0960/v1/tables/tabF1_sde.tex,2786.0,0.03,0.02,0.05,1
+apep_0961_v1,Total healthcare costs,binary,0,0,-1,-1,0.08,0.73,0.19,beneficiary outcome direction,apep_0961/v1/tables/tabF1_sde.tex,2814.0,0.03,0.02,0.14,-1
+apep_0963_v1,Food insecure,continuous,-1,-1,-1,-1,0.06,0.95,0.14,beneficiary outcome direction,apep_0963/v1/tables/tabF1_sde.tex,2914.0,0.03,0.08,0.02,-1
+apep_0965_v1,Total Manufacturing Employment,continuous,1,1,1,1,0.95,0.19,0.08,beneficiary outcome direction,apep_0965/v1/tables/tabF1_sde.tex,3445.0,0.03,0.04,0.02,1
+apep_0966_v1,Rel. tobacco price,continuous,0,0,0,-1,0.15,0.57,0.51,beneficiary outcome direction,apep_0966/v1/tables/tabF1_sde.tex,3216.0,0.02,0.04,0.05,-1
+apep_0967_v1,Le Pen share,continuous,0,0,0,0,0.15,0.57,0.81,measurement qualifier: group_composition,apep_0967/v1/tables/tabF1_sde.tex,4083.0,0.06,0.97,0.06,0
+apep_0968_v1,Enrollment volatility,continuous,0,-1,0,-1,0.13,0.85,0.67,beneficiary outcome direction,apep_0968/v1/tables/tabF1_sde.tex,2558.0,0.07,0.08,0.14,-1
+apep_0969_v1,Monthly hours,binary,0,0,-1,-1,0.28,0.75,0.52,beneficiary outcome direction,apep_0969/v1/tables/tabF1_sde.tex,3998.0,0.02,0.03,0.03,-1
+apep_0970_v1,Hire rate,binary,0,1,1,1,0.94,0.2,0.1,beneficiary outcome direction,apep_0970/v1/tables/tabF1_sde.tex,4202.0,0.09,0.15,0.07,1
+apep_0972_v1,Log employment (NAICS 312),binary,1,1,1,1,0.94,0.16,0.1,beneficiary outcome direction,apep_0972/v1/tables/tabF1_sde.tex,2880.0,0.02,0.04,0.02,1
+apep_0973_v1,Log bag items,binary,-1,-1,-1,-1,0.11,0.86,0.32,beneficiary outcome direction,apep_0973/v1/tables/tabF1_sde.tex,2878.0,0.29,0.03,0.36,-1
+apep_0974_v1,ED Share,binary,0,0,-1,-1,0.15,0.82,0.46,beneficiary outcome direction,apep_0974/v1/tables/tabF1_sde.tex,2634.0,0.14,0.45,0.34,-1
+apep_0975_v1,Fraud,binary,-1,-1,-1,-1,0.06,0.94,0.37,beneficiary outcome direction,apep_0975/v1/tables/tabF1_sde.tex,3376.0,0.82,0.03,0.09,-1
+apep_0976_v1,Log land price,binary,0,1,0,0,0.53,0.29,0.24,insufficient directional evidence,apep_0976/v1/tables/tabF1_sde.tex,4323.0,0.04,0.02,0.09,0
+apep_0977_v1,Consumer exports (pooled),binary,0,1,1,1,0.8,0.3,0.12,beneficiary outcome direction,apep_0977/v1/tables/tabF1_sde.tex,3428.0,0.03,0.03,0.74,1
+apep_0978_v1,Total cultivated land,continuous,0,0,1,1,0.67,0.32,0.43,beneficiary outcome direction,apep_0978/v1/tables/tabF1_sde.tex,4026.0,0.03,0.04,0.07,1
+apep_0979_v1,Log monthly earnings (Black HC),binary,1,1,1,1,0.97,0.07,0.05,beneficiary outcome direction,apep_0979/v1/tables/tabF1_sde.tex,3827.0,0.02,0.03,0.01,1
+apep_0980_v1,Construction,binary,1,1,1,1,0.94,0.11,0.09,beneficiary outcome direction,apep_0980/v1/tables/tabF1_sde.tex,3317.0,0.03,0.04,0.02,1
+apep_0981_v1,Log(Bup Rx),binary,1,1,1,1,0.94,0.09,0.09,beneficiary outcome direction,apep_0981/v1/tables/tabF1_sde.tex,2868.0,0.09,0.03,0.45,1
+apep_0982_v1,Log emp. (DDD),binary,0,1,0,1,0.94,0.44,0.13,beneficiary outcome direction,apep_0982/v1/tables/tabF1_sde.tex,2665.0,0.03,0.06,0.02,1
+apep_0983_v1,Establishments,continuous,0,0,1,1,0.64,0.23,0.3,beneficiary outcome direction,apep_0983/v1/tables/tabF1_sde.tex,2623.0,0.06,0.04,0.28,1
+apep_0984_v1,Search intensity,binary,0,-1,-1,-1,0.11,0.8,0.53,beneficiary outcome direction,apep_0984/v1/tables/tabF1_sde.tex,2802.0,0.19,0.02,0.16,-1
+apep_0985_v1,"Search interest (IHS, overall)",binary,0,-1,-1,-1,0.1,0.76,0.48,beneficiary outcome direction,apep_0985/v1/tables/tabF1_sde.tex,3163.0,0.12,0.02,0.13,-1
+apep_0987_v1,LBW rate (pooled TWFE),binary,-1,-1,-1,-1,0.04,0.98,0.09,beneficiary outcome direction,apep_0987/v1/tables/tabF1_sde.tex,3499.0,0.04,0.04,0.02,-1
+apep_0989_v1,ln(Enterprises) --- Preferred (unit trends),binary,0,1,1,1,0.76,0.25,0.48,beneficiary outcome direction,apep_0989/v1/tables/tabF1_sde.tex,2698.0,0.05,0.02,0.28,1
+apep_0990_v1,Corn share,binary,0,0,0,0,0.53,0.31,0.64,insufficient directional evidence,apep_0990/v1/tables/tabF1_sde.tex,3726.0,0.02,0.55,0.07,0
+apep_0991_v1,Log catches (all),binary,0,0,0,0,0.54,0.4,0.65,insufficient directional evidence,apep_0991/v1/tables/tabF1_sde.tex,3453.0,0.08,0.03,0.21,0
+apep_0992_v1,Log(Planted Area),binary,0,0,1,1,0.74,0.2,0.41,beneficiary outcome direction,apep_0992/v1/tables/tabF1_sde.tex,3156.0,0.02,0.03,0.14,1
+apep_0993_v1,Weekly hours (all industries),binary,0,-1,-1,-1,0.18,0.82,0.39,beneficiary outcome direction,apep_0993/v1/tables/tabF1_sde.tex,2571.0,0.03,0.03,0.03,-1
+apep_0995_v1,FN/RN Vote Share,binary,0,0,0,0,0.13,0.41,0.87,measurement qualifier: group_composition,apep_0995/v1/tables/tabF1_sde.tex,3027.0,0.07,0.98,0.07,0
+apep_0997_v1,Self-employment share,binary,0,0,0,0,0.19,0.75,0.75,measurement qualifier: group_composition,apep_0997/v1/tables/tabF1_sde.tex,2528.0,0.06,0.72,0.02,0
+apep_0998_v1,Prof. Services Emp,binary,1,1,1,1,0.95,0.22,0.1,beneficiary outcome direction,apep_0998/v1/tables/tabF1_sde.tex,3310.0,0.03,0.05,0.02,1
+apep_1001_v1,Total accidents,binary,0,-1,-1,-1,0.04,0.96,0.16,beneficiary outcome direction,apep_1001/v1/tables/tabF1_sde.tex,2899.0,0.4,0.02,0.23,-1
+apep_1002_v1,Business registrations,binary,0,0,0,0,0.68,0.26,0.48,measurement qualifier: gross_activity,apep_1002/v1/tables/tabF1_sde.tex,2727.0,0.1,0.04,0.85,1
+apep_1006_v1,Total cost (% of 200),binary,-1,-1,-1,-1,0.08,0.83,0.09,beneficiary outcome direction,apep_1006/v1/tables/tabF1_sde.tex,4050.0,0.03,0.08,0.09,-1
+apep_1007_v1,Internet Banking (%),binary,1,1,1,1,0.9,0.07,0.09,beneficiary outcome direction,apep_1007/v1/tables/tabF1_sde.tex,3270.0,0.04,0.4,0.08,1
+apep_1012_v1,Employment,binary,0,1,1,1,0.97,0.17,0.06,beneficiary outcome direction,apep_1012/v1/tables/tabF1_sde.tex,3542.0,0.03,0.11,0.02,1
+apep_1013_v1,Log exports (full sample),continuous,1,1,1,1,0.86,0.16,0.18,beneficiary outcome direction,apep_1013/v1/tables/tabF1_sde.tex,1925.0,0.03,0.03,0.31,1
+apep_1014_v1,B-W earnings ratio,binary,1,1,1,1,0.89,0.3,0.11,beneficiary outcome direction,apep_1014/v1/tables/tabF1_sde.tex,3156.0,0.02,0.03,0.01,1
+apep_1015_v1,Retention,binary,1,1,1,1,0.92,0.2,0.12,beneficiary outcome direction,apep_1015/v1/tables/tabF1_sde.tex,2443.0,0.02,0.08,0.02,1
+apep_1016_v1,ln(Entry_ t+1 ),continuous,1,1,1,1,0.84,0.09,0.14,beneficiary outcome direction,apep_1016/v1/tables/tabF1_sde.tex,3445.0,0.07,0.03,0.36,1
+apep_1017_v1,Rail fares (CS ATT),binary,-1,-1,-1,-1,0.14,0.85,0.13,beneficiary outcome direction,apep_1017/v1/tables/tabF1_sde.tex,3081.0,0.02,0.03,0.06,-1
+apep_1018_v1,SIR Count (OLS),continuous,0,0,0,0,0.62,0.32,0.61,measurement qualifier: administrative_detection,apep_1018/v1/tables/tabF1_sde.tex,2855.0,0.97,0.03,0.95,1
+apep_1019_v1,Occ. income score,binary,1,1,1,1,0.96,0.1,0.06,beneficiary outcome direction,apep_1019/v1/tables/tabF1_sde.tex,3762.0,0.02,0.04,0.02,1
+apep_1021_v1,Dissolution rate,binary,0,0,-1,-1,0.15,0.81,0.57,beneficiary outcome direction,apep_1021/v1/tables/tabF1_sde.tex,3910.0,0.06,0.06,0.55,-1
+apep_1022_v1,Black share,binary,0,0,0,0,0.89,0.11,0.21,measurement qualifier: group_composition,apep_1022/v1/tables/tabF1_sde.tex,1402.0,0.05,0.98,0.13,1
+apep_1023_v1,SNAP participation rate,continuous,1,1,1,1,0.85,0.22,0.29,beneficiary outcome direction,apep_1023/v1/tables/tabF1_sde.tex,2296.0,0.14,0.41,0.14,1
+apep_1025_v1,Log abundance (CS),binary,1,1,1,1,0.86,0.13,0.08,beneficiary outcome direction,apep_1025/v1/tables/tabF1_sde.tex,2667.0,0.28,0.03,0.05,1
+apep_1026_v1,FHA share,binary,0,0,0,0,0.61,0.4,0.58,measurement qualifier: group_composition,apep_1026/v1/tables/tabF1_sde.tex,3804.0,0.09,0.71,0.43,1
+apep_1028_v1,Total Homeless,binary,-1,-1,-1,-1,0.05,0.96,0.16,beneficiary outcome direction,apep_1028/v1/tables/tabF1_sde.tex,2347.0,0.29,0.03,0.15,-1
+apep_1030_v1,Total recycling,binary,1,1,1,1,0.92,0.24,0.08,beneficiary outcome direction,apep_1030/v1/tables/tabF1_sde.tex,3616.0,0.17,0.17,0.1,1
+apep_1031_v1,NAICS 722: log(Emp),binary,1,1,1,1,0.92,0.18,0.1,beneficiary outcome direction,apep_1031/v1/tables/tabF1_sde.tex,3823.0,0.03,0.05,0.02,1
+apep_1032_v1,Noncurrent loan ratio,binary,-1,-1,-1,-1,0.06,0.95,0.13,beneficiary outcome direction,apep_1032/v1/tables/tabF1_sde.tex,1762.0,0.06,0.08,0.07,-1
+apep_1033_v1,Unpast. dairy outbreaks,binary,-1,-1,-1,-1,0.04,0.97,0.25,beneficiary outcome direction,apep_1033/v1/tables/tabF1_sde.tex,4550.0,0.74,0.02,0.28,-1
+apep_1034_v1,Wind production (log GWh),binary,1,1,1,1,0.78,0.17,0.17,beneficiary outcome direction,apep_1034/v1/tables/tabF1_sde.tex,2082.0,0.02,0.03,0.05,1
+apep_1035_v1,Divorce rate,binary,-1,-1,-1,-1,0.08,0.72,0.31,beneficiary outcome direction,apep_1035/v1/tables/tabF1_sde.tex,2902.0,0.19,0.05,0.06,-1
+apep_1036_v1,RN share (trend-adj.),binary,0,0,0,0,0.13,0.32,0.8,measurement qualifier: group_composition,apep_1036/v1/tables/tabF1_sde.tex,2766.0,0.05,0.98,0.05,0
+apep_1037_v1,Daily volume (announcement),binary,0,0,0,0,0.59,0.25,0.55,measurement qualifier: gross_activity,apep_1037/v1/tables/tabF1_sde.tex,3643.0,0.03,0.02,0.97,1
+apep_1038_v1,Incumbent Delta chemicals,binary,0,0,0,0,0.28,0.49,0.74,measurement qualifier: administrative_detection,apep_1038/v1/tables/tabF1_sde.tex,3177.0,0.95,0.06,0.88,0
+apep_1046_v1,Cross-hazard substitution (DDD),binary,-1,-1,-1,-1,0.07,0.94,0.17,beneficiary outcome direction,apep_1046/v1/tables/tabF1_sde.tex,3607.0,0.07,0.02,0.05,-1
+apep_1049_v1,Plastic packaging (kg/person),binary,-1,-1,-1,-1,0.05,0.86,0.18,beneficiary outcome direction,apep_1049/v1/tables/tabF1_sde.tex,3238.0,0.03,0.03,0.06,-1
+apep_1050_v1,BEV Share (continuous),continuous,0,0,1,1,0.77,0.21,0.18,beneficiary outcome direction,apep_1050/v1/tables/tabF1_sde.tex,2235.0,0.07,0.53,0.18,1
+apep_1051_v1,Total planted,continuous,0,0,0,0,0.43,0.31,0.63,insufficient directional evidence,apep_1051/v1/tables/tabF1_sde.tex,2388.0,0.04,0.04,0.21,0
+apep_1054_v1,Street crime,binary,0,-1,-1,-1,0.04,0.97,0.27,beneficiary outcome direction,apep_1054/v1/tables/tabF1_sde.tex,2990.0,0.26,0.02,0.1,-1
+apep_1055_v1,Prev. Hosp. Rate (pooled),continuous,-1,-1,-1,-1,0.05,0.96,0.08,beneficiary outcome direction,apep_1055/v1/tables/tabF1_sde.tex,2171.0,0.06,0.02,0.04,-1
+apep_1057_v1,Health violation (0/1),binary,-1,-1,-1,-1,0.06,0.97,0.12,beneficiary outcome direction,apep_1057/v1/tables/tabF1_sde.tex,3187.0,0.34,0.03,0.05,-1
+apep_1058_v1,Delta Log Deposits,continuous,1,1,1,1,0.78,0.32,0.34,beneficiary outcome direction,apep_1058/v1/tables/tabF1_sde.tex,3053.0,0.03,0.05,0.43,1
+apep_1061_v1,TFR,continuous,0,0,1,1,0.66,0.26,0.58,beneficiary outcome direction,apep_1061/v1/tables/tabF1_sde.tex,3756.0,0.04,0.05,0.03,1
+apep_1064_v1,Enterprises per 10K,continuous,1,1,1,1,0.77,0.13,0.29,beneficiary outcome direction,apep_1064/v1/tables/tabF1_sde.tex,3550.0,0.17,0.1,0.67,1
+apep_1065_v1,New Hire Rate,binary,0,1,1,1,0.84,0.22,0.41,beneficiary outcome direction,apep_1065/v1/tables/tabF1_sde.tex,4097.0,0.05,0.15,0.04,1
+apep_1066_v1,Log Median Earnings,binary,1,1,1,1,0.97,0.07,0.04,beneficiary outcome direction,apep_1066/v1/tables/tabF1_sde.tex,3256.0,0.02,0.04,0.01,1
+apep_1068_v1,Delta Occ. Score 1930--40,binary,1,1,1,1,0.92,0.17,0.07,beneficiary outcome direction,apep_1068/v1/tables/tabF1_sde.tex,3677.0,0.02,0.03,0.03,1
+apep_1069_v1,WOZ Value (000s EUR),binary,1,1,1,1,0.89,0.18,0.08,beneficiary outcome direction,apep_1069/v1/tables/tabF1_sde.tex,3383.0,0.02,0.02,0.08,1
+apep_1070_v1,Employment,continuous,0,1,1,1,0.94,0.3,0.16,beneficiary outcome direction,apep_1070/v1/tables/tabF1_sde.tex,3158.0,0.03,0.09,0.03,1
+apep_1071_v1,Existing--New Gap,binary,0,0,0,0,0.22,0.43,0.69,insufficient directional evidence,apep_1071/v1/tables/tabF1_sde.tex,3197.0,0.03,0.04,0.08,0
+apep_1072_v1,Water temperature (^ circ C),binary,0,0,0,-1,0.22,0.69,0.64,beneficiary outcome direction,apep_1072/v1/tables/tabF1_sde.tex,3222.0,0.02,0.01,0.02,-1
+apep_1073_v1,Log Employment,binary,0,1,1,1,0.95,0.2,0.1,beneficiary outcome direction,apep_1073/v1/tables/tabF1_sde.tex,3191.0,0.03,0.23,0.02,1
+apep_1074_v1,Death rate (DDD),binary,-1,-1,-1,-1,0.04,0.98,0.14,beneficiary outcome direction,apep_1074/v1/tables/tabF1_sde.tex,2715.0,0.04,0.02,0.03,-1
+apep_1076_v1,Persistent sadness,binary,-1,-1,-1,-1,0.05,0.97,0.13,beneficiary outcome direction,apep_1076/v1/tables/tabF1_sde.tex,3038.0,0.03,0.04,0.01,-1
+apep_1077_v1,Log employment,binary,0,0,0,1,0.78,0.45,0.39,beneficiary outcome direction,apep_1077/v1/tables/tabF1_sde.tex,2905.0,0.04,0.04,0.02,1
+apep_1079_v1,Employment (all races),continuous,1,1,1,1,0.97,0.23,0.06,beneficiary outcome direction,apep_1079/v1/tables/tabF1_sde.tex,3067.0,0.03,0.05,0.02,1
+apep_1081_v1,Fluoranthene,binary,-1,-1,-1,-1,0.05,0.97,0.16,beneficiary outcome direction,apep_1081/v1/tables/tabF1_sde.tex,3082.0,0.03,0.01,0.03,-1
+apep_1082_v1,College share (%),binary,1,1,1,1,0.95,0.12,0.09,beneficiary outcome direction,apep_1082/v1/tables/tabF1_sde.tex,4474.0,0.03,0.37,0.03,1
+apep_1083_v1,Residential,binary,0,0,1,1,0.63,0.35,0.43,beneficiary outcome direction,apep_1083/v1/tables/tabF1_sde.tex,3503.0,0.02,0.05,0.25,1
+apep_1084_v1,1em Total completions,binary,1,1,1,1,0.86,0.25,0.21,beneficiary outcome direction,apep_1084/v1/tables/tabF1_sde.tex,2010.0,0.07,0.04,0.4,1
+apep_1085_v1,Raptor reporting rate,continuous,0,0,0,0,0.61,0.32,0.6,measurement qualifier: administrative_detection,apep_1085/v1/tables/tabF1_sde.tex,2950.0,0.94,0.64,0.11,1
+apep_1086_v1,Log Mfg. Employment,binary,1,1,1,1,0.96,0.17,0.08,beneficiary outcome direction,apep_1086/v1/tables/tabF1_sde.tex,4490.0,0.03,0.04,0.02,1
+apep_1087_v1,DAFW rate,binary,-1,-1,-1,-1,0.05,0.97,0.08,beneficiary outcome direction,apep_1087/v1/tables/tabF1_sde.tex,3301.0,0.14,0.03,0.2,-1
+apep_1088_v1,Log Revenue,binary,0,1,1,1,0.87,0.18,0.2,beneficiary outcome direction,apep_1088/v1/tables/tabF1_sde.tex,3914.0,0.03,0.02,0.13,1
+apep_1089_v1,Technical Index,binary,1,1,1,1,0.91,0.15,0.1,beneficiary outcome direction,apep_1089/v1/tables/tabF1_sde.tex,3305.0,0.07,0.08,0.11,1
+apep_1090_v1,SNAP participation rate,continuous,1,1,1,1,0.88,0.24,0.34,beneficiary outcome direction,apep_1090/v1/tables/tabF1_sde.tex,2418.0,0.09,0.43,0.14,1
+apep_1091_v1,Spouse present,binary,0,1,1,1,0.85,0.18,0.19,beneficiary outcome direction,apep_1091/v1/tables/tabF1_sde.tex,2539.0,0.03,0.07,0.03,1
+apep_1093_v1,B-W New-Hire Earnings Gap,binary,-1,-1,-1,-1,0.36,0.74,0.19,beneficiary outcome direction,apep_1093/v1/tables/tabF1_sde.tex,1873.0,0.03,0.02,0.01,-1
+apep_1094_v1,Log employment (all races),binary,1,1,1,1,0.95,0.14,0.09,beneficiary outcome direction,apep_1094/v1/tables/tabF1_sde.tex,3358.0,0.03,0.04,0.02,1
+apep_1095_v1,Earthquake count (M2.0+),binary,-1,-1,-1,-1,0.05,0.91,0.23,beneficiary outcome direction,apep_1095/v1/tables/tabF1_sde.tex,2329.0,0.22,0.02,0.26,-1
+apep_1102_v1,High-dose share,binary,0,0,0,-1,0.11,0.84,0.71,beneficiary outcome direction,apep_1102/v1/tables/tabF1_sde.tex,3817.0,0.05,0.29,0.3,-1
+apep_1103_v1,OKP costs/insured,continuous,0,0,-1,-1,0.28,0.62,0.57,beneficiary outcome direction,apep_1103/v1/tables/tabF1_sde.tex,3772.0,0.05,0.03,0.17,-1
+apep_1104_v1,Log total luminosity,continuous,1,1,1,1,0.91,0.08,0.08,beneficiary outcome direction,apep_1104/v1/tables/tabF1_sde.tex,3004.0,0.02,0.02,0.05,1
+apep_1105_v1,Total MAT,continuous,1,1,1,1,0.94,0.14,0.11,beneficiary outcome direction,apep_1105/v1/tables/tabF1_sde.tex,3546.0,0.1,0.06,0.3,1
+apep_1106_v1,Bee share (DiD),binary,0,0,0,0,0.84,0.23,0.17,measurement qualifier: group_composition,apep_1106/v1/tables/tabF1_sde.tex,3638.0,0.79,0.7,0.11,1
+apep_1107_v1,Log Wages (D11),binary,0,0,1,1,0.87,0.27,0.23,beneficiary outcome direction,apep_1107/v1/tables/tabF1_sde.tex,2516.0,0.02,0.06,0.02,1
+apep_1108_v1,Home values (log ZHVI),binary,0,0,-1,-1,0.19,0.7,0.58,beneficiary outcome direction,apep_1108/v1/tables/tabF1_sde.tex,2926.0,0.02,0.02,0.07,-1
+apep_1110_v1,Dental decay,continuous,-1,-1,-1,-1,0.04,0.98,0.1,beneficiary outcome direction,apep_1110/v1/tables/tabF1_sde.tex,4673.0,0.24,0.03,0.02,-1
+apep_1111_v1,Total Permits,continuous,1,1,1,1,0.81,0.25,0.22,beneficiary outcome direction,apep_1111/v1/tables/tabF1_sde.tex,4020.0,0.13,0.02,0.91,1
+apep_1112_v1,Log fare,binary,-1,-1,-1,-1,0.16,0.73,0.13,beneficiary outcome direction,apep_1112/v1/tables/tabF1_sde.tex,3612.0,0.02,0.02,0.11,-1
+apep_1113_v1,URM Share,continuous,0,0,0,0,0.85,0.12,0.26,measurement qualifier: group_composition,apep_1113/v1/tables/tabF1_sde.tex,2638.0,0.06,0.98,0.08,1
+apep_1114_v1,Log farm count,continuous,0,0,0,0,0.4,0.3,0.72,insufficient directional evidence,apep_1114/v1/tables/tabF1_sde.tex,2428.0,0.08,0.04,0.41,0
+apep_1115_v1,Visible share,binary,0,0,0,0,0.4,0.49,0.67,measurement qualifier: group_composition,apep_1115/v1/tables/tabF1_sde.tex,3687.0,0.07,0.95,0.03,0
+apep_1120_v1,log(Employment),binary,1,1,1,1,0.93,0.18,0.12,beneficiary outcome direction,apep_1120/v1/tables/tabF1_sde.tex,2314.0,0.03,0.05,0.02,1
+apep_1121_v1,Education share,binary,0,0,0,1,0.85,0.31,0.7,beneficiary outcome direction,apep_1121/v1/tables/tabF1_sde.tex,1413.0,0.03,0.4,0.11,1
+apep_1122_v1,Log employment (DDD),continuous,0,1,1,1,0.96,0.27,0.1,beneficiary outcome direction,apep_1122/v1/tables/tabF1_sde.tex,3490.0,0.03,0.05,0.02,1
+apep_1123_v1,Results Reporting Rate,binary,0,0,1,1,0.88,0.17,0.15,beneficiary outcome direction,apep_1123/v1/tables/tabF1_sde.tex,423.0,0.95,0.08,0.77,1
+apep_1124_v1,Log Fishing Hours,binary,0,0,0,0,0.44,0.48,0.61,insufficient directional evidence,apep_1124/v1/tables/tabF1_sde.tex,4221.0,0.06,0.03,0.17,0
+apep_1125_v1,Total insolvency rate,continuous,-1,-1,-1,-1,0.04,0.91,0.32,beneficiary outcome direction,apep_1125/v1/tables/tabF1_sde.tex,1573.0,0.56,0.12,0.44,-1
+apep_1126_v1,Drug arrest rate,binary,0,0,0,0,0.06,0.59,0.55,measurement qualifier: administrative_detection,apep_1126/v1/tables/tabF1_sde.tex,2614.0,0.99,0.04,0.72,-1
+apep_1127_v1,"IHS(Quakes M2.5+), CS",binary,-1,-1,-1,-1,0.07,0.9,0.18,beneficiary outcome direction,apep_1127/v1/tables/tabF1_sde.tex,2567.0,0.24,0.02,0.26,-1
+apep_1128_v1,Separation Rate,binary,0,0,0,0,0.4,0.51,0.68,insufficient directional evidence,apep_1128/v1/tables/tabF1_sde.tex,1683.0,0.08,0.15,0.06,0
+apep_1129_v1,Pills per capita,continuous,0,0,-1,-1,0.12,0.79,0.51,beneficiary outcome direction,apep_1129/v1/tables/tabF1_sde.tex,3452.0,0.06,0.04,0.37,-1
+apep_1130_v1,Log SB procurement,binary,0,0,1,1,0.81,0.22,0.3,beneficiary outcome direction,apep_1130/v1/tables/tabF1_sde.tex,2668.0,0.06,0.18,0.8,1
+apep_1131_v1,Timeliness (leq14d),continuous,1,1,1,1,0.94,0.4,0.06,beneficiary outcome direction,apep_1131/v1/tables/tabF1_sde.tex,2472.0,0.11,0.11,0.57,1
+apep_1132_v1,Complaint rate,binary,-1,-1,-1,-1,0.06,0.83,0.34,beneficiary outcome direction,apep_1132/v1/tables/tabF1_sde.tex,2800.0,0.86,0.06,0.81,-1
+apep_1133_v1,log(Days Away + 1),continuous,-1,-1,-1,-1,0.05,0.94,0.12,beneficiary outcome direction,apep_1133/v1/tables/tabF1_sde.tex,3039.0,0.03,0.01,0.05,-1
+apep_1134_v1,Renewable generation,binary,0,1,1,1,0.81,0.26,0.44,beneficiary outcome direction,apep_1134/v1/tables/tabF1_sde.tex,3761.0,0.03,0.04,0.06,1
+apep_1135_v1,Employment (log),binary,1,1,1,1,0.97,0.2,0.07,beneficiary outcome direction,apep_1135/v1/tables/tabF1_sde.tex,2786.0,0.02,0.04,0.02,1
+apep_1136_v1,Log gap (CC/PL),binary,0,0,0,-1,0.33,0.57,0.51,beneficiary outcome direction,apep_1136/v1/tables/tabF1_sde.tex,2290.0,0.03,0.16,0.23,-1
+apep_1143_v1,"ln(farmland), TWFE",binary,0,0,1,1,0.71,0.28,0.14,beneficiary outcome direction,apep_1143/v1/tables/tabF1_sde.tex,1561.0,0.56,0.03,0.04,1
+apep_1144_v1,Employment (t+1),binary,0,1,1,1,0.97,0.18,0.07,beneficiary outcome direction,apep_1144/v1/tables/tabF1_sde.tex,2828.0,0.03,0.04,0.03,1
+apep_1146_v1,|New MoM|,binary,0,0,-1,-1,0.11,0.78,0.33,beneficiary outcome direction,apep_1146/v1/tables/tabF1_sde.tex,3228.0,0.02,0.02,0.05,-1
+apep_1147_v1,Log earnings (all),binary,1,1,1,1,0.97,0.07,0.05,beneficiary outcome direction,apep_1147/v1/tables/tabF1_sde.tex,2057.0,0.02,0.02,0.01,1
+apep_1149_v1,Total pills (log),continuous,0,0,-1,-1,0.13,0.68,0.52,beneficiary outcome direction,apep_1149/v1/tables/tabF1_sde.tex,3813.0,0.07,0.03,0.52,-1
+apep_1152_v1,Generator Retirement,binary,0,0,0,0,0.32,0.53,0.65,insufficient directional evidence,apep_1152/v1/tables/tabF1_sde.tex,3041.0,0.04,0.04,0.18,0
+apep_1154_v1,Log firm births,binary,1,1,1,1,0.86,0.12,0.17,beneficiary outcome direction,apep_1154/v1/tables/tabF1_sde.tex,2658.0,0.08,0.07,0.49,1
+apep_1155_v1,Hom. rate,continuous,-1,-1,-1,-1,0.06,0.97,0.11,beneficiary outcome direction,apep_1155/v1/tables/tabF1_sde.tex,2533.0,0.08,0.02,0.05,-1
+apep_1156_v1,Domestic violence,binary,0,0,0,0,0.35,0.78,0.77,measurement qualifier: administrative_detection,apep_1156/v1/tables/tabF1_sde.tex,4310.0,0.93,0.03,0.4,0
+apep_1157_v1,Overall IMR,binary,-1,-1,-1,-1,0.07,0.98,0.07,beneficiary outcome direction,apep_1157/v1/tables/tabF1_sde.tex,3604.0,0.04,0.02,0.02,-1
+apep_1161_v1,MOT failure rate,binary,-1,-1,-1,-1,0.07,0.94,0.12,beneficiary outcome direction,apep_1161/v1/tables/tabF1_sde.tex,2486.0,0.48,0.09,0.3,-1
+apep_1162_v1,Log empl.,binary,1,1,1,1,0.93,0.2,0.13,beneficiary outcome direction,apep_1162/v1/tables/tabF1_sde.tex,3097.0,0.05,0.04,0.02,1
+apep_1164_v1,Employment Rate,continuous,1,1,1,1,0.96,0.1,0.07,beneficiary outcome direction,apep_1164/v1/tables/tabF1_sde.tex,4482.0,0.03,0.15,0.02,1
+apep_1165_v1,Administration,binary,0,0,0,0,0.21,0.37,0.66,insufficient directional evidence,apep_1165/v1/tables/tabF1_sde.tex,3735.0,0.05,0.03,0.33,0
+apep_1166_v1,Log sales volume,binary,0,1,1,1,0.71,0.23,0.33,beneficiary outcome direction,apep_1166/v1/tables/tabF1_sde.tex,3280.0,0.08,0.03,0.8,1
+apep_1167_v1,Delta SA Completions (OLS),continuous,0,1,1,1,0.79,0.23,0.3,beneficiary outcome direction,apep_1167/v1/tables/tabF1_sde.tex,4941.0,0.09,0.04,0.45,1
+apep_1168_v1,Geo-weighted exposure rightarrow Ordinance,continuous,0,0,0,0,0.22,0.42,0.78,ambiguous economic direction,apep_1168/v1/tables/tabF1_sde.tex,3816.0,0.24,0.03,0.4,0
+apep_1169_v1,log(BA),binary,1,1,1,1,0.78,0.14,0.1,beneficiary outcome direction,apep_1169/v1/tables/tabF1_sde.tex,4658.0,0.16,0.02,0.95,1
+apep_1172_v1,Log Layers,binary,0,0,1,1,0.65,0.3,0.45,beneficiary outcome direction,apep_1172/v1/tables/tabF1_sde.tex,2401.0,0.05,0.03,0.12,1
+apep_1174_v1,Log(TRI releases) --- OLS,binary,-1,-1,-1,-1,0.09,0.94,0.13,beneficiary outcome direction,apep_1174/v1/tables/tabF1_sde.tex,2675.0,0.1,0.02,0.21,-1
+apep_1175_v1,Log Employment,continuous,0,1,1,1,0.97,0.3,0.09,beneficiary outcome direction,apep_1175/v1/tables/tabF1_sde.tex,4468.0,0.03,0.05,0.03,1
+apep_1176_v1,Total HPRD,continuous,1,1,1,1,0.93,0.08,0.08,beneficiary outcome direction,apep_1176/v1/tables/tabF1_sde.tex,4120.0,0.05,0.03,0.04,1
+apep_1177_v2,Convicted (Drug Trafficking),binary,0,0,0,0,0.06,0.81,0.51,measurement qualifier: administrative_detection,apep_1177/v2/tables/tabF1_sde.tex,3093.0,0.98,0.04,0.45,-1
+apep_1178_v1,"Log employment (BA+, 621)",binary,1,1,1,1,0.92,0.16,0.13,beneficiary outcome direction,apep_1178/v1/tables/tabF1_sde.tex,3617.0,0.04,0.04,0.02,1
+apep_1179_v1,Education share,continuous,0,1,1,1,0.9,0.11,0.4,beneficiary outcome direction,apep_1179/v1/tables/tabF1_sde.tex,3436.0,0.04,0.41,0.14,1
+apep_1180_v1,Amihud illiquidity,binary,-1,-1,-1,-1,0.06,0.94,0.21,beneficiary outcome direction,apep_1180/v1/tables/tabF1_sde.tex,3784.0,0.03,0.02,0.38,-1
+apep_1181_v1,Export (MW),binary,0,0,0,1,0.59,0.27,0.56,beneficiary outcome direction,apep_1181/v1/tables/tabF1_sde.tex,3506.0,0.03,0.02,0.32,1
+apep_1182_v1,Log employment (Levels),binary,1,1,1,1,0.96,0.17,0.08,beneficiary outcome direction,apep_1182/v1/tables/tabF1_sde.tex,1798.0,0.03,0.03,0.02,1
+apep_1183_v1,DeltaOccscore (ordinal),binary,1,1,1,1,0.94,0.22,0.06,beneficiary outcome direction,apep_1183/v1/tables/tabF1_sde.tex,4102.0,0.02,0.03,0.02,1
+apep_1184_v1,Total passengers,continuous,0,1,1,1,0.84,0.17,0.21,beneficiary outcome direction,apep_1184/v1/tables/tabF1_sde.tex,3205.0,0.04,0.02,0.18,1
+apep_1185_v1,All opioid OD deaths (log),binary,-1,-1,-1,-1,0.05,0.97,0.14,beneficiary outcome direction,apep_1185/v1/tables/tabF1_sde.tex,4196.0,0.04,0.02,0.06,-1
+apep_1186_v1,Any accident,binary,-1,-1,-1,-1,0.05,0.97,0.14,beneficiary outcome direction,apep_1186/v1/tables/tabF1_sde.tex,3683.0,0.09,0.02,0.14,-1
+apep_1187_v1,Monthly wage ratio,continuous,1,1,1,1,0.93,0.09,0.07,beneficiary outcome direction,apep_1187/v1/tables/tabF1_sde.tex,1812.0,0.03,0.04,0.01,1
+apep_1188_v1,Employment,continuous,0,1,1,1,0.95,0.28,0.13,beneficiary outcome direction,apep_1188/v1/tables/tabF1_sde.tex,3234.0,0.03,0.06,0.02,1
+apep_1190_v1,Low birth weight (%),continuous,-1,-1,-1,-1,0.03,0.98,0.09,beneficiary outcome direction,apep_1190/v1/tables/tabF1_sde.tex,3149.0,0.05,0.04,0.02,-1
+apep_1192_v1,Recall probability,continuous,1,1,1,1,0.91,0.27,0.14,beneficiary outcome direction,apep_1192/v1/tables/tabF1_sde.tex,3202.0,0.7,0.03,0.38,1
+apep_1194_v1,Human-Factor Accidents,binary,-1,-1,-1,-1,0.06,0.96,0.16,beneficiary outcome direction,apep_1194/v1/tables/tabF1_sde.tex,4163.0,0.15,0.03,0.42,-1
+apep_1199_v1,Waterborne hosp. rate,binary,-1,-1,-1,-1,0.04,0.97,0.08,beneficiary outcome direction,apep_1199/v1/tables/tabF1_sde.tex,3579.0,0.12,0.02,0.03,-1
+apep_1200_v1,Foreign share change (pp),binary,0,0,0,0,0.27,0.39,0.77,measurement qualifier: group_composition,apep_1200/v1/tables/tabF1_sde.tex,3820.0,0.04,0.96,0.08,0
+apep_1201_v1,Branch exit next year (pooled),binary,0,0,-1,-1,0.09,0.77,0.48,beneficiary outcome direction,apep_1201/v1/tables/tabF1_sde.tex,2879.0,0.07,0.05,0.32,-1
+apep_1202_v1,Telehealth (overall),binary,1,1,1,1,0.94,0.11,0.09,beneficiary outcome direction,apep_1202/v1/tables/tabF1_sde.tex,3149.0,0.09,0.56,0.13,1
+apep_1203_v1,SAS registrations,binary,0,1,1,1,0.84,0.18,0.15,beneficiary outcome direction,apep_1203/v1/tables/tabF1_sde.tex,2965.0,0.17,0.04,0.95,1
+apep_1204_v1,IHP Approval Rate (All),continuous,1,1,1,1,0.96,0.06,0.06,beneficiary outcome direction,apep_1204/v1/tables/tabF1_sde.tex,3221.0,0.48,0.1,0.85,1
+apep_1206_v1,Log(Emp/Est) --- Total,binary,0,1,1,1,0.79,0.27,0.4,beneficiary outcome direction,apep_1206/v1/tables/tabF1_sde.tex,2274.0,0.03,0.07,0.04,1
+apep_1207_v1,Cereal production index,binary,1,1,1,1,0.84,0.09,0.18,beneficiary outcome direction,apep_1207/v1/tables/tabF1_sde.tex,2901.0,0.02,0.05,0.03,1
+apep_1208_v1,Credit/GDP,binary,1,1,1,1,0.89,0.09,0.12,beneficiary outcome direction,apep_1208/v1/tables/tabF1_sde.tex,4666.0,0.04,0.29,0.09,1
+apep_1209_v1,Log(price),binary,0,1,1,1,0.63,0.21,0.08,beneficiary outcome direction,apep_1209/v1/tables/tabF1_sde.tex,3584.0,0.02,0.01,0.12,1
+apep_1211_v1,DDD: BW earnings gap (log),binary,-1,-1,0,-1,0.47,0.76,0.21,beneficiary outcome direction,apep_1211/v1/tables/tabF1_sde.tex,1408.0,0.03,0.02,0.01,-1
+apep_1212_v1,Employment (log),binary,1,1,1,1,0.97,0.17,0.07,beneficiary outcome direction,apep_1212/v1/tables/tabF1_sde.tex,3417.0,0.03,0.05,0.02,1
+apep_1213_v1,Log Employment,continuous,1,1,1,1,0.96,0.18,0.14,beneficiary outcome direction,apep_1213/v1/tables/tabF1_sde.tex,3752.0,0.03,0.04,0.02,1
+apep_1214_v1,IDEB (Grades 1--5),binary,1,1,1,1,0.97,0.06,0.05,beneficiary outcome direction,apep_1214/v1/tables/tabF1_sde.tex,3800.0,0.04,0.03,0.03,1
+apep_1215_v1,Unemp. rate,continuous,-1,-1,-1,-1,0.04,0.98,0.09,beneficiary outcome direction,apep_1215/v1/tables/tabF1_sde.tex,1495.0,0.06,0.47,0.02,-1
+apep_1220_v1,Log tax revenue,continuous,0,0,0,0,0.16,0.34,0.56,insufficient directional evidence,apep_1220/v1/tables/tabF1_sde.tex,1259.0,0.06,0.02,0.08,0
+apep_1221_v1,Interstate mobility (full sample),binary,0,0,0,0,0.29,0.4,0.76,ambiguous economic direction,apep_1221/v1/tables/tabF1_sde.tex,3000.0,0.03,0.06,0.07,0
+apep_1222_v1,Total crime,binary,-1,-1,-1,-1,0.05,0.97,0.36,beneficiary outcome direction,apep_1222/v1/tables/tabF1_sde.tex,3321.0,0.76,0.02,0.28,-1
+apep_1223_v1,Full encashment share,continuous,0,0,0,-1,0.27,0.63,0.71,beneficiary outcome direction,apep_1223/v1/tables/tabF1_sde.tex,2824.0,0.1,0.4,0.52,-1
+apep_1225_v1,Weapons possession,binary,-1,-1,-1,-1,0.04,0.96,0.17,beneficiary outcome direction,apep_1225/v1/tables/tabF1_sde.tex,4981.0,0.6,0.02,0.09,-1
+apep_1227_v1,Log Earnings,binary,1,1,1,1,0.97,0.08,0.05,beneficiary outcome direction,apep_1227/v1/tables/tabF1_sde.tex,3943.0,0.02,0.02,0.01,1
+apep_1228_v1,log(NWP),binary,0,0,0,0,0.34,0.36,0.55,insufficient directional evidence,apep_1228/v1/tables/tabF1_sde.tex,4443.0,0.03,0.03,0.48,0
+apep_1229_v1,Log transport ins.,binary,0,-1,-1,-1,0.13,0.66,0.37,beneficiary outcome direction,apep_1229/v1/tables/tabF1_sde.tex,3955.0,0.04,0.03,0.08,-1
+apep_1230_v1,New enrollments (all),binary,0,0,0,0,0.61,0.32,0.56,measurement qualifier: gross_activity,apep_1230/v1/tables/tabF1_sde.tex,4187.0,0.15,0.04,0.87,1
+apep_1232_v1,C-section rate,binary,0,-1,-1,-1,0.06,0.87,0.13,beneficiary outcome direction,apep_1232/v1/tables/tabF1_sde.tex,2836.0,0.09,0.17,0.08,-1
+apep_1234_v1,ROA,binary,1,1,1,1,0.93,0.09,0.08,beneficiary outcome direction,apep_1234/v1/tables/tabF1_sde.tex,3262.0,0.03,0.04,0.03,1
+apep_1235_v1,Secondary sector share,continuous,0,0,0,0,0.49,0.34,0.75,measurement qualifier: group_composition,apep_1235/v1/tables/tabF1_sde.tex,3428.0,0.02,0.97,0.02,0
+apep_1236_v1,New construction (levels),binary,1,1,1,1,0.88,0.21,0.11,beneficiary outcome direction,apep_1236/v1/tables/tabF1_sde.tex,1519.0,0.07,0.02,0.07,1
+apep_1237_v1,Total employment,continuous,1,1,1,1,0.97,0.13,0.1,beneficiary outcome direction,apep_1237/v1/tables/tabF1_sde.tex,4030.0,0.03,0.03,0.02,1
+apep_1238_v1,Total Medicare spending (OLS),continuous,0,0,-1,-1,0.13,0.72,0.53,beneficiary outcome direction,apep_1238/v1/tables/tabF1_sde.tex,4342.0,0.05,0.03,0.28,-1
+apep_1239_v1,Net migration rate,continuous,0,0,0,0,0.22,0.25,0.76,ambiguous economic direction,apep_1239/v1/tables/tabF1_sde.tex,2719.0,0.04,0.09,0.1,0
+apep_1240_v1,Depth to water (m),binary,0,-1,-1,-1,0.06,0.94,0.14,beneficiary outcome direction,apep_1240/v1/tables/tabF1_sde.tex,2423.0,0.03,0.02,0.03,-1
+apep_1241_v1,Log mink exports (active producers),binary,0,0,0,0,0.78,0.39,0.47,measurement qualifier: gross_activity,apep_1241/v1/tables/tabF1_sde.tex,2968.0,0.06,0.04,0.9,1
+apep_1243_v1,Foreign population share,binary,0,0,0,0,0.2,0.26,0.84,measurement qualifier: group_composition,apep_1243/v1/tables/tabF1_sde.tex,3857.0,0.04,0.98,0.04,0
+apep_1244_v1,Hazardous industry entry,binary,0,0,0,0,0.23,0.66,0.77,ambiguous economic direction,apep_1244/v1/tables/tabF1_sde.tex,2881.0,0.03,0.15,0.02,0
+apep_1245_v1,"CAR[-1,+1]: Ban imposition",continuous,0,0,0,0,0.44,0.4,0.51,insufficient directional evidence,apep_1245/v1/tables/tabF1_sde.tex,3927.0,0.07,0.04,0.15,0
+apep_1246_v1,Employment (log),binary,0,1,1,1,0.97,0.24,0.07,beneficiary outcome direction,apep_1246/v1/tables/tabF1_sde.tex,4273.0,0.03,0.04,0.02,1
+apep_1247_v1,Black enrollment share,continuous,0,0,0,0,0.74,0.12,0.4,measurement qualifier: group_composition,apep_1247/v1/tables/tabF1_sde.tex,1781.0,0.07,0.98,0.16,1
+apep_1248_v1,Benefit Index,binary,1,1,1,1,0.96,0.08,0.05,beneficiary outcome direction,apep_1248/v1/tables/tabF1_sde.tex,2923.0,0.05,0.06,0.04,1
+apep_1249_v1,Log employment,continuous,0,1,1,1,0.94,0.23,0.14,beneficiary outcome direction,apep_1249/v1/tables/tabF1_sde.tex,3339.0,0.03,0.04,0.02,1
+apep_1250_v1,Private minus mortgage claims,continuous,0,0,0,0,0.52,0.65,0.46,measurement qualifier: administrative_detection,apep_1250/v1/tables/tabF1_sde.tex,4314.0,0.84,0.06,0.89,0
+apep_1251_v1,Total strikes,binary,-1,-1,0,0,0.08,0.76,0.74,measurement qualifier: administrative_detection,apep_1251/v1/tables/tabF1_sde.tex,3713.0,0.83,0.03,0.59,-1
+apep_1253_v1,Employment (all industries),continuous,0,1,1,1,0.95,0.2,0.12,beneficiary outcome direction,apep_1253/v1/tables/tabF1_sde.tex,2674.0,0.03,0.05,0.02,1
+apep_1254_v1,Log appraisal value,binary,0,0,0,-1,0.41,0.56,0.48,beneficiary outcome direction,apep_1254/v1/tables/tabF1_sde.tex,1977.0,0.02,0.02,0.08,-1
+apep_1261_v1,Birth rate (all),continuous,1,1,1,1,0.75,0.19,0.32,beneficiary outcome direction,apep_1261/v1/tables/tabF1_sde.tex,3049.0,0.06,0.09,0.03,1
+apep_1262_v1,FN/RN (TWFE),binary,0,0,0,0,0.14,0.52,0.81,measurement qualifier: group_composition,apep_1262/v1/tables/tabF1_sde.tex,3565.0,0.04,0.97,0.05,0
+apep_1263_v1,Deceased donors pmp,binary,1,1,1,1,0.89,0.1,0.07,beneficiary outcome direction,apep_1263/v1/tables/tabF1_sde.tex,3031.0,0.3,0.05,0.39,1
+apep_1264_v1,Avg. employment (50--249),binary,0,0,0,1,0.71,0.28,0.67,beneficiary outcome direction,apep_1264/v1/tables/tabF1_sde.tex,3477.0,0.04,0.03,0.03,1
+apep_1269_v1,Any crime,binary,-1,-1,-1,-1,0.05,0.97,0.11,beneficiary outcome direction,apep_1269/v1/tables/tabF1_sde.tex,2742.0,0.06,0.04,0.03,-1
+apep_1270_v1,Oil heating share,continuous,0,0,-1,-1,0.15,0.7,0.56,beneficiary outcome direction,apep_1270/v1/tables/tabF1_sde.tex,1981.0,0.03,0.59,0.08,-1
+apep_1271_v1,Separation Rate,binary,-1,-1,-1,-1,0.11,0.81,0.41,beneficiary outcome direction,apep_1271/v1/tables/tabF1_sde.tex,3664.0,0.05,0.13,0.06,-1
+apep_1272_v1,Log luminosity,binary,1,1,1,1,0.91,0.08,0.06,beneficiary outcome direction,apep_1272/v1/tables/tabF1_sde.tex,3526.0,0.03,0.02,0.06,1
+apep_1275_v1,Mean NDVI (all seasons),continuous,0,0,1,1,0.94,0.06,0.07,beneficiary outcome direction,apep_1275/v1/tables/tabF1_sde.tex,2917.0,0.02,0.02,0.03,1
+apep_1277_v1,Hires (White),binary,1,1,1,1,0.92,0.22,0.1,beneficiary outcome direction,apep_1277/v1/tables/tabF1_sde.tex,1710.0,0.07,0.07,0.09,1
+apep_1278_v1,VAT gap (% VTTL),binary,-1,-1,-1,-1,0.09,0.92,0.09,beneficiary outcome direction,apep_1278/v1/tables/tabF1_sde.tex,2558.0,0.16,0.13,0.15,-1
+apep_1279_v1,Farm exit,binary,0,0,0,0,0.56,0.42,0.58,insufficient directional evidence,apep_1279/v1/tables/tabF1_sde.tex,3654.0,0.03,0.08,0.03,0
+apep_1280_v1,B/W Earnings Ratio,continuous,1,1,1,1,0.92,0.13,0.08,beneficiary outcome direction,apep_1280/v1/tables/tabF1_sde.tex,1973.0,0.02,0.03,0.01,1
+apep_1282_v1,NEET 18--24,continuous,-1,-1,-1,-1,0.07,0.97,0.11,beneficiary outcome direction,apep_1282/v1/tables/tabF1_sde.tex,1910.0,0.04,0.41,0.01,-1
+apep_1283_v1,B/W Earnings Ratio,binary,0,1,1,1,0.91,0.15,0.12,beneficiary outcome direction,apep_1283/v1/tables/tabF1_sde.tex,2995.0,0.03,0.03,0.01,1
+apep_1284_v1,Per capita income,continuous,1,1,1,1,0.97,0.06,0.06,beneficiary outcome direction,apep_1284/v1/tables/tabF1_sde.tex,3902.0,0.02,0.02,0.02,1
+apep_1287_v1,DeltaOcc. Score (1940),binary,1,1,1,1,0.95,0.09,0.06,beneficiary outcome direction,apep_1287/v1/tables/tabF1_sde.tex,4083.0,0.02,0.03,0.02,1
+apep_1288_v1,Employment,binary,0,1,1,1,0.87,0.18,0.23,beneficiary outcome direction,apep_1288/v1/tables/tabF1_sde.tex,3500.0,0.03,0.11,0.02,1
+apep_1289_v1,"Victim rate (per 1,000)",binary,0,-1,0,0,0.07,0.91,0.46,measurement qualifier: administrative_detection,apep_1289/v1/tables/tabF1_sde.tex,2712.0,0.92,0.05,0.53,-1
+apep_1290_v1,Tax/GDP (pp),binary,0,0,0,0,0.18,0.33,0.71,insufficient directional evidence,apep_1290/v1/tables/tabF1_sde.tex,2052.0,0.05,0.14,0.04,0
+apep_1291_v1,Average farm size,binary,0,0,0,0,0.32,0.35,0.76,ambiguous economic direction,apep_1291/v1/tables/tabF1_sde.tex,3291.0,0.03,0.04,0.07,0
+apep_1293_v1,Firearm homicide rate,binary,-1,-1,-1,-1,0.03,0.98,0.13,beneficiary outcome direction,apep_1293/v1/tables/tabF1_sde.tex,2874.0,0.07,0.02,0.02,-1
+apep_1294_v1,Convergence deceleration (trend-break),continuous,0,0,0,0,0.21,0.53,0.6,insufficient directional evidence,apep_1294/v1/tables/tabF1_sde.tex,1772.0,0.05,0.05,0.06,0
+apep_1298_v1,Private employment (ln),continuous,1,1,1,1,0.96,0.18,0.08,beneficiary outcome direction,apep_1298/v1/tables/tabF1_sde.tex,2811.0,0.02,0.05,0.02,1
+apep_1299_v1,Log remittances,continuous,1,1,1,1,0.86,0.21,0.21,beneficiary outcome direction,apep_1299/v1/tables/tabF1_sde.tex,3071.0,0.06,0.04,0.32,1
+apep_1300_v1,Employment (All),binary,1,1,1,1,0.95,0.16,0.09,beneficiary outcome direction,apep_1300/v1/tables/tabF1_sde.tex,5032.0,0.04,0.07,0.02,1
+apep_1301_v1,Low birth weight (%%),continuous,-1,-1,-1,-1,0.04,0.98,0.09,beneficiary outcome direction,apep_1301/v1/tables/tabF1_sde.tex,3346.0,0.05,0.05,0.02,-1
+apep_1310_v1,Employment,continuous,0,1,1,1,0.96,0.22,0.08,beneficiary outcome direction,apep_1310/v1/tables/tabF1_sde.tex,3145.0,0.03,0.05,0.02,1
+apep_1311_v1,Competitive share,continuous,0,0,1,1,0.84,0.19,0.15,beneficiary outcome direction,apep_1311/v1/tables/tabF1_sde.tex,3580.0,0.08,0.33,0.66,1
+apep_1312_v1,Gross wage (reform),continuous,0,1,1,1,0.96,0.15,0.1,beneficiary outcome direction,apep_1312/v1/tables/tabF1_sde.tex,2126.0,0.06,0.02,0.01,1
+apep_1314_v1,Total employment (% Delta),continuous,1,1,1,1,0.96,0.16,0.08,beneficiary outcome direction,apep_1314/v1/tables/tabF1_sde.tex,2545.0,0.02,0.11,0.02,1
+apep_1315_v1,House Price Index (DiD),binary,0,1,1,1,0.68,0.29,0.18,beneficiary outcome direction,apep_1315/v1/tables/tabF1_sde.tex,2326.0,0.03,0.02,0.1,1
+apep_1316_v1,Appeal Granted,continuous,1,1,1,1,0.96,0.36,0.06,beneficiary outcome direction,apep_1316/v1/tables/tabF1_sde.tex,3734.0,0.59,0.06,0.35,1
+apep_1317_v1,Math (DDD),binary,1,1,1,1,0.96,0.11,0.05,beneficiary outcome direction,apep_1317/v1/tables/tabF1_sde.tex,3547.0,0.03,0.02,0.02,1
+apep_1318_v1,Registrations (adoption),binary,1,1,1,1,0.75,0.24,0.36,beneficiary outcome direction,apep_1318/v1/tables/tabF1_sde.tex,2591.0,0.16,0.03,0.78,1
+apep_1319_v1,ASB rate per 100k,continuous,-1,-1,-1,-1,0.06,0.92,0.25,beneficiary outcome direction,apep_1319/v1/tables/tabF1_sde.tex,2946.0,0.73,0.03,0.38,-1
+apep_1320_v1,Manufacturing share,binary,0,0,0,0,0.75,0.26,0.71,measurement qualifier: group_composition,apep_1320/v1/tables/tabF1_sde.tex,4319.0,0.04,0.97,0.02,1
+apep_1322_v1,MM share (all states),binary,0,0,1,1,0.77,0.18,0.35,beneficiary outcome direction,apep_1322/v1/tables/tabF1_sde.tex,3837.0,0.05,0.57,0.47,1
+apep_1323_v1,Branches per 100k,binary,0,0,1,1,0.88,0.18,0.18,beneficiary outcome direction,apep_1323/v1/tables/tabF1_sde.tex,3702.0,0.06,0.1,0.3,1
+apep_1328_v1,Business density,binary,1,1,1,1,0.77,0.12,0.25,beneficiary outcome direction,apep_1328/v1/tables/tabF1_sde.tex,3344.0,0.12,0.17,0.63,1
+apep_1330_v1,In-state tuition,continuous,0,-1,-1,-1,0.14,0.89,0.22,beneficiary outcome direction,apep_1330/v1/tables/tabF1_sde.tex,3082.0,0.03,0.02,0.11,-1
+apep_1331_v1,New complaints,binary,-1,-1,0,0,0.16,0.76,0.46,measurement qualifier: administrative_detection,apep_1331/v1/tables/tabF1_sde.tex,3438.0,0.83,0.05,0.89,-1
+apep_1332_v1,DO (cont.),continuous,1,1,1,1,0.92,0.22,0.07,beneficiary outcome direction,apep_1332/v1/tables/tabF1_sde.tex,3879.0,0.03,0.04,0.04,1
+apep_1333_v1,All fish density,binary,0,1,1,1,0.78,0.15,0.14,beneficiary outcome direction,apep_1333/v1/tables/tabF1_sde.tex,2501.0,0.43,0.02,0.04,1
+apep_1334_v1,Market Transfer,binary,0,0,1,1,0.67,0.28,0.53,beneficiary outcome direction,apep_1334/v1/tables/tabF1_sde.tex,3283.0,0.09,0.03,0.57,1
+apep_1335_v1,Retail employment,binary,1,1,1,1,0.94,0.12,0.1,beneficiary outcome direction,apep_1335/v1/tables/tabF1_sde.tex,3216.0,0.03,0.04,0.02,1
+apep_1336_v1,PM2.5 (mug/m^3),continuous,-1,-1,-1,-1,0.04,0.98,0.13,beneficiary outcome direction,apep_1336/v1/tables/tabF1_sde.tex,2380.0,0.03,0.02,0.03,-1
+apep_1337_v1,Log earnings,continuous,1,1,1,1,0.97,0.06,0.06,beneficiary outcome direction,apep_1337/v1/tables/tabF1_sde.tex,2146.0,0.02,0.02,0.01,1
+apep_1338_v1,Log exports,continuous,1,1,1,1,0.81,0.27,0.3,beneficiary outcome direction,apep_1338/v1/tables/tabF1_sde.tex,3288.0,0.03,0.02,0.87,1
+apep_1339_v1,Flood Declaration (LPM),continuous,-1,-1,0,0,0.19,0.89,0.65,measurement qualifier: administrative_detection,apep_1339/v1/tables/tabF1_sde.tex,2983.0,0.67,0.03,0.74,-1
+apep_1340_v1,Log Mortgage Originations,binary,0,1,1,1,0.79,0.18,0.35,beneficiary outcome direction,apep_1340/v1/tables/tabF1_sde.tex,3911.0,0.25,0.08,0.87,1
+apep_1343_v1,Alliance times Apparel times Post,binary,1,1,1,1,0.8,0.24,0.16,beneficiary outcome direction,apep_1343/v1/tables/tabF1_sde.tex,3882.0,0.05,0.05,0.9,1
+apep_1344_v1,Delta MME/Pill,continuous,0,0,0,-1,0.11,0.88,0.7,beneficiary outcome direction,apep_1344/v1/tables/tabF1_sde.tex,3780.0,0.04,0.04,0.21,-1
+apep_1345_v1,Log house price (all areas),binary,0,1,0,0,0.45,0.24,0.13,insufficient directional evidence,apep_1345/v1/tables/tabF1_sde.tex,2535.0,0.02,0.02,0.15,0
+apep_1346_v1,Payment limit at ASP adjustment,binary,0,0,0,-1,0.35,0.59,0.55,beneficiary outcome direction,apep_1346/v1/tables/tabF1_sde.tex,3276.0,0.03,0.03,0.18,-1
+apep_1348_v1,Housing price (post-earthquake),continuous,1,1,0,1,0.58,0.23,0.09,beneficiary outcome direction,apep_1348/v1/tables/tabF1_sde.tex,3304.0,0.03,0.02,0.16,1
+apep_1350_v1,B/W Earnings Ratio,binary,0,1,1,1,0.92,0.18,0.11,beneficiary outcome direction,apep_1350/v1/tables/tabF1_sde.tex,1860.0,0.03,0.04,0.02,1
+apep_1376_v1,Log HPI (Post-Announcement),binary,1,1,1,1,0.69,0.24,0.14,beneficiary outcome direction,apep_1376/v1/tables/tabF1_sde.tex,0.0,0.03,0.02,0.07,1
+apep_1377_v1,Electricity hours/week,continuous,1,1,1,1,0.97,0.04,0.05,beneficiary outcome direction,apep_1377/v1/tables/tabF1_sde.tex,1483.0,0.03,0.03,0.03,1
+apep_1381_v1,High Exposure,continuous,0,0,0,0,0.21,0.4,0.67,insufficient directional evidence,apep_1381/v1/tables/tabF1_sde.tex,1893.0,0.03,0.05,0.06,0
+apep_1389_v1,Total Case Rate,binary,-1,-1,-1,-1,0.06,0.97,0.11,beneficiary outcome direction,apep_1389/v1/tables/tabF1_sde.tex,4771.0,0.45,0.03,0.2,-1
+apep_1390_v1,Wage Income,binary,1,1,1,1,0.98,0.07,0.05,beneficiary outcome direction,apep_1390/v1/tables/tabF1_sde.tex,2544.0,0.02,0.02,0.01,1
+apep_1394_v1,Turnover rate,binary,-1,-1,-1,-1,0.09,0.92,0.17,beneficiary outcome direction,apep_1394/v1/tables/tabF1_sde.tex,3334.0,0.06,0.17,0.05,-1
+apep_1399_v1,Cancer AADR,binary,-1,-1,-1,-1,0.05,0.98,0.08,beneficiary outcome direction,apep_1399/v1/tables/tabF1_sde.tex,3713.0,0.04,0.02,0.02,-1
+apep_1400_v1,Log B/W hire ratio,binary,1,1,1,1,0.87,0.18,0.14,beneficiary outcome direction,apep_1400/v1/tables/tabF1_sde.tex,3235.0,0.08,0.35,0.09,1
+apep_1404_v1,Future Incidents,binary,-1,-1,-1,-1,0.07,0.94,0.24,beneficiary outcome direction,apep_1404/v1/tables/tabF1_sde.tex,2458.0,0.34,0.02,0.67,-1
+apep_1407_v1,Log Premium,binary,0,-1,-1,-1,0.13,0.68,0.54,beneficiary outcome direction,apep_1407/v1/tables/tabF1_sde.tex,2917.0,0.03,0.02,0.3,-1
+apep_1408_v1,Coca area (IHS),binary,-1,-1,-1,-1,0.12,0.8,0.2,beneficiary outcome direction,apep_1408/v1/tables/tabF1_sde.tex,4600.0,0.34,0.03,0.04,-1
+apep_1409_v1,Naturalization rate,binary,1,1,1,1,0.82,0.14,0.22,beneficiary outcome direction,apep_1409/v1/tables/tabF1_sde.tex,3632.0,0.23,0.21,0.39,1
+apep_1410_v1,Capital withdrawal share,continuous,0,0,0,0,0.41,0.34,0.78,ambiguous economic direction,apep_1410/v1/tables/tabF1_sde.tex,3863.0,0.11,0.54,0.52,0
+apep_1413_v1,Log registrations,binary,1,1,1,1,0.63,0.26,0.38,beneficiary outcome direction,apep_1413/v1/tables/tabF1_sde.tex,2791.0,0.22,0.03,0.92,1
+apep_1414_v1,First-test failure,binary,-1,-1,-1,-1,0.06,0.86,0.25,beneficiary outcome direction,apep_1414/v1/tables/tabF1_sde.tex,3409.0,0.46,0.05,0.23,-1
+apep_1415_v1,TWFE DiD,binary,1,1,1,1,0.83,0.16,0.12,beneficiary outcome direction,apep_1415/v1/tables/tabF1_sde.tex,3551.0,0.03,0.02,0.05,1
+apep_1416_v1,Log Median Rent,continuous,0,0,0,-1,0.15,0.69,0.61,beneficiary outcome direction,apep_1416/v1/tables/tabF1_sde.tex,2705.0,0.03,0.04,0.06,-1
+apep_1417_v1,Log Price Index,binary,0,0,0,0,0.25,0.46,0.43,insufficient directional evidence,apep_1417/v1/tables/tabF1_sde.tex,2636.0,0.02,0.03,0.15,0
+apep_1418_v1,In-state tuition,continuous,0,-1,-1,-1,0.12,0.85,0.19,beneficiary outcome direction,apep_1418/v1/tables/tabF1_sde.tex,2626.0,0.03,0.03,0.19,-1
+apep_1419_v1,Log annual pay (continuous),continuous,1,1,1,1,0.96,0.14,0.08,beneficiary outcome direction,apep_1419/v1/tables/tabF1_sde.tex,2811.0,0.02,0.02,0.01,1
+apep_1420_v1,Log charge gap (MCC/CC),continuous,0,0,0,0,0.53,0.48,0.62,insufficient directional evidence,apep_1420/v1/tables/tabF1_sde.tex,3339.0,0.07,0.05,0.35,0
+apep_1421_v1,Log nightlights (dose),continuous,1,1,1,1,0.91,0.08,0.07,beneficiary outcome direction,apep_1421/v1/tables/tabF1_sde.tex,4140.0,0.02,0.02,0.07,1
+apep_1422_v1,"Heat, rainfed states",continuous,0,1,0,0,0.53,0.43,0.15,insufficient directional evidence,apep_1422/v1/tables/tabF1_sde.tex,4990.0,0.03,0.03,0.04,0
+apep_1423_v1,Violation rate,binary,-1,-1,-1,-1,0.07,0.95,0.16,beneficiary outcome direction,apep_1423/v1/tables/tabF1_sde.tex,2520.0,0.54,0.07,0.29,-1
+apep_1425_v1,Pro-Worker Verdict,binary,1,1,1,1,0.91,0.16,0.1,beneficiary outcome direction,apep_1425/v1/tables/tabF1_sde.tex,3163.0,0.82,0.21,0.4,1
+apep_1426_v1,Safety Coverage (all networks),binary,0,0,1,1,0.69,0.31,0.31,beneficiary outcome direction,apep_1426/v1/tables/tabF1_sde.tex,2634.0,0.29,0.23,0.19,1
+apep_1428_v1,1em Log(Party Transfer+1) --- DDD,binary,0,0,0,1,0.8,0.41,0.33,beneficiary outcome direction,apep_1428/v1/tables/tabF1_sde.tex,3390.0,0.07,0.05,0.34,1
+apep_1431_v1,Log transactions (March 2025),binary,0,0,0,0,0.32,0.32,0.71,measurement qualifier: gross_activity,apep_1431/v1/tables/tabF1_sde.tex,1490.0,0.19,0.11,0.86,0
+apep_1432_v1,Contribution count,binary,0,0,0,0,0.46,0.26,0.63,measurement qualifier: gross_activity,apep_1432/v1/tables/tabF1_sde.tex,1815.0,0.32,0.02,0.79,0
+apep_1434_v1,Hearings (count),binary,0,0,0,0,0.63,0.32,0.63,measurement qualifier: administrative_detection,apep_1434/v1/tables/tabF1_sde.tex,3676.0,0.82,0.02,0.93,1
+apep_1435_v1,Log page-change ratio,continuous,0,0,0,0,0.22,0.37,0.81,ambiguous economic direction,apep_1435/v1/tables/tabF1_sde.tex,1269.0,0.07,0.02,0.58,0
+apep_1437_v1,log(1+vacancies),binary,0,1,1,1,0.64,0.34,0.38,beneficiary outcome direction,apep_1437/v1/tables/tabF1_sde.tex,1521.0,0.55,0.02,0.63,1
+apep_1439_v1,Search intensity (levels),binary,0,0,1,1,0.71,0.3,0.42,beneficiary outcome direction,apep_1439/v1/tables/tabF1_sde.tex,1426.0,0.06,0.03,0.33,1
+apep_1440_v1,Any PFAS Detection,binary,0,-1,-1,-1,0.07,0.95,0.33,beneficiary outcome direction,apep_1440/v1/tables/tabF1_sde.tex,1094.0,0.48,0.02,0.07,-1
+apep_1441_v1,Employment (high-bite),binary,1,1,1,1,0.95,0.32,0.12,beneficiary outcome direction,apep_1441/v1/tables/tabF1_sde.tex,2168.0,0.03,0.05,0.02,1
+apep_1442_v1,Appeal allowed (first stage),binary,1,1,0,1,0.74,0.51,0.29,beneficiary outcome direction,apep_1442/v1/tables/tabF1_sde.tex,3346.0,0.5,0.04,0.54,1
+apep_1443_v1,"2-yr notch, Tax 2.0",binary,0,0,0,0,0.3,0.36,0.56,measurement qualifier: gross_activity,apep_1443/v1/tables/tabF1_sde.tex,2901.0,0.14,0.05,0.87,0
+apep_1444_v1,Labor Force Participation,binary,0,0,1,1,0.89,0.32,0.3,beneficiary outcome direction,apep_1444/v1/tables/tabF1_sde.tex,2731.0,0.02,0.19,0.01,1
+apep_1445_v1,Closure (narrow BW),binary,0,0,0,-1,0.09,0.61,0.65,beneficiary outcome direction,apep_1445/v1/tables/tabF1_sde.tex,3533.0,0.37,0.05,0.52,-1
+apep_1446_v1,New entrants,binary,1,1,1,1,0.9,0.21,0.14,beneficiary outcome direction,apep_1446/v1/tables/tabF1_sde.tex,3789.0,0.11,0.05,0.67,1
+apep_1447_v1,Unemployment rate,continuous,-1,-1,-1,-1,0.04,0.98,0.08,beneficiary outcome direction,apep_1447/v1/tables/tabF1_sde.tex,1766.0,0.06,0.28,0.02,-1
+apep_1448_v1,Pr( 4+ stars ) (RDD),binary,1,1,1,1,0.78,0.25,0.12,beneficiary outcome direction,apep_1448/v1/tables/tabF1_sde.tex,4119.0,0.07,0.04,0.16,1
+apep_1449_v1,Log fishing hours (pooled),continuous,0,0,0,0,0.49,0.34,0.64,insufficient directional evidence,apep_1449/v1/tables/tabF1_sde.tex,4284.0,0.07,0.04,0.34,0
+apep_1450_v1,Star Rating,binary,1,1,1,1,0.95,0.13,0.05,beneficiary outcome direction,apep_1450/v1/tables/tabF1_sde.tex,1436.0,0.1,0.02,0.04,1
+apep_1452_v1,Log employment,continuous,1,1,1,1,0.95,0.23,0.1,beneficiary outcome direction,apep_1452/v1/tables/tabF1_sde.tex,3189.0,0.04,0.04,0.02,1
+apep_1454_v1,Cash benefit rate,binary,0,0,0,0,0.57,0.62,0.53,insufficient directional evidence,apep_1454/v1/tables/tabF1_sde.tex,2999.0,0.08,0.47,0.11,0
+apep_1455_v1,Multi-unit share,binary,0,0,0,1,0.63,0.24,0.71,beneficiary outcome direction,apep_1455/v1/tables/tabF1_sde.tex,3922.0,0.05,0.56,0.2,1
+apep_1456_v1,1-year survival,binary,1,1,1,1,0.97,0.09,0.07,beneficiary outcome direction,apep_1456/v1/tables/tabF1_sde.tex,3324.0,0.04,0.11,0.07,1
+apep_1458_v1,Coliform MCL viol.,binary,-1,-1,-1,-1,0.05,0.94,0.16,beneficiary outcome direction,apep_1458/v1/tables/tabF1_sde.tex,3865.0,0.83,0.03,0.31,-1
+apep_1459_v1,Log employment,binary,1,1,1,1,0.92,0.15,0.18,beneficiary outcome direction,apep_1459/v1/tables/tabF1_sde.tex,2520.0,0.04,0.04,0.02,1
+apep_1460_v1,"Empl. (F, 60--64)",binary,0,1,1,1,0.91,0.39,0.33,beneficiary outcome direction,apep_1460/v1/tables/tabF1_sde.tex,1168.0,0.04,0.34,0.02,1
+apep_1461_v1,Weekly hours,binary,0,0,0,0,0.46,0.5,0.55,insufficient directional evidence,apep_1461/v1/tables/tabF1_sde.tex,3360.0,0.03,0.03,0.02,0

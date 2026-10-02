@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering\small
+\caption{Alternative samples and interpretation rules}\label{tab:robustness}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrl}\toprule
+Estimand & Sample or rule & $N$ & Mean & 95\% CI \\
+\midrule
+Binary & Arithmetic screen & 326 & 0.000 & [-0.040, 0.040] \\
+Binary & Direction agreement & 21 & 0.006 & [-0.072, 0.084] \\
+Binary & Confident direction & 212 & 0.019 & [-0.027, 0.064] \\
+Binary & Drop most precise 1\% & 331 & -0.002 & [-0.042, 0.037] \\
+Binary & Clean scan & 152 & 0.009 & [-0.050, 0.068] \\
+Binary & Policy intent & 27 & 0.033 & [-0.113, 0.179] \\
+Binary & Include large SDEs & 336 & -0.008 & [-0.052, 0.036] \\
+Binary & Include duplicate tables & 337 & -0.002 & [-0.040, 0.037] \\
+Continuous & Arithmetic screen & 150 & 0.011 & [-0.018, 0.041] \\
+Continuous & Confident direction & 101 & -0.004 & [-0.028, 0.021] \\
+Continuous & Drop most precise 1\% & 148 & 0.012 & [-0.018, 0.041] \\
+Continuous & Clean scan & 82 & -0.010 & [-0.032, 0.012] \\
+Continuous & Policy intent & 5 & 0.055 & [-0.022, 0.132] \\
+Continuous & Include large SDEs & 151 & 0.011 & [-0.018, 0.041] \\
+Continuous & Include duplicate tables & 154 & 0.009 & [-0.020, 0.038] \\
+\bottomrule\end{tabular}
+\par\vspace{4pt}\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} All entries use REML and modified Hartung--Knapp inference. Clean scan is the upstream CLEAN verdict; it is not independent verification. The confidence subset requires direction margin at least 0.60 and ambiguity below 0.30. Policy intent uses explicit stated objectives and answers a different question.
+\end{minipage}
+\end{table}

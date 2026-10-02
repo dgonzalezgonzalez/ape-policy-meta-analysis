@@ -1,0 +1,11 @@
+Author-created manuscript, generated figures and tables, and annotations:
+Copyright 2026 Diego González-González.
+Licensed under Creative Commons Attribution 4.0 International to the extent
+of the author's rights: https://creativecommons.org/licenses/by/4.0/
+
+This statement grants no rights in third-party material. The factual extracts
+retain source attribution and are supplied for transparent replication. No
+licence in the underlying APE papers, table prose, source metadata or source
+leaderboard is asserted or transferred. Full original source prose is excluded.
+Any required third-party permissions and formal author rights certification
+remain to be established before journal submission.

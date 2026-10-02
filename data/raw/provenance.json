@@ -1,0 +1,20 @@
+{
+  "source_repository": "https://github.com/SocialCatalystLab/ape-papers",
+  "git_tree_sha": "70c660ea5a7de722e9a12ad965e1c665890208d8",
+  "access_date": "2026-10-02",
+  "source_table_versions": 712,
+  "source_metadata_versions": 710,
+  "leaderboard_url": "https://ape.socialcatalystlab.org/leaderboard.json",
+  "leaderboard_snapshot_sha256": "af2de3b2f4e76011088c64b0fbc15f6d2fc10c89154243aedeeb44c6400f293c",
+  "leaderboard_last_updated": "2026-07-01 16:01:11",
+  "leaderboard_release": "Selected factual rating fields in source_records.json; full mutable snapshot preserved locally, not redistributed.",
+  "source_license": "No explicit licence in the frozen source tree. Original prose excluded from release.",
+  "annotation_model": "jev-1.13.0",
+  "annotation_responses": 692,
+  "source_checksums": "Table SHA256 uses LF-normalized UTF-8; metadata SHA256 uses canonical JSON. All 712 tables match the frozen Git blob SHA1 after LF normalization.",
+  "context_paper_sources": 691,
+  "context_direction_responses": 692,
+  "context_model": "jev-1.13.0",
+  "context_selection": "Data/measurement/setting only, results excluded; see direction_protocol.json",
+  "context_questions": 8
+}

@@ -1,0 +1,15 @@
+{
+  "families": 699,
+  "numeric": 692,
+  "valid": 685,
+  "standardized": 626,
+  "oriented": 485,
+  "rated": 620,
+  "exclusions": {
+    "ok": 685,
+    "latest table has no parseable standardized effect": 7,
+    "|SDE| > 5": 4,
+    "SE(SDE) <= 0": 2,
+    "no classification label": 1
+  }
+}

@@ -1,0 +1,13 @@
+exhibit,source,output
+Table 1,sample_flow.json,paper/generated/sample.tex
+Table 2,results.json:distribution,paper/generated/distribution.tex
+Table 3,results.json:pooled,paper/generated/pooled.tex
+Table 4,results.json:policy_regressions,paper/generated/policy_regressions.tex
+Table 5,results.json:quality_regressions,paper/generated/quality_regressions.tex
+Figure 1,analysis_sample.csv,output/figures/magnitude_cdf.pdf
+Figure 2,results.json:domains,output/figures/domains.pdf
+Table A1,results.json:sign_sensitivity,paper/generated/thresholds.tex
+Table A2,results.json:robustness,paper/generated/robustness.tex
+Table A3,results.json:distribution,paper/generated/identities.tex
+Table A4,results.json:weighting,paper/generated/weights.tex
+Table A5,results.json:direction_comparison,paper/generated/direction_comparison.tex

@@ -1,0 +1,125 @@
+---
+title: "Replication self-check: Automated Policy Evaluation and the Interpretation of Evidence"
+author: "Diego GonzÃ¡lez-GonzÃ¡lez"
+date: "2026-10-02"
+number-sections: true
+format:
+  html:
+    toc: true
+---
+
+# Paper Identification
+
+| Field | Value |
+| --- | --- |
+| Paper ID | Working paper; no JPE submission identifier |
+| Author | Diego GonzÃ¡lez-GonzÃ¡lez |
+| Title | Automated Policy Evaluation and the Interpretation of Evidence: A Meta-Analysis of Project APE |
+| Iteration | Author release 1.0.0 |
+| Repository | <https://github.com/dgonzalezgonzalez/ape-policy-meta-analysis> |
+| Report status | Author-side self-check; not a JPE replicator report or approval |
+
+This report follows the headings of the [JPE template](https://github.com/JPE-Reproducibility/JPEtemplate/blob/main/TEMPLATE.qmd). The journal's template belongs to its independent replication workflow. It is adapted here to document preparation and checks without impersonating a replicator or Data Editor. Quarto is needed only to render this optional report, not to reproduce the paper.
+
+# Summary
+
+The frozen factual inputs and cached annotations reproduce the numerical analysis offline. The package contains one driver, separated input/code/output directories, exact software versions, input checksums, source provenance, an exhibit map, a complete dataset dictionary, analytical checks and the paper's editable TeX source. A clean-copy replication is documented in `output/qa/clean_replication.json`.
+
+The source corpus does not specify an explicit redistribution licence. Full source prose is therefore excluded, with immutable acquisition instructions supplied. Author rights certification and an archival DOI remain outstanding for a journal submission. No editorial compliance decision is claimed.
+
+# General
+
+- [x] Data availability and provenance statements in root README.
+- [x] Public acquisition method and access dates documented.
+- [ ] Author certification of right to use and publish third-party material completed.
+- [x] Original third-party prose excluded from public release.
+- [x] Code licence and scoped author-output licence supplied.
+- [x] Dataset list and complete variable dictionary supplied.
+- [x] Software, hardware, storage and timing information supplied.
+- [x] Randomness controlled and seed recorded.
+- [x] Code description and one-command replication supplied.
+- [x] Table, figure and in-text-number mapping supplied.
+- [ ] Persistent archival DOI assigned.
+- [ ] Independent journal-appointed replication conducted.
+
+# High-level Description of Research Project
+
+- [x] Uses publicly reported observational estimates and automated tournament ratings.
+- [ ] Uses confidential microdata.
+- [ ] Conducts a new human-subject experiment or trial.
+- [x] Generates model annotations from abbreviated published descriptions.
+- [x] Supplies frozen annotations sufficient for offline reproduction.
+- [x] Distinguishes descriptive corpus analysis from underlying causal replication.
+
+The analysis population is the paper families with designated effect tables, not the entire policy literature. Binary treatment contrasts and continuous exposure slopes remain separate. Favourable movement in a measured outcome is distinguished from stated policy intent and net welfare.
+
+# Data description
+
+## Data Sources
+
+1. Social Catalyst Lab's APE repository, frozen tree `70c660ea5a7de722e9a12ad965e1c665890208d8`, accessed October 2, 2026. The immutable manifest lists 712 table versions and 710 metadata files.
+   An additional 691 latest-version paper.tex files supply outcome-relevant data/setting paragraphs, excluding result sections.
+2. APE leaderboard, accessed October 2, 2026, reporting a July 1 update. The package freezes selected factual records rather than reusing the mutable live endpoint.
+3. Author-generated TypeSafe Jev 1.13.0 responses, generated October 2, 2026. Questions, request hashes, returned typed answers and usage are provided.
+
+The released inputs are JSON, JSON Lines and CSV. `data/input_checksums.json` verifies the seven frozen files. The dictionary defines every column in the 699-row generated dataset. Original source prose and local API credentials are excluded. Detailed acquisition and rights statements are in the README.
+
+# Requirements
+
+## Stated Requirements
+
+Python 3.12 and `requirements.txt`; pdflatex for manuscript compilation. No proprietary statistical software is required. The supplied PDF permits reading without a TeX installation. Main analysis requires no network, key, GPU or Quarto. Dependency installation and optional original-source acquisition require internet access. New annotations additionally require a TypeSafe key and may incur charges.
+
+# Analyzing Data and Code Files
+
+## Code description
+
+`run_all.py` verifies inputs, builds the dataset, runs thirteen benchmark checks, estimates results, writes tables and figures, compiles the manuscript twice and checks outputs. The optional `--rebuild-sources` route performs immutable acquisition, parsing and arithmetic diagnostics first. The optional `--enrich` route refreshes only missing/stale model requests.
+
+The numerical generator writes no source input files during the default run. `make_tex.py` reads results and writes generated TeX; it does not rewrite figure inputs. The primary row rule, latest-version rule, deduplication, missingness and directional thresholds are explicit in code and manuscript.
+
+## Computing Environment of Replicator
+
+The author-side checks used Python 3.12.10 on Windows 11 build 26200, an Intel i7-1165G7 processor, eight logical CPUs and approximately 16 GB RAM. The tested dependency versions are in `requirements.txt` and `output/qa/run_environment.json`. A complete offline run takes approximately 25 seconds. This is the author's environment, not an independent replicator's computer.
+
+# Replication
+
+Primary command: `python run_all.py`, with the actual Python interpreter as described in README. Run `python run_all.py --no-pdf` for numerical and TeX reproduction without pdflatex. `output/replication.log` contains the commands and compiler output. `output/qa/output_checks.json` reports sample invariants, common regression samples, placeholders, PDF page count and compiler checks.
+
+The clean-copy check excludes `.env`, `.local`, original source text and existing analysis outputs. It rebuilds the main dataset, results, tables and figures using only release files. Its comparison targets and results are recorded in `output/qa/clean_replication.json`. A separate source-level reconstruction checks extraction from immutable originals using frozen ratings and cached annotations. Neither check reruns the underlying policy evaluations.
+
+# Findings
+
+## Missing Requirements
+
+No missing requirement prevents numerical reproduction from the frozen release. Formal author rights certification, any necessary third-party permissions, a persistent archive deposit and an independent journal assessment remain outside the completed computational checks.
+
+## Data Preparation Code
+
+The release records all 699 latest families rather than silently replacing an unusable latest table with an older version. Header-name extraction, escaped ampersands, positive parenthesized standard errors and panel selection are tested. Internal coefficient/SD identities are tested only when their inputs are reported; the exposure SD is never recovered from the effect under test. Failed checks remain visible and enter a sensitivity exclusion.
+
+Exactly repeated table files are removed using LF-normalized SHA256. The comparable sample contains 626 papers; 485 allow favourable-direction coding and 620 have usable tournament ratings. Unresolved oriented estimates remain missing. A review queue preserves 141 unresolved comparable outcomes for further substantive inspection.
+
+## Tables and Figures
+
+The package reproduces Tables 1â€“5, Figures 1â€“2 and Tables A1â€“A5. The machine-readable mapping is `output/tables/exhibit_map.csv`. Regression displays include constants, observations, fit measures and HC3 inference. Main binary and continuous means are separate REML summaries with modified Hartungâ€“Knapp intervals. Exact source standardization and directional selection limit their interpretation.
+
+All manuscript pages were rendered for visual inspection. Checks cover margins, axis/legend placement, table readability, placeholders, undefined references and overfull horizontal boxes. The log and QA output record compiler success; visual inspection is a separate author check.
+
+## In-Text Numbers
+
+Fifty-nine generated macros populate the text's numerical claims from `results.json`. The complete coefficient exports include categorical controls omitted from the displayed tables. The fifteen directional threshold pairs are reapplied to all comparable observations. The strict-confidence subset and original notes-only route are retained; both information and threshold changes are exposed in Table A5.
+
+## Other Issues
+
+The requested economics AI detector is optional and pinned separately. Its scores and the exact checked PDF hash are in `output/qa/detector.json`. The detector does not establish authorship; the manuscript retains its AI-assistance disclosure.
+
+The original corpus has substantial cross-paper heterogeneity, limited arithmetic checkability for continuous exposures and unknown dependence beyond exact repeated tables. Model annotations have no independently established calibration or error rate in this corpus. These are empirical limitations, not computational reproducibility failures. The contextual rule increases coverage from 299 to 485 papers. Its measurement safeguards are exploratory; no independently estimated error-minimizing threshold is claimed. The illustrative audit documents the wage-gap definition reversal and remaining price/clinical interpretation concerns.
+
+# Classification
+
+**Author-side classification:** computationally reproducible from the supplied frozen factual inputs and annotations, subject to the documented software environment. Source-level extraction is reconstructible from immutable publicly accessible tables and metadata. This is not a journal Data Editor's classification.
+
+## Reason for incomplete reproducibility
+
+Original underlying policy analyses have not been independently replicated. Model regeneration may vary despite a pinned label. The mutable leaderboard's selected factual records are frozen locally rather than recovered from a public historical endpoint. These limitations are disclosed. Rights certification and persistent archival deposit must be completed before claiming full JPE submission compliance.

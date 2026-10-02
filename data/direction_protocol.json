@@ -1,0 +1,11 @@
+{
+  "revision_date": "2026-10-02",
+  "purpose": "Increase coverage using outcome definitions and conventional outcome ordering, without assigning net welfare or observing reported results.",
+  "baseline_thresholds_chosen_before_contextual_pooled_results": true,
+  "baseline": {"margin": 0.15, "support": 0.55, "ambiguity_max": 0.75, "opposite_support_ceiling": null},
+  "strict_sensitivity": {"margin": 0.20, "support": 0.60, "ambiguity_max": 0.60, "opposite_support_ceiling": 0.40},
+  "threshold_grid": {"margin": [0.05, 0.10, 0.15, 0.20, 0.30], "ambiguity_max": [0.60, 0.75, 0.90], "support": 0.55},
+  "semantic_safeguards": {"questions": ["administrative_detection", "group_composition", "gross_activity"], "probability_threshold": 0.65, "qualifier_ambiguity_min": 0.40, "composition_unconditional": true, "reason": "Group composition lacks an absolute-benefit ordering. Reporting/activity flags require accompanying outcome ambiguity, because registry-based harm, beneficial access and direct beneficiary burdens can still have a conventional direction. Introduced after result-blind substantive review; not an independently validated error model."},
+  "context": "Outcome-relevant paragraphs from data, measurement and institutional-setting sections only; no abstract, introduction, results, conclusion, table inputs, numerical effects, standard errors or ratings.",
+  "validation": "Paired comparisons and AI-assisted substantive audit; no independently calibrated false-positive or false-negative rates are claimed."
+}

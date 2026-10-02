@@ -1,0 +1,11 @@
+{
+  "sample_invariants": "pass",
+  "common_regression_samples": "pass",
+  "table_placeholders": "pass",
+  "tests": 13,
+  "pdf_checked": true,
+  "pdf_pages": 20,
+  "pdf_sha256": "281a5df4c5802348340d0fac1748be3565c1c0d5cdb75f2e935b3b63ea6278fb",
+  "latex_errors": 0,
+  "overfull_boxes": 0
+}

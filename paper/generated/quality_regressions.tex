@@ -1,0 +1,35 @@
+\begin{table}[htbp]\centering\small
+\caption{Correlates of tournament ratings}\label{tab:quality_regressions}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}\toprule
+ & Rating & Rating & Rating & Rating \\
+ & (1) & (2) & (3) & (4) \\
+\midrule
+$\log\,\mathrm{SE}(\mathrm{SDE})$ & -0.752$^{***}$ & -0.772$^{***}$ & -0.693$^{***}$ & -0.644$^{***}$ \\
+ & (0.204) & (0.203) & (0.201) & (0.205) \\
+Design score & -- & 1.078$^{**}$ & 1.165$^{**}$ & 1.216$^{**}$ \\
+ &  & (0.492) & (0.507) & (0.506) \\
+Policy intensity & -- & -- & 1.039$^{*}$ & 1.078$^{*}$ \\
+ &  &  & (0.540) & (0.560) \\
+Identifying-assumption test & -- & -- & -3.563$^{*}$ & -3.811$^{*}$ \\
+ &  &  & (1.849) & (1.979) \\
+Reports robustness & -- & -- & -2.272$^{**}$ & -2.164$^{**}$ \\
+ &  &  & (1.073) & (1.090) \\
+Official data source & -- & -- & 2.570$^{**}$ & 2.694$^{**}$ \\
+ &  &  & (1.228) & (1.359) \\
+Constant & 17.577$^{***}$ & 15.519$^{***}$ & 12.268$^{***}$ & 11.986$^{***}$ \\
+ & (0.818) & (1.197) & (1.714) & (1.976) \\
+\midrule Observations & 620 & 620 & 620 & 620 \\
+$R^2$ & 0.089 & 0.098 & 0.129 & 0.144 \\
+Adjusted $R^2$ & 0.063 & 0.071 & 0.097 & 0.102 \\
+RMSE (unweighted) & 5.831 & 5.803 & 5.702 & 5.651 \\
+Residual degrees of freedom & 602 & 601 & 597 & 590 \\
+HC3 Wald $F$ & 3.24 & 3.60 & 4.10 & 3.49 \\
+Wald $p$-value & $<0.001$ & $<0.001$ & $<0.001$ & $<0.001$ \\
+Method, region, week controls & Yes & Yes & Yes & Yes \\
+Policy-domain controls & No & No & No & Yes \\
+\bottomrule\end{tabular}
+\par\vspace{4pt}\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} Dependent variable is TrueSkill $\mu$. All columns use the same rated comparable papers, including those without directional coding. An estimand indicator is also included. Ratings measure the automated tournament assessment; underlying validity is not observed. HC3 standard errors in parentheses. $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$. Constant is the intercept for the omitted categorical groups; fixed effects are estimated separately. All columns use equal paper weights. Rare categorical levels (fewer than ten papers) are grouped as Other.
+\end{minipage}
+\end{table}

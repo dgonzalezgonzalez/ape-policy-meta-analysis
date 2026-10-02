@@ -1,0 +1,13 @@
+\begin{table}[htbp]\centering\small
+\caption{Internal arithmetic diagnostics}\label{tab:identities}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrr}\toprule
+Estimand & Total & SDE tested & SDE fails & SE tested & SE fails \\
+\midrule
+Binary & 433 & 429 & 10 & 404 & 7 \\
+Continuous & 193 & 39 & 0 & 7 & 0 \\
+\bottomrule\end{tabular}
+\par\vspace{4pt}\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} SDE is checked against the declared standardization and SE against the same multiplier. A test is uninformative when the denominator or continuous exposure SD is unavailable. Tolerances allow 10\% relative SDE and 15\% relative SE discrepancies, with small-value floors of 0.02 and 0.0001. Counts are diagnostics, not estimates of research reliability.
+\end{minipage}
+\end{table}

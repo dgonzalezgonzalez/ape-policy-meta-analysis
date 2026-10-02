@@ -1,0 +1,21 @@
+\begin{table}[htbp]\centering\small
+\caption{Annotation setup and directional coverage}\label{tab:direction_comparison}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrl}\toprule
+Setup and rule & Estimand & $N$ & Mean & 95\% CI \\
+\midrule
+Notes / strict & Binary & 210 & 0.018 & [-0.018, 0.053] \\
+Notes / strict & Continuous & 89 & 0.015 & [-0.016, 0.046] \\
+Notes / relaxed & Binary & 278 & -0.006 & [-0.046, 0.033] \\
+Notes / relaxed & Continuous & 123 & 0.001 & [-0.029, 0.031] \\
+Context / strict & Binary & 307 & -0.007 & [-0.048, 0.033] \\
+Context / strict & Continuous & 139 & 0.000 & [-0.021, 0.022] \\
+Context / unguarded & Binary & 366 & -0.011 & [-0.051, 0.028] \\
+Context / unguarded & Continuous & 161 & 0.016 & [-0.013, 0.044] \\
+Context / balanced & Binary & 335 & -0.002 & [-0.041, 0.037] \\
+Context / balanced & Continuous & 150 & 0.011 & [-0.018, 0.041] \\
+\bottomrule\end{tabular}
+\par\vspace{4pt}\begin{minipage}{\textwidth}\footnotesize
+\textit{Notes:} Notes refers to the original beneficiary questions and table notes. Context refers to outcome-relevant data/setting paragraphs and questions explicitly about conventional outcome ordering, holding other outcomes and policy costs aside. Thus both context and question framing change across routes. Strict requires margin 0.20, support 0.60, opposite support no greater than 0.40 and ambiguity below 0.60. Balanced requires margin 0.15, support 0.55 and ambiguity below 0.75, with no opposite-support ceiling. Both routes use the same estimator. Contextual guarded rules flag group composition at probability 0.65; reporting/enforcement and gross-activity flags at 0.65 additionally require ambiguity at least 0.40. Unguarded omits these safeguards. These comparisons are not classification-error estimates.
+\end{minipage}
+\end{table}

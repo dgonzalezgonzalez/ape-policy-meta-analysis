@@ -1,0 +1,123 @@
+{
+  "status": "pass",
+  "date": "2026-10-02",
+  "copied_files": 39,
+  "source": "Git index bytes, excluding all outputs, generated tables, processed data and ignored local files",
+  "credentials_present": false,
+  "original_source_prose_present": false,
+  "seconds": 22.688,
+  "comparisons": {
+    "data/processed/dataset.csv": {
+      "match": true,
+      "sha256": "853e9046153f0338394eff01d31cd41b74c00d9070e3354e0652e3b65d0402a7"
+    },
+    "output/results.json": {
+      "match": true,
+      "sha256": "8b1fba96c87ff074ca8e32410965dcc66c5b2feb35d7f1bca0aba0083e101f1e"
+    },
+    "output/sample_flow.json": {
+      "match": true,
+      "sha256": "e39f226b1a3603aac738a4b8c74517ecc04e287892aed67a7bacb2c2e9f40668"
+    },
+    "output/analysis_sample.csv": {
+      "match": true,
+      "sha256": "b7c8124825084b64bc6f08dba1c3799ebc87f76a55315538ea6a0c39eab214af"
+    },
+    "output/sign_sensitivity.csv": {
+      "match": true,
+      "sha256": "1102cc0c36d562c187bcd69fa5ff323ea96ad9f79c9d406b42b293658565a362"
+    },
+    "output/direction_review_queue.csv": {
+      "match": true,
+      "sha256": "8f8751c8689a11741d4656625ed112d7a89dd56e6d111ea986089599b6b3ef9f"
+    },
+    "output/direction_comparison.csv": {
+      "match": true,
+      "sha256": "3f244feaff08d274bcdd1c3e07bde9af6b83028b959497c9e878cfb10ae0a4ed"
+    },
+    "paper/generated/direction_comparison.tex": {
+      "match": true,
+      "sha256": "591f7826baf6994806a2f5d371d2b5e82de768754ba233bd2a2ece93cd24ee89"
+    },
+    "paper/generated/distribution.tex": {
+      "match": true,
+      "sha256": "1accb208ad776f831b81aad31493e93dfea39955c1f034c86dd16d7967ff1493"
+    },
+    "paper/generated/identities.tex": {
+      "match": true,
+      "sha256": "f02623433d1353e06a3e82487700331a29c6843692efe7242281d7b345f8d2cd"
+    },
+    "paper/generated/numbers.tex": {
+      "match": true,
+      "sha256": "a5c1bcc6aaee64497097c663bb97c4ea368f5ea57007c83b11b0fa853973a475"
+    },
+    "paper/generated/policy_regressions.tex": {
+      "match": true,
+      "sha256": "4a5af3a0724c7c39af90c3b197a78aea7935245076c93ebd5566c0503352ce5e"
+    },
+    "paper/generated/pooled.tex": {
+      "match": true,
+      "sha256": "5ca676ce462219807d0aaa69bf0a1adcefc709c900a54f1f568de2732c56a8a9"
+    },
+    "paper/generated/quality_regressions.tex": {
+      "match": true,
+      "sha256": "abaaddc4beeaf96c9723755be477754bb2bab3efa576e5afcd174fadad1760d5"
+    },
+    "paper/generated/robustness.tex": {
+      "match": true,
+      "sha256": "2bd0d18eaa6abee2b7cf844f3224be887910cce26c480df9d219afb3d15f0628"
+    },
+    "paper/generated/sample.tex": {
+      "match": true,
+      "sha256": "61471081c98060b98b32bde66b94170d545f29331650586678f51cda1a4fa52f"
+    },
+    "paper/generated/thresholds.tex": {
+      "match": true,
+      "sha256": "fc1dcc3c1a445e8b3f39669234fe200047ac40115e1ed98052b0641ac1cdd032"
+    },
+    "paper/generated/weights.tex": {
+      "match": true,
+      "sha256": "f92e0713fc1d0779d32ec386a486378ba47ab34eba497a32e0bc0bedfb64b96e"
+    },
+    "output/tables/direction_coverage.csv": {
+      "match": true,
+      "sha256": "6ac0709f462b1986d55db64b995635358ff30be0bc996fdca45e755198bfb0f1"
+    },
+    "output/tables/domain_summaries.csv": {
+      "match": true,
+      "sha256": "edfb138837d9c53d14f066d327bb62dbe5e91601e3152fe753fb49a06991b0a8"
+    },
+    "output/tables/exhibit_map.csv": {
+      "match": true,
+      "sha256": "cb087889201d38ea98007971d5c1d2565792956639d508b1ad83e8644994dc00"
+    },
+    "output/tables/policy_regressions_all_coefficients.csv": {
+      "match": true,
+      "sha256": "911807209caaa642fa4965b40697d3eae9590bbb09b2987373690bdf9f36cabe"
+    },
+    "output/tables/quality_regressions_all_coefficients.csv": {
+      "match": true,
+      "sha256": "84ebd73bee6d70615fcc929bc3e66761d68debd736f9e2290dccdcbb9456fb7f"
+    },
+    "output/figures/domains.pdf": {
+      "match": true,
+      "sha256": "c52cef486a5b1ccd7ff364e6219cccba389c73caa1fd8661de1aeeca29dfb63a"
+    },
+    "output/figures/magnitude_cdf.pdf": {
+      "match": true,
+      "sha256": "6945ae4dc18b59fc9662620761a41577873aaad2c5e60effe061867ccaf99be3"
+    }
+  },
+  "pdf": "Compiled successfully in clean copy; PDF bytes not compared because TeX timestamps and IDs vary.",
+  "clean_output_checks": {
+    "sample_invariants": "pass",
+    "common_regression_samples": "pass",
+    "table_placeholders": "pass",
+    "tests": 13,
+    "pdf_checked": true,
+    "pdf_pages": 20,
+    "pdf_sha256": "d0a493f2a13b395228f2063b194178b233baa313709b69731fe77608aa3d8e5d",
+    "latex_errors": 0,
+    "overfull_boxes": 0
+  }
+}
